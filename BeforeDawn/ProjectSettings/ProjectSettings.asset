@@ -5,6 +5,7 @@ PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 23
   productGUID: b9820a1847152481ca8a5c55321957f2
+>>>>>>> 51f534747562c27a1cd3d5f693cab106477823d8
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -152,7 +153,8 @@ PlayerSettings:
   resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Standalone: com.DefaultCompany.BeforeDawn
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -666,7 +668,11 @@ PlayerSettings:
   ps4GarlicHeapSize: 2048
   ps4ProGarlicHeapSize: 2560
   playerPrefsMaxSize: 32768
+<<<<<<< HEAD
+  ps4Passcode: 7HoBH8y8gb8ICEmpMCVpqV0z9KV0HP5P
+=======
   ps4Passcode: 30QRTzaqpCV79wD04cUpLKYAE1t7Xyn1
+>>>>>>> 51f534747562c27a1cd3d5f693cab106477823d8
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -806,7 +812,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
