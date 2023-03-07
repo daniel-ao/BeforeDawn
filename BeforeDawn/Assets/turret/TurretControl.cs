@@ -6,7 +6,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class TurretControl : MonoBehaviour
 {
-    Transform _ennemi;
+    Transform _enemy;
     private NavMeshAgent navAgent;
     public TurretData turretData;
     private float nextShoot, distance;
@@ -36,17 +36,23 @@ public class TurretControl : MonoBehaviour
         }
         else
         {
-            _ennemi = GameObject.FindWithTag("ennemi").transform;     // HAVE TO RELOAD THIS EVERY TIME TO KNOW IF WHERE IS AN ENNEMI WITHIN THE RANGE
-
-            distance = Vector3.Distance(_ennemi.position, transform.position); //to know the position of oponnent
-            if (distance <= turretData.maxRange)
+            _enemy = GameObject.FindWithTag("enemy").transform;     // HAVE TO RELOAD THIS EVERY TIME TO KNOW IF WHERE IS AN ENNEMI WITHIN THE RANGE
+            if (_enemy !=null)
             {
-                head.LookAt(_ennemi);
-                if (Time.time >= nextShoot) //fireRate
+                distance = Vector3.Distance(_enemy.position, transform.position); //to know the position of oponnent
+                if (distance <= turretData.maxRange)
                 {
-                    nextShoot = Time.time + 1f / turretData.fireRate;
-                    shoot();
+                    head.LookAt(_enemy);
+                    if (Time.time >= nextShoot) //fireRate
+                    {
+                        nextShoot = Time.time + 1f / turretData.fireRate;
+                        shoot();
+                    }
                 }
+            }
+            if (_enemy == null)
+            {
+                return;
             }
         } 
     }
