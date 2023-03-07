@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66c9ed571139aed44bb71278b42d16d3, type: 3}
-  m_Name: turret 1
+  m_Script: {fileID: 11500000, guid: 6df5842d62e58c9479326e89fb57c8e4, type: 3}
+  m_Name: turrettest
   m_EditorClassIdentifier: 
   hp: 50
   atckDmg: 10
   maxRange: 20
-  speedShoot: 500
+  speedShoot: 1500
   fireRate: 2
