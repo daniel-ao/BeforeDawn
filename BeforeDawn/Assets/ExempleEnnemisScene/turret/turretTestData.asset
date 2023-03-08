@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5767385de8fdd74b90c5afa27947f26, type: 3}
-  m_Name: Goblin
+  m_Script: {fileID: 11500000, guid: b0de6985ff71aaa4c85c9d09b7345b32, type: 3}
+  m_Name: turretTestData
   m_EditorClassIdentifier: 
-  enemyName: Goblin
-  description: Very mean goblin.
-  enemyModel: {fileID: 4477817434301611361, guid: b0466623b70aaa84391492426e639d36,
-    type: 3}
-  health: 50
-  speed: 2.2
-  damage: 5
+  hp: 50
+  atckDmg: 10
+  maxRange: 20
+  speedShoot: 1500
+  fireRate: 2
