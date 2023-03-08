@@ -12,6 +12,7 @@ public class CameraMovement : MonoBehaviour
     public float scrollmin = 0f;
     public float scrollmax = 20f;
     private int fps = 30;
+    public Vector3 position;
 
     public Vector2 limit;
     // Start is called before the first frame update
@@ -19,6 +20,7 @@ public class CameraMovement : MonoBehaviour
     {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = fps;
+        transform.position = position;
     }
 
     // Update is called once per frame 
