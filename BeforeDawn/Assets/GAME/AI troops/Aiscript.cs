@@ -12,9 +12,10 @@ public class Aiscript : MonoBehaviour
     public float timeBetAttack;
     private bool alreadyAttack;
     public float SightRange, AttackRange;
-    private float AiSightRange, AiAttackRange;
+    private float AiSightRange, AiAttackRange, AiAttackRangeTower;
     public Animator animator;
     public Vector3 vector;
+    public KnightData knightData;
 
     void Start()
     {
@@ -29,39 +30,42 @@ public class Aiscript : MonoBehaviour
     {
         AiSightRange = Vector3.Distance(transform.position, player.position);
         AiAttackRange = Vector3.Distance(transform.position, player.position);
+        AiAttackRangeTower = Vector3.Distance(transform.position, PrincipalTower.position);
+        Debug.Log(AiAttackRangeTower);
         if (AiAttackRange > AttackRange && AiSightRange > SightRange)
         {
-            AvancingToTower();
-            Debug.Log("avance!");
+            AvancingToTower(AiAttackRangeTower <= AttackRange);
         }
 
         if (AiAttackRange > AttackRange && AiSightRange <= SightRange)
         {
-            Debug.Log("Chasing!");
             ChasingEnnemy();
             
         }
         if (AiAttackRange <= AttackRange && AiSightRange <= SightRange)
         {
-            Debug.Log("Attackiiiiinnnggg!");
-            Attacking();
+            Attacking(player);
+
         }
     }
 
-    private void AvancingToTower()
+    private void AvancingToTower(bool attacking)
     {
         agent.SetDestination(PrincipalTower.position - vector);
+        if (attacking)
+        {
+            Attacking(PrincipalTower);
+        }
         transform.LookAt(PrincipalTower);
-        Debug.Log(agent.transform.position);
     }
     private void ChasingEnnemy()
     {
         agent.SetDestination(player.position);
     }
-    private void Attacking()
+    private void Attacking(Transform gameobject)
     {
         
-        transform.LookAt(player);
+        transform.LookAt(gameobject);
         AttackAnimation(alreadyAttack);
         if (!alreadyAttack)
         {
@@ -85,8 +89,7 @@ public class Aiscript : MonoBehaviour
         {
             animator.SetBool("isAttacking", true);
         }
-        {
-        }
     }
+
 
 }
