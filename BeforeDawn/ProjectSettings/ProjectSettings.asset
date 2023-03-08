@@ -4,9 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 23
-
-  productGUID: 4ce28f06c6fbd4e63bc6d36a32085fae
-
+  productGUID: ac55685a389a61af5b4d11ae0817cfc0
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -572,11 +570,7 @@ PlayerSettings:
   ps4GarlicHeapSize: 2048
   ps4ProGarlicHeapSize: 2560
   playerPrefsMaxSize: 32768
-<<<<<<< HEAD
-  ps4Passcode: 6WRy5oLKzFinVdxC2kThBIF08FSKOuDU
-=======
-  ps4Passcode: zx7dk1sinRd4N2hyrvPVz7YlFsYjGCRr
->>>>>>> 09313432b5e1f0977de7e7df115185f9bd2995f2
+  ps4Passcode: PBwa85u0t2kkFkccuBVe0XCRsnwyIkmh
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
