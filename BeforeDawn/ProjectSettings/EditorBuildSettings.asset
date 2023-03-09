@@ -8,14 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EnterScene/Menu - Copy.unity
     guid: fffe214d90fda16d298914233eb6df17
-  - enabled: 0
-    path: Assets/Scenes/EnterScene/Loading.unity
-    guid: 94f1dd0cac46abf40ac81c29794636f9
   - enabled: 1
     path: Assets/Scenes/EnterScene/Lobby.unity
     guid: 6bdf7ffc9417df84db36de086a1e1181
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameScene/Game.unity
     guid: 4defc9853aa444a35881bff67c808081
-  m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: b4d615a40c644c36288c9b743e171650, type: 2}
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: c824a5368aa92acbd8656e3c23b41612
+  m_configObjects: {}
