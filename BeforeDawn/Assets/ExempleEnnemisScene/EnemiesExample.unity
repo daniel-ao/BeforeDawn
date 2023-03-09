@@ -769,7 +769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 100
+  maxHealth: 50
 --- !u!1 &1266170530
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,7 +783,6 @@ GameObject:
   - component: {fileID: 1266170532}
   - component: {fileID: 1266170531}
   - component: {fileID: 1266170535}
-  - component: {fileID: 1266170536}
   m_Layer: 0
   m_Name: victimTer
   m_TagString: enemy
@@ -882,21 +881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 100
---- !u!114 &1266170536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266170530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e4118207724f240b802f6f4a926a6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 100
+  maxHealth: 50
 --- !u!1 &1277658020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,7 +1289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 100
+  maxHealth: 50
 --- !u!1 &2015969826
 GameObject:
   m_ObjectHideFlags: 0
