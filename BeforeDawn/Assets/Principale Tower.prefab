@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1458759109395352555}
   - component: {fileID: 170148484642005675}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Principale Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,6 +106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: towerSquare_bottomB
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0a48b6d2937ba4d66aa176297cf25bfb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a48b6d2937ba4d66aa176297cf25bfb, type: 3}
 --- !u!4 &1419817864846962456 stripped
@@ -186,6 +190,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: weapon_blaster (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 23ce009c8bfad46d7944983eefe3d6fd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607668393258877731, guid: 23ce009c8bfad46d7944983eefe3d6fd, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23ce009c8bfad46d7944983eefe3d6fd, type: 3}
 --- !u!4 &1419817864598504610 stripped
@@ -247,6 +259,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b58606db48c7549a58114abafdee7cf4, type: 3}
       propertyPath: m_Name
       value: towerSquare_middleB (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b58606db48c7549a58114abafdee7cf4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607668393258877731, guid: b58606db48c7549a58114abafdee7cf4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b58606db48c7549a58114abafdee7cf4, type: 3}
@@ -310,6 +330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: towerSquare_topB
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cbc87bc7057ab4a98812013e585b4938, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbc87bc7057ab4a98812013e585b4938, type: 3}
 --- !u!4 &1419817863943923292 stripped
@@ -371,6 +395,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: b58606db48c7549a58114abafdee7cf4, type: 3}
       propertyPath: m_Name
       value: towerSquare_middleB
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b58606db48c7549a58114abafdee7cf4, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607668393258877731, guid: b58606db48c7549a58114abafdee7cf4, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b58606db48c7549a58114abafdee7cf4, type: 3}

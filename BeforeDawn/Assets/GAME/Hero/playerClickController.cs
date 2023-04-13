@@ -34,20 +34,6 @@ public class playerClickController : MonoBehaviour
         //  for letf click
         bool click1 = Input.GetMouseButtonDown(1);
         click(click1);
-        SightRange = Vector3.Distance(transform.position, Enemy.position);
-        AttackRange = Vector3.Distance(transform.position, Enemy.position);
-
-        if (AttackRange > playerdata.AttackRange && SightRange <= playerdata.SightRange)
-        {
-            Debug.Log("Chasing!");
-            ChasingEnnemy();
-
-        }
-        if (AttackRange <= playerdata.AttackRange && SightRange <= playerdata.SightRange)
-        {
-            Debug.Log("Attackiiiiinnnggg!");
-            Attacking();
-        }
     }
 
     private void click(bool click1)
