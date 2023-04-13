@@ -10,6 +10,7 @@ TagManager:
   - Target
   - Archer
   - Mage
+  - Enemy
   layers:
   - Default
   - TransparentFX
