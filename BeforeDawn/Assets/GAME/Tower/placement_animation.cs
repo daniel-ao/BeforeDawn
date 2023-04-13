@@ -16,7 +16,7 @@ public class placement_animation : MonoBehaviour
     {
         _renderer = GetComponent<Renderer>();
         list = _renderer.materials;
-    }
+    } 
     void OnMouseEnter()
     {
         startcolor = _renderer.material.color;

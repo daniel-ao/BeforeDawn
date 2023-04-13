@@ -12,6 +12,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de53ccfabe6694ba29774aa733a8c786, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de53ccfabe6694ba29774aa733a8c786, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de53ccfabe6694ba29774aa733a8c786, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: de53ccfabe6694ba29774aa733a8c786, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -55,6 +67,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tile Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de53ccfabe6694ba29774aa733a8c786, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de53ccfabe6694ba29774aa733a8c786, type: 3}
 --- !u!1 &3130220225188346330 stripped
@@ -76,30 +92,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4855243574250553854, guid: de53ccfabe6694ba29774aa733a8c786, type: 3}
---- !u!114 &1217872362947741702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3130220225188346330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcc7c6252ca79462f87bb1429dc18b05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  placement_color: {r: 1, g: 0.18017924, b: 0, a: 0}
-  position: {x: 0, y: 0, z: 14}
---- !u!114 &2395174933025985956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3130220225188346330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f00580b53bbf4eef947a98a5977c380, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TurretPrefab: {fileID: 1458759109395352552, guid: 35da06ec8bcdc4aa2991d1961c3a435d, type: 3}

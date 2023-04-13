@@ -15,7 +15,6 @@ public class Aiscript : MonoBehaviour
     private float AiSightRange, AiAttackRange, AiAttackRangeTower;
     public Animator animator;
     public Vector3 vector;
-    public KnightData knightData;
 
     void Start()
     {
@@ -31,7 +30,6 @@ public class Aiscript : MonoBehaviour
         AiSightRange = Vector3.Distance(transform.position, player.position);
         AiAttackRange = Vector3.Distance(transform.position, player.position);
         AiAttackRangeTower = Vector3.Distance(transform.position, PrincipalTower.position);
-        Debug.Log(AiAttackRangeTower);
         if (AiAttackRange > AttackRange && AiSightRange > SightRange)
         {
             AvancingToTower(AiAttackRangeTower <= AttackRange);
