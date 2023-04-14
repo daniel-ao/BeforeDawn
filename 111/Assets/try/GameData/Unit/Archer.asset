@@ -17,7 +17,8 @@ MonoBehaviour:
   speed: 3
   damage: 2
   SightRange: 6
-  AttackRange: 1
+  AttackRange: 15
   timeBetweenAttack: 1
-  isLongRange: 0
-  projectilePrefab: {fileID: 0}
+  isLongRange: 1
+  projectilePrefab: {fileID: 953002537907380271, guid: e12f67aa396803b4db1f156b4de6a91f,
+    type: 3}
