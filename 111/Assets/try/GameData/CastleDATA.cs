@@ -10,7 +10,6 @@ public class CastleDATA : ScriptableObject
     public float damage = 3f;
     public float AttackRange = 5f;
     public float fireRate = 1f;
-
     public GameObject projectilePrefab;
 }
 

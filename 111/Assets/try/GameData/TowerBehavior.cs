@@ -51,7 +51,7 @@ public class TowerBehavior : MonoBehaviour
         }
     }
 
-    public void DamageTaken(float amout)
+    public void TakeDamage(float amout)
     {
         Health -= amout;
         if (Health <= 0)
@@ -68,7 +68,15 @@ public class TowerBehavior : MonoBehaviour
     }
     void FindTarget()
     {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] enemies;
+        if (transform.CompareTag("Red"))
+        {
+            enemies = GameObject.FindGameObjectsWithTag("Blue");
+        }
+        else
+        {
+            enemies = GameObject.FindGameObjectsWithTag("Red");
+        }
         float closestDistance = Mathf.Infinity;
         Transform closestEnemy = null;
         foreach (GameObject enemy in enemies)
