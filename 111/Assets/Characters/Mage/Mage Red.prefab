@@ -1387,7 +1387,7 @@ GameObject:
   - component: {fileID: 1122871591}
   - component: {fileID: 590187671794222575}
   - component: {fileID: 5035176704641411430}
-  - component: {fileID: 5781668677728545120}
+  - component: {fileID: -2229717053386656441}
   m_Layer: 0
   m_Name: Mage Red
   m_TagString: Red
@@ -1551,7 +1551,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5781668677728545120
+--- !u!114 &-2229717053386656441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1564,7 +1564,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 211a6044e0738f849b576ec4c96fdb98, type: 2}
-  Health: 0
   popo: {x: 0, y: 0, z: 0}
 --- !u!1 &1135473222
 GameObject:

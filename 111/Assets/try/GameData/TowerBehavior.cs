@@ -61,7 +61,6 @@ public class TowerBehavior : MonoBehaviour
     }
     public IEnumerator WaitDestruction()
     {
-        Debug.Log("waiting");
         yield return new WaitForSeconds(5);
             
         Destroy(gameObject);

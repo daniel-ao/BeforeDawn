@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Archer
   m_EditorClassIdentifier: 
   Type: {fileID: 0}
-  Health: 15
+  Health: 5
   speed: 3
-  damage: 5
-  SightRange: 10
-  AttackRange: 20
-  timeBetweenAttack: 0.5
-  projectile: 0
+  damage: 2
+  SightRange: 6
+  AttackRange: 1
+  timeBetweenAttack: 1
+  isLongRange: 0
+  projectilePrefab: {fileID: 0}

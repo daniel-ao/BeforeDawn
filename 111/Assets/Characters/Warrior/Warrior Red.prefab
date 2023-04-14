@@ -987,7 +987,7 @@ GameObject:
   - component: {fileID: 7657649297414108623}
   - component: {fileID: 7321173093633038108}
   - component: {fileID: 1281781896090838426}
-  - component: {fileID: 8713776233293950484}
+  - component: {fileID: 765267110443359011}
   m_Layer: 0
   m_Name: Warrior Red
   m_TagString: Red
@@ -1148,7 +1148,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8713776233293950484
+--- !u!114 &765267110443359011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1161,7 +1161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: b5c4e2bd43f754eac850ac46884b7074, type: 2}
-  Health: 0
+  popo: {x: 0, y: 0, z: 0}
 --- !u!1 &5709216429091363622
 GameObject:
   m_ObjectHideFlags: 0

@@ -1541,7 +1541,7 @@ GameObject:
   - component: {fileID: 9127210239390274919}
   - component: {fileID: 1920537943675698485}
   - component: {fileID: 167357322037240506}
-  - component: {fileID: 1606910457076416073}
+  - component: {fileID: -5379689881011535103}
   m_Layer: 0
   m_Name: Archer Red
   m_TagString: Red
@@ -1702,7 +1702,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1606910457076416073
+--- !u!114 &-5379689881011535103
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1715,7 +1715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: dc3326f4a8a6445728532a9e9180bbe4, type: 2}
-  Health: 0
+  popo: {x: 0, y: 0, z: 0}
 --- !u!1 &5557141645663679012
 GameObject:
   m_ObjectHideFlags: 0
