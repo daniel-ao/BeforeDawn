@@ -47,7 +47,6 @@ public class AiBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(navAgent.isStopped);
         GameObject target;
         target = FindTarget();
         if (target is null)
@@ -62,7 +61,6 @@ public class AiBehavior : MonoBehaviour
             }
         }
 
-        Debug.Log(target);
         transform.LookAt(target.transform.position);
         Chasing(target);
 
@@ -87,14 +85,12 @@ public class AiBehavior : MonoBehaviour
     private void Chasing(GameObject target)
     {
         navAgent.SetDestination(target.transform.position);
-        Debug.Log(target.transform.position);
-        Debug.Log(target);
         animator.SetBool("IsMoving", true);
     }
 
     private void ShortRangeAttack(GameObject target)
     {
-        Debug.Log("atta");
+
         if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
@@ -120,7 +116,6 @@ public class AiBehavior : MonoBehaviour
 
     private void LongRangeAttack(GameObject target)
     {
-        Debug.Log("atta");
         if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
@@ -220,9 +215,7 @@ public class AiBehavior : MonoBehaviour
 
     public IEnumerator WaitDie()
     {
-        Debug.Log("waiting");
         yield return new WaitForSeconds(1.5f);
-
         Destroy(gameObject);
     }
 }
