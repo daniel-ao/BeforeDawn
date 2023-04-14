@@ -7,7 +7,7 @@ public class playerClickController : MonoBehaviour
 {
     public LayerMask clickOn;
     public PlayerData playerdata;
-    public LayerMask WhatIsEnemy;
+    public Tag WhatIsEnemy;
     public Transform Enemy;
     private float SightRange, AttackRange;
     private RaycastHit hitInfo;
