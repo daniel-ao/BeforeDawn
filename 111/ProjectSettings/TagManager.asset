@@ -3,19 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Pivot
-  - Fire
-  - PivotArcher
-  - Target
-  - Archer
-  - Mage
-<<<<<<< HEAD
-  - Enemy
-=======
-  - Blue
-  - Red
->>>>>>> 483016825d9a4ca5dde8384c6a562e22e82fbc78
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -25,12 +13,12 @@ TagManager:
   - UI
   - 
   - 
-  - PostProcessing
-  - Portraits
-  - PlayingField
-  - NonNavmeshed
-  - RedUnits
-  - BlueUnits
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

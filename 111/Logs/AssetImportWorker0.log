@@ -1,971 +1,926 @@
 Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 22621.1555; Version 2009; 64bit' Language: 'fr' Physical Memory: 15773 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-/Users/florent/Desktop/EPITA/PROJET/github/projectS2/BeforeDawn/111
+C:/Users/linfr/Downloads/Epita/Project_S2/BeforeDawn/111
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49330
-Successfully changed project path to: /Users/florent/Desktop/EPITA/PROJET/github/projectS2/BeforeDawn/111
-/Users/florent/Desktop/EPITA/PROJET/github/projectS2/BeforeDawn/111
+49923
+Successfully changed project path to: C:/Users/linfr/Downloads/Epita/Project_S2/BeforeDawn/111
+C:/Users/linfr/Downloads/Epita/Project_S2/BeforeDawn/111
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 51.29 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 112.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/florent/Desktop/EPITA/PROJET/github/projectS2/BeforeDawn/111/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/linfr/Downloads/Epita/Project_S2/BeforeDawn/111/Assets
 GfxDevice: creating device client; threaded=0
-2023-04-13 21:13:21.632 Unity[1441:17508] (null) preferred device: Apple M1 (high power)
-2023-04-13 21:13:21.632 Unity[1441:17508] Metal devices available: 1
-2023-04-13 21:13:21.632 Unity[1441:17508] 0: Apple M1 (high power)
-2023-04-13 21:13:21.632 Unity[1441:17508] Using device Apple M1 (high power)
-Initializing Metal device caps: Apple M1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon (TM) Graphics (ID=0x15e7)
+    Vendor:   
+    VRAM:     7886 MB
+    Driver:   31.0.12034.4
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
-Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Managed'
-Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56441
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000890 seconds.
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 46.80 ms, found 1 plugins.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006127 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 160.73 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.540 seconds
+- Completed reload, in  3.719 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001549 seconds.
+Registered in 0.007873 seconds.
 Begin MonoManager ReloadAssembly
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 49.12 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 129.74 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/Kernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
 Mono: successfully reloaded assembly
-- Completed reload, in  2.129 seconds
+- Completed reload, in  2.937 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launching external process: /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.15 seconds
-Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2996 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 208.2 MB.
-System memory in use after: 208.4 MB.
+Unloading 3002 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 132.9 MB.
+System memory in use after: 133.0 MB.
 
 Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3734.
-Total: 4.975292 ms (FindLiveObjects: 0.616208 ms CreateObjectMapping: 0.074959 ms MarkObjects: 4.192084 ms  DeleteObjects: 0.091041 ms)
+Total: 7.431900 ms (FindLiveObjects: 0.836800 ms CreateObjectMapping: 0.254400 ms MarkObjects: 6.123800 ms  DeleteObjects: 0.214300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42baae205c97e3337697759514652acd') in 0.010505 seconds
-  Import took 0.015947 seconds .
+  path: Assets/try/NavMesh-Nav.asset
+  artifactKey: Guid(361c293d68ecd4f90a09693583be493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/NavMesh-Nav.asset using Guid(361c293d68ecd4f90a09693583be493e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1238dbb5158303cc04f737b975abbe0a') in 0.082760 seconds
+  Import took 0.093209 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 30.167086 seconds.
+  Time since last request: 0.000724 seconds.
+  path: Assets/try/GameData
+  artifactKey: Guid(3e1a4ff27053c4b01910b8f5943ef85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData using Guid(3e1a4ff27053c4b01910b8f5943ef85e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c986a363bec8fefe922a3aa73fe236f') in 0.006044 seconds
+  Import took 0.032943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003935 seconds.
+  path: Assets/try/script
+  artifactKey: Guid(8594c7227b67c453fb063f376c063e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/script using Guid(8594c7227b67c453fb063f376c063e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87cbde1bcdac979ca22ef8f4a01bd78') in 0.005013 seconds
+  Import took 0.019423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.098688 seconds.
+  path: Assets/try/script/AiBehavior.cs
+  artifactKey: Guid(b9746d9fd45d542aea4a78637bb613fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/script/AiBehavior.cs using Guid(b9746d9fd45d542aea4a78637bb613fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d1f53b74cfcffcd2e012d55c310fa0') in 0.014771 seconds
+  Import took 0.027071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.074537 seconds.
+  path: Assets/try/script/AiBehavior.cs
+  artifactKey: Guid(b9746d9fd45d542aea4a78637bb613fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/script/AiBehavior.cs using Guid(b9746d9fd45d542aea4a78637bb613fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69d1f53b74cfcffcd2e012d55c310fa0') in 0.006757 seconds
+  Import took 0.017067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.168134 seconds.
+  path: Assets/try/GameData/Castle.asset
+  artifactKey: Guid(f3422b0879d884c4a80a144efa1f2a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData/Castle.asset using Guid(f3422b0879d884c4a80a144efa1f2a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c237bf7de266f35ef03602d5e06e8b') in 0.024913 seconds
+  Import took 0.055353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 54.933533 seconds.
+  path: Assets/try/GameData/TowerBehavior.cs
+  artifactKey: Guid(88b2c81219c84448a9d028c9feb2401b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData/TowerBehavior.cs using Guid(88b2c81219c84448a9d028c9feb2401b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57c18ae121ed0ff5228e211b855b23a') in 0.006062 seconds
+  Import took 0.017650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001118 seconds.
+  path: Assets/try/GameData/TowerBehavior.cs
+  artifactKey: Guid(88b2c81219c84448a9d028c9feb2401b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData/TowerBehavior.cs using Guid(88b2c81219c84448a9d028c9feb2401b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57c18ae121ed0ff5228e211b855b23a') in 0.005053 seconds
+  Import took 0.016617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 181.890143 seconds.
+  path: Assets/try/GameData/TowerBehavior.cs
+  artifactKey: Guid(88b2c81219c84448a9d028c9feb2401b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData/TowerBehavior.cs using Guid(88b2c81219c84448a9d028c9feb2401b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cac6ee0eda8c2754efe7f4fab81759c') in 0.010005 seconds
+  Import took 0.024343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 796.835266 seconds.
+  path: Assets/try/GameData/Unit/Archer.asset
+  artifactKey: Guid(dc3326f4a8a6445728532a9e9180bbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData/Unit/Archer.asset using Guid(dc3326f4a8a6445728532a9e9180bbe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8f429c043222807a8ce54d3e7ba519') in 0.012025 seconds
+  Import took 0.028881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/try/GameData/Unit/Warrior.asset
+  artifactKey: Guid(b5c4e2bd43f754eac850ac46884b7074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData/Unit/Warrior.asset using Guid(b5c4e2bd43f754eac850ac46884b7074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f09491d72b89988683ced7c9a9237e2') in 0.009189 seconds
+  Import took 0.023402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001080 seconds.
+  path: Assets/try/GameData/Unit
+  artifactKey: Guid(b7e13b5e4df8747bca511a4ccae9d5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData/Unit using Guid(b7e13b5e4df8747bca511a4ccae9d5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a3355493ed4e543fa3853e6f179d25') in 0.015475 seconds
+  Import took 0.029337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.027997 seconds.
+  path: Assets/try/GameData/Unit
+  artifactKey: Guid(b7e13b5e4df8747bca511a4ccae9d5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData/Unit using Guid(b7e13b5e4df8747bca511a4ccae9d5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a3355493ed4e543fa3853e6f179d25') in 0.005712 seconds
+  Import took 0.019359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.196151 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(c20071dc6d348469b8f67970dc67bed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main.unity using Guid(c20071dc6d348469b8f67970dc67bed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f72a5f63693ab3e7bcb08920a0224657') in 0.010713 seconds
+  Import took 0.092971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.424044 seconds.
+  path: Assets/Scenes/AssetsShowcases
+  artifactKey: Guid(b8a8a1ed005734b168cb7e67683e1ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AssetsShowcases using Guid(b8a8a1ed005734b168cb7e67683e1ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6edbbc1d9d1d3c2796dadb6d863f99') in 0.009056 seconds
+  Import took 0.023326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.851634 seconds.
+  path: Assets/Scenes/AssetsShowcases/Character Animations.unity
+  artifactKey: Guid(b8c7974e5a94ade4386efe06e1cc6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AssetsShowcases/Character Animations.unity using Guid(b8c7974e5a94ade4386efe06e1cc6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e4787902cb6e89e6c99e089934054c') in 0.013565 seconds
+  Import took 0.028652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.042667 seconds.
+  path: Assets/Scenes/AssetsShowcases/Character Animations.unity
+  artifactKey: Guid(b8c7974e5a94ade4386efe06e1cc6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AssetsShowcases/Character Animations.unity using Guid(b8c7974e5a94ade4386efe06e1cc6233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e4787902cb6e89e6c99e089934054c') in 0.006842 seconds
+  Import took 0.019906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.690864 seconds.
+  path: Assets/Scenes/AssetsShowcases/Assets Lineup.unity
+  artifactKey: Guid(2d53182cbedb52a428148a3dff290c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AssetsShowcases/Assets Lineup.unity using Guid(2d53182cbedb52a428148a3dff290c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6757aafe2dfa9be3c4088ed31cde35') in 0.016359 seconds
+  Import took 0.044754 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.051862 seconds.
+  path: Assets/Scenes/AssetsShowcases/Assets Lineup.unity
+  artifactKey: Guid(2d53182cbedb52a428148a3dff290c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/AssetsShowcases/Assets Lineup.unity using Guid(2d53182cbedb52a428148a3dff290c24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6757aafe2dfa9be3c4088ed31cde35') in 0.008413 seconds
+  Import took 0.029978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.330252 seconds.
   path: Assets/try.unity
   artifactKey: Guid(768418ff3d24141d5a9bfb6a4108bd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/try.unity using Guid(768418ff3d24141d5a9bfb6a4108bd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d922b0a31e45a92883e79b22332ae1') in 0.036346 seconds
-  Import took 0.052818 seconds .
+Start importing Assets/try.unity using Guid(768418ff3d24141d5a9bfb6a4108bd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b785af254f0fad87b006f15e4ac5e46') in 0.010042 seconds
+  Import took 0.029728 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018703 seconds.
+  path: Assets/try.unity
+  artifactKey: Guid(768418ff3d24141d5a9bfb6a4108bd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try.unity using Guid(768418ff3d24141d5a9bfb6a4108bd28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b785af254f0fad87b006f15e4ac5e46') in 0.005751 seconds
+  Import took 0.022860 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.000862 seconds.
+Registered in 0.004169 seconds.
 Begin MonoManager ReloadAssembly
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/Kernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.011 seconds
+- Completed reload, in  2.377 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2842 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 200.7 MB.
-System memory in use after: 200.9 MB.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.9 MB.
+System memory in use after: 125.1 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3741.
-Total: 1.788167 ms (FindLiveObjects: 0.264500 ms CreateObjectMapping: 0.067833 ms MarkObjects: 1.430500 ms  DeleteObjects: 0.024334 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 33.733196 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dfcc5d79d9b9a226927eca97c4f67af') in 1.421295 seconds
-  Import took 1.433790 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Characters/Archer/Archer Red.prefab
-  artifactKey: Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Red.prefab using Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00cef1123e21f006b0afd4a6fd6ec6e8') in 0.171949 seconds
-  Import took 0.177798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Props/ENVProps/Prefabs/Trees3.prefab
-  artifactKey: Guid(1f129fb15aa99452dba09f266938c6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Props/ENVProps/Prefabs/Trees3.prefab using Guid(1f129fb15aa99452dba09f266938c6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e0a391a0fbb9c08c21c04bfa79eccb') in 0.023836 seconds
-  Import took 0.028035 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.101437 seconds.
-  path: Assets/Characters/Warrior/Warrior Blue.prefab
-  artifactKey: Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Blue.prefab using Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01548506be29fac17895aec8eb82af8') in 0.064984 seconds
-  Import took 0.070526 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/Characters/Warrior/Warrior Red.prefab
-  artifactKey: Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Red.prefab using Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b7097d348ba5a531385dc5054d699dc') in 0.059516 seconds
-  Import took 0.063937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.383345 seconds.
-  path: Assets/Characters/Mage/Mage Blue.prefab
-  artifactKey: Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Mage Blue.prefab using Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1876d3202da0566dd0a54fdbe9fc9785') in 0.159191 seconds
-  Import took 0.166711 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Characters/Mage/Mage Red.prefab
-  artifactKey: Guid(ddbc89a2e5731354497399c2803d9354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Mage Red.prefab using Guid(ddbc89a2e5731354497399c2803d9354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '070a2a18953e83b1947e36cfd6775c76') in 0.128631 seconds
-  Import took 0.134357 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.695261 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07b3793473fc4af8d77c6d0fec695fc') in 0.146383 seconds
-  Import took 0.153897 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.807854 seconds.
-  path: Assets/Characters/Warrior/Warrior Red.prefab
-  artifactKey: Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Red.prefab using Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5efab139f06937753854921c2753dfd1') in 0.064576 seconds
-  Import took 0.069959 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Characters/Warrior/Warrior Blue.prefab
-  artifactKey: Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Blue.prefab using Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ce6412953228a16391114a16df4953') in 0.057316 seconds
-  Import took 0.061565 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.394888 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea323771e901050d2ee07846964ac7d2') in 0.216645 seconds
-  Import took 0.227606 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.714729 seconds.
-  path: Assets/Characters/Archer/Archer Red.prefab
-  artifactKey: Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Red.prefab using Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a50f2c50d24fedf3ee6ae40976eca3') in 0.168965 seconds
-  Import took 0.174844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc468009fc00443ce290ef615a5ad64f') in 0.132964 seconds
-  Import took 0.138140 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.119553 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef03121747a84d4c62364be01626d4ad') in 0.129761 seconds
-  Import took 0.136345 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Characters/Archer/Archer Red.prefab
-  artifactKey: Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Red.prefab using Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10681d38ed0a9e03ab841cd8adc3ccf7') in 0.133602 seconds
-  Import took 0.139006 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.192686 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a69192bb396b3f7d74cf845f7021ad') in 0.141299 seconds
-  Import took 0.148595 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.279085 seconds.
-  path: Assets/Characters/Warrior/Warrior Blue.prefab
-  artifactKey: Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Blue.prefab using Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb093d76858b01250670ae49822f793') in 0.078467 seconds
-  Import took 0.086016 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Characters/Warrior/Warrior Red.prefab
-  artifactKey: Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Red.prefab using Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3ba9cc70e173a34e34b2f10d593c98a') in 0.058487 seconds
-  Import took 0.062916 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.968661 seconds.
-  path: Assets/Characters/Mage/Mage Red.prefab
-  artifactKey: Guid(ddbc89a2e5731354497399c2803d9354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Mage Red.prefab using Guid(ddbc89a2e5731354497399c2803d9354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5292ef97e2ddeaa00da469c47c084103') in 0.170454 seconds
-  Import took 0.177291 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Characters/Mage/Mage Blue.prefab
-  artifactKey: Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Mage Blue.prefab using Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '070910e30c62596bdb3daa88f19bc1c7') in 0.129806 seconds
-  Import took 0.135600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.697791 seconds.
-  path: Assets/Characters/Mage/Mage Blue.prefab
-  artifactKey: Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Mage Blue.prefab using Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30854d6882df9f24d5919f7af91af8b7') in 0.125530 seconds
-  Import took 0.132306 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000212 seconds.
-  path: Assets/Characters/Mage/Mage Red.prefab
-  artifactKey: Guid(ddbc89a2e5731354497399c2803d9354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Mage Red.prefab using Guid(ddbc89a2e5731354497399c2803d9354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30133e7b4b94ff804acc3fa2ecddc208') in 0.121905 seconds
-  Import took 0.127217 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.692515 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b593cc316ea15896a65c6b0db27680') in 0.165280 seconds
-  Import took 0.174474 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a996bc217c1784a55abce00a779b8533') in 0.104435 seconds
-  Import took 0.114583 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.450584 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce0531a3482e0104fbc0f22cd06046a') in 0.169586 seconds
-  Import took 0.176203 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Characters/Archer/Archer Red.prefab
-  artifactKey: Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Red.prefab using Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e586b9e56dd5a027d214976d6acff9') in 0.131941 seconds
-  Import took 0.137304 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.312314 seconds.
-  path: Assets/Characters/Warrior/Warrior Blue.prefab
-  artifactKey: Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Blue.prefab using Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d72736dace515d4e1ef24bd2ef1d033') in 0.070931 seconds
-  Import took 0.078330 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000290 seconds.
-  path: Assets/Characters/Warrior/Warrior Red.prefab
-  artifactKey: Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Red.prefab using Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb681f3978ca8ce577643b909914defa') in 0.057477 seconds
-  Import took 0.061847 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.259928 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34a887b80b0737783607e823cb991f27') in 0.117201 seconds
-  Import took 0.128231 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d6949532bbec222d8487780a4adbe1') in 0.099651 seconds
-  Import took 0.107669 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.253086 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979897b68eb20177cf9fded5435f04fb') in 0.103226 seconds
-  Import took 0.113805 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b73bb951b2d49e656437a1323b854e93') in 0.101338 seconds
-  Import took 0.110066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 51.905268 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f9e6ec80ea636a73545d2d06ffed9bf') in 0.170898 seconds
-  Import took 0.185027 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ae7065e1cc3f7ba1c3e29c748936ac') in 0.104485 seconds
-  Import took 0.113233 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.080140 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a96c12ed4ae2aa4cd221d25051f70d50') in 0.152629 seconds
-  Import took 0.163535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.067130 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aba340c44f6388000141bd56efc5f2b') in 0.230835 seconds
-  Import took 0.242201 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79d33dc562520d8eb67ff50c09bf9639') in 0.210512 seconds
-  Import took 0.220483 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61472225fa3b63bed38fac0f7177be19') in 0.104323 seconds
-  Import took 0.112909 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226a56392f04f42a1f3d8f65a893e12a') in 0.104972 seconds
-  Import took 0.114465 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.871469 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
-  artifactKey: Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad64703436f12514e7ad02f73217d42') in 0.255095 seconds
-  Import took 0.259455 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.251065 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29ef7e6590ad3e766122125b1e6e5bac') in 0.141491 seconds
-  Import took 0.152353 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb96037c8527be06632a25952646c14a') in 0.112362 seconds
-  Import took 0.120825 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.133412 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '613ec4f4cc99af7fb55f17c25603febd') in 0.108997 seconds
-  Import took 0.119280 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259422e58f12da8350bc4fe5281e08f3') in 0.103330 seconds
-  Import took 0.111437 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.344172 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61e01fd29122643070307e5d4298f84') in 0.139771 seconds
-  Import took 0.152066 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7786bec959014d0cbb1565448b77ee1a') in 0.066290 seconds
-  Import took 0.070949 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.303545 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540519a72933b5c8e79af39dd35c5d5a') in 0.165478 seconds
-  Import took 0.183846 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75e29c56504161fb71b4c202a0afb0c') in 0.116032 seconds
-  Import took 0.124914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.063681 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d0eaa28a427916b74762bc672e2ca19') in 0.117154 seconds
-  Import took 0.128384 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.173416 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb73be59f3fa04d5d0564bea6354b85') in 0.157627 seconds
-  Import took 0.164660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Characters/Archer/Archer Red.prefab
-  artifactKey: Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Red.prefab using Guid(f7e6e31c5324d874db515c8ca4922190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92d38a84ef7b699f99a1652dd498b323') in 0.139190 seconds
-  Import took 0.144967 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb73be59f3fa04d5d0564bea6354b85') in 0.133476 seconds
-  Import took 0.139571 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.159489 seconds.
-  path: Assets/Characters/Archer/Archer Blue.prefab
-  artifactKey: Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Archer Blue.prefab using Guid(93ddf5fff26bcb642a6f1f94462963b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0219f9f328208c554088d701688c7421') in 0.128458 seconds
-  Import took 0.135202 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.153268 seconds.
-  path: Assets/Characters/Warrior/Warrior Blue.prefab
-  artifactKey: Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Blue.prefab using Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '306c72074f8a8f67d201afd2406fe977') in 0.064209 seconds
-  Import took 0.070265 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Characters/Warrior/Warrior Red.prefab
-  artifactKey: Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Red.prefab using Guid(36e93c435d1648a4c86d516057a9cbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8aa3552dd30a2ed1ed0c1d7a83393b') in 0.057285 seconds
-  Import took 0.061730 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.496211 seconds.
-  path: Assets/Characters/Warrior/Warrior Blue.prefab
-  artifactKey: Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Warrior Blue.prefab using Guid(3d7094a1663ab0a44ab8e11c1defd922) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145159684973866edbe9d8351c3c68f6') in 0.059192 seconds
-  Import took 0.064535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.049769 seconds.
-  path: Assets/Characters/Mage/Mage Blue.prefab
-  artifactKey: Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Mage Blue.prefab using Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd89a7155ea9f954e084871d54b113633') in 0.147481 seconds
-  Import took 0.154684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Characters/Mage/Mage Red.prefab
-  artifactKey: Guid(ddbc89a2e5731354497399c2803d9354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Mage Red.prefab using Guid(ddbc89a2e5731354497399c2803d9354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4072dc8444bb58005f355db88adde2d0') in 0.142666 seconds
-  Import took 0.148608 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.855343 seconds.
-  path: Assets/Characters/Mage/Mage Blue.prefab
-  artifactKey: Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Mage Blue.prefab using Guid(4d4319dde2f198845ac34608a1013ffc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89998fca65bafe01c9a2058760f7088') in 0.122658 seconds
-  Import took 0.129715 seconds .
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3737.
+Total: 5.026200 ms (FindLiveObjects: 0.832400 ms CreateObjectMapping: 0.296100 ms MarkObjects: 3.845400 ms  DeleteObjects: 0.050300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001842 seconds.
+Registered in 0.004926 seconds.
 Begin MonoManager ReloadAssembly
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/Kernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.05 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.111 seconds
+- Completed reload, in  3.006 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2842 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 246.0 MB.
-System memory in use after: 246.2 MB.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 124.9 MB.
+System memory in use after: 125.2 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3825.
-Total: 2.280709 ms (FindLiveObjects: 0.221792 ms CreateObjectMapping: 0.068625 ms MarkObjects: 1.937292 ms  DeleteObjects: 0.052167 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 49.091415 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Red.prefab
-  artifactKey: Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Red.prefab using Guid(dd280e7a9315109438464a3cda98bd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf428be7c113674fc96708a6cd77312') in 0.609044 seconds
-  Import took 0.617990 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Towers/BarracksTower/Barracks Tower Blue.prefab
-  artifactKey: Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Towers/BarracksTower/Barracks Tower Blue.prefab using Guid(0411bbd6c1ad5b84084f7036ccec0aba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c4b74460fdb5f6d977faa0feb3a161') in 0.126981 seconds
-  Import took 0.136570 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.592695 seconds.
-  path: Assets/FX/Tower/Destruction/ArcherTower_Des_111.fbx
-  artifactKey: Guid(32e414ff1ed67c74d9978832c80899c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Destruction/ArcherTower_Des_111.fbx using Guid(32e414ff1ed67c74d9978832c80899c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98cd685c8a13c2e978fb5f1843e6e28f') in 0.865015 seconds
-  Import took 0.872436 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
-  path: Assets/FX/Tower/Construction Version 1/Models/BarrackTower_Stage2_Con_001_square.fbx
-  artifactKey: Guid(3fc78f8cdd9f2f948bf61928e70df8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Construction Version 1/Models/BarrackTower_Stage2_Con_001_square.fbx using Guid(3fc78f8cdd9f2f948bf61928e70df8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40700d59f72a31e4f54459fd5a92ee01') in 0.104172 seconds
-  Import took 0.108101 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/FX/Tower/Construction Version 1/Models/BarrackTower_Stage4_Con_001_square.fbx
-  artifactKey: Guid(0ae34f8675585c44dbd8516648ad43e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Construction Version 1/Models/BarrackTower_Stage4_Con_001_square.fbx using Guid(0ae34f8675585c44dbd8516648ad43e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '841fa1a942162bb629a6de6728f1c3c3') in 0.039797 seconds
-  Import took 0.043624 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Characters/Mage/Animations/Mage_Gethit.fbx
-  artifactKey: Guid(6f81952372b06cf468354efc77feca8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Animations/Mage_Gethit.fbx using Guid(6f81952372b06cf468354efc77feca8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ab8f1d57cf24674a1db6dd156ffc26') in 0.007767 seconds
-  Import took 0.011945 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/FX/Tower/Destruction/MagicTower_Des_111.fbx
-  artifactKey: Guid(207bda795f5271540b3f6443a1ad73f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Destruction/MagicTower_Des_111.fbx using Guid(207bda795f5271540b3f6443a1ad73f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c56b74a1beaf0054a3a619a642f5396') in 0.755627 seconds
-  Import took 0.763239 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/FX/Tower/Construction Version 1/Models/ArcherTower_Stage1_Con_001.fbx
-  artifactKey: Guid(46246b82005583247b10cb61efe06e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Construction Version 1/Models/ArcherTower_Stage1_Con_001.fbx using Guid(46246b82005583247b10cb61efe06e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56b05692a6411be7a41c8673a035dc0') in 0.060410 seconds
-  Import took 0.064851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/FX/Tower/Construction Version 1/Models/ArcherTower_Stage3_Con_001.fbx
-  artifactKey: Guid(c1a7b563b83862041a3240639c359164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Construction Version 1/Models/ArcherTower_Stage3_Con_001.fbx using Guid(c1a7b563b83862041a3240639c359164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c79f8caceb1a05bb9edc21d43e3b34a') in 0.045583 seconds
-  Import took 0.049305 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/FX/Tower/Construction Version 1/Models/ArcherTower_Stage4_Con_001.fbx
-  artifactKey: Guid(26420626d0ec44147a5058ced83946f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Construction Version 1/Models/ArcherTower_Stage4_Con_001.fbx using Guid(26420626d0ec44147a5058ced83946f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f321a102c980755815d18ba642ca0e') in 0.038927 seconds
-  Import took 0.042675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/FX/Tower/Destruction/BarracksTower_Des_111.fbx
-  artifactKey: Guid(07a543839ac76014f9c907aa7ac985be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Destruction/BarracksTower_Des_111.fbx using Guid(07a543839ac76014f9c907aa7ac985be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32730647974d8175ff4e6c432971201a') in 1.266908 seconds
-  Import took 1.274950 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Particles/Materials/SmokeSingle.mat
-  artifactKey: Guid(183f0fd4b11a345878268568cd9b85d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Particles/Materials/SmokeSingle.mat using Guid(183f0fd4b11a345878268568cd9b85d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567f1dc4b58e0cec6ef53b46535268c9') in 0.009768 seconds
-  Import took 0.014023 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/FX/Tower/Construction Version 1/Models/BarrackTower_Stage3_Con_001_square.fbx
-  artifactKey: Guid(188c54378b7d4754c85862e7af2e75f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Construction Version 1/Models/BarrackTower_Stage3_Con_001_square.fbx using Guid(188c54378b7d4754c85862e7af2e75f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781ff4a02745ba95dd850107c507aa3b') in 0.055106 seconds
-  Import took 0.060513 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/FX/Tower/Construction Version 1/Models/BarrackTower_Stage1_Con_001_square.fbx
-  artifactKey: Guid(3c536ed7c6d6e2a4199fe67c3221b9dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Construction Version 1/Models/BarrackTower_Stage1_Con_001_square.fbx using Guid(3c536ed7c6d6e2a4199fe67c3221b9dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e4f5b485f57bb488aa297fc8e37626f') in 0.041023 seconds
-  Import took 0.045025 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/Characters/Mage/Animations/Mage_Die.fbx
-  artifactKey: Guid(88e92d2ba6fd8ca419d26ccdf007ba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Animations/Mage_Die.fbx using Guid(88e92d2ba6fd8ca419d26ccdf007ba3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7400f534bd4e4bed10bd7581dfdd9658') in 0.009029 seconds
-  Import took 0.013168 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000195 seconds.
-  path: Assets/Characters/Mage/Animations/Mage_Idle.fbx
-  artifactKey: Guid(97459916597534b47a6cd5d9fd212540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Animations/Mage_Idle.fbx using Guid(97459916597534b47a6cd5d9fd212540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cac7511dd24fe5cc2e268bbda2340a2b') in 0.011972 seconds
-  Import took 0.015697 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Characters/Mage/Animations/Mage_Attack.fbx
-  artifactKey: Guid(ed975bcdf6dc9df488ada744ecc82be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Animations/Mage_Attack.fbx using Guid(ed975bcdf6dc9df488ada744ecc82be0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0964932e914f93fb61907091b96e1b8f') in 0.007812 seconds
-  Import took 0.011768 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Characters/Mage/Model/Mage_Bindpose.fbx
-  artifactKey: Guid(77690ce519ab13e4aab93a59e5573892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Model/Mage_Bindpose.fbx using Guid(77690ce519ab13e4aab93a59e5573892) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e07d423b81bb3e68d1b7c88c5d47f2') in 0.063869 seconds
-  Import took 0.068273 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Characters/Mage/Model/Mage_sphere_placeholder.fbx
-  artifactKey: Guid(7df951689f252b64fa47b11c0f492e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Model/Mage_sphere_placeholder.fbx using Guid(7df951689f252b64fa47b11c0f492e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f778c33f7ee691cecf7b182c9c84b366') in 0.015381 seconds
-  Import took 0.019355 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000232 seconds.
-  path: Assets/FX/Tower/Construction Version 1/Models/ArcherTower_Stage2_Con_001.fbx
-  artifactKey: Guid(2bfc43c88061c1043a439480a2be956a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FX/Tower/Construction Version 1/Models/ArcherTower_Stage2_Con_001.fbx using Guid(2bfc43c88061c1043a439480a2be956a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca88f90418e7e9cf9a1691069bdc4e94') in 0.045262 seconds
-  Import took 0.049086 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Characters/Mage/Animations/Mage_Run.fbx
-  artifactKey: Guid(8145575cbab627c478df040567a1a2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Animations/Mage_Run.fbx using Guid(8145575cbab627c478df040567a1a2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce54795382193375731a225de56da0e') in 0.007165 seconds
-  Import took 0.011745 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.338232 seconds.
-  path: Assets/Characters/Archer/Animations/Controller/Archer.overrideController
-  artifactKey: Guid(2efa327a0a6eb4dcaa4d0e42706e9edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Animations/Controller/Archer.overrideController using Guid(2efa327a0a6eb4dcaa4d0e42706e9edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9905aebd3ea7488581bfe46c4630b559') in 0.203291 seconds
-  Import took 0.209336 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001939 seconds.
-  path: Assets/Characters/Archer/Animations/Controller/Archer.overrideController
-  artifactKey: Guid(2efa327a0a6eb4dcaa4d0e42706e9edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Archer/Animations/Controller/Archer.overrideController using Guid(2efa327a0a6eb4dcaa4d0e42706e9edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9905aebd3ea7488581bfe46c4630b559') in 0.110372 seconds
-  Import took 0.115343 seconds .
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3740.
+Total: 4.702900 ms (FindLiveObjects: 0.634800 ms CreateObjectMapping: 0.236600 ms MarkObjects: 3.779000 ms  DeleteObjects: 0.050300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006447 seconds.
+Registered in 0.004543 seconds.
 Begin MonoManager ReloadAssembly
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/Kernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.098 seconds
+- Completed reload, in  2.396 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2842 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 266.1 MB.
-System memory in use after: 266.4 MB.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.0 MB.
+System memory in use after: 125.2 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3868.
-Total: 2.682958 ms (FindLiveObjects: 0.243584 ms CreateObjectMapping: 0.070458 ms MarkObjects: 2.335667 ms  DeleteObjects: 0.032500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 264.660204 seconds.
-  path: Assets/Characters/Warrior/Animations
-  artifactKey: Guid(100f811004f0d60469104deec37cae4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Animations using Guid(100f811004f0d60469104deec37cae4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30f01d03706e941095fa01c8c3bc491') in 0.009317 seconds
-  Import took 0.016228 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.187664 seconds.
-  path: Assets/Characters/Warrior/Animations/Warrior_attack.fbx
-  artifactKey: Guid(5b28467562159df48affb3f414d8e8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Animations/Warrior_attack.fbx using Guid(5b28467562159df48affb3f414d8e8ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b1a1866385ac358e78620267fde428b') in 0.083673 seconds
-  Import took 0.090118 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/Characters/Warrior/Animations/Warrior_die.fbx
-  artifactKey: Guid(3097e307c4bd26d429d44f28d4682f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Animations/Warrior_die.fbx using Guid(3097e307c4bd26d429d44f28d4682f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb141920acfcaa3d2d5f37923082b603') in 0.007697 seconds
-  Import took 0.011935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Characters/Warrior/Animations/Warrior_Gethit.fbx
-  artifactKey: Guid(ff364b9c739cf4348b853c1de981d7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Animations/Warrior_Gethit.fbx using Guid(ff364b9c739cf4348b853c1de981d7c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b162d822e7e398a02b0dbb930bbe3764') in 0.006286 seconds
-  Import took 0.011689 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Characters/Warrior/Animations/Warrior_Idle.fbx
-  artifactKey: Guid(08dcd917cbcd8df4c852987b649b643c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Animations/Warrior_Idle.fbx using Guid(08dcd917cbcd8df4c852987b649b643c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d882dff6f96e7a028adbf81f76b8f30') in 0.007898 seconds
-  Import took 0.011914 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/Characters/Warrior/Animations/Warrior_Run.fbx
-  artifactKey: Guid(d95ff3ad3e3bb7f4fada1c33e41531f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Animations/Warrior_Run.fbx using Guid(d95ff3ad3e3bb7f4fada1c33e41531f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87096980c19c848121a2d264c3a2b0a8') in 0.006245 seconds
-  Import took 0.010872 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.612248 seconds.
-  path: Assets/Characters/Warrior/Animations/Controller/Warrior.controller
-  artifactKey: Guid(37594f01984414613b3ba897e300f3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Warrior/Animations/Controller/Warrior.controller using Guid(37594f01984414613b3ba897e300f3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93964a74bf9e6a5ce7b6090d50d5fa7d') in 0.166946 seconds
-  Import took 0.173951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 67.153235 seconds.
-  path: Assets/Characters/Mage/Animations/Controller/Mage.overrideController
-  artifactKey: Guid(0341c2063d5404e388b8180fa8e4f7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Animations/Controller/Mage.overrideController using Guid(0341c2063d5404e388b8180fa8e4f7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbc7ff413839891804200781cc72441') in 0.136315 seconds
-  Import took 0.150318 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003617 seconds.
-  path: Assets/Characters/Mage/Animations/Controller/Mage.overrideController
-  artifactKey: Guid(0341c2063d5404e388b8180fa8e4f7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Animations/Controller/Mage.overrideController using Guid(0341c2063d5404e388b8180fa8e4f7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbc7ff413839891804200781cc72441') in 0.100858 seconds
-  Import took 0.106110 seconds .
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3743.
+Total: 5.406800 ms (FindLiveObjects: 0.685000 ms CreateObjectMapping: 0.263500 ms MarkObjects: 4.405200 ms  DeleteObjects: 0.050800 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002308 seconds.
+Registered in 0.004377 seconds.
 Begin MonoManager ReloadAssembly
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/Kernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.059 seconds
+- Completed reload, in  2.261 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 1.03 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2842 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 271.2 MB.
-System memory in use after: 271.4 MB.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 125.0 MB.
+System memory in use after: 125.2 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3871.
-Total: 1.831417 ms (FindLiveObjects: 0.216875 ms CreateObjectMapping: 0.095000 ms MarkObjects: 1.490750 ms  DeleteObjects: 0.028042 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3746.
+Total: 4.388700 ms (FindLiveObjects: 0.526800 ms CreateObjectMapping: 0.213100 ms MarkObjects: 3.613300 ms  DeleteObjects: 0.033600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 56.726219 seconds.
-  path: Assets/Characters/Mage/Animations/Controller/Mage.overrideController
-  artifactKey: Guid(0341c2063d5404e388b8180fa8e4f7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Mage/Animations/Controller/Mage.overrideController using Guid(0341c2063d5404e388b8180fa8e4f7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea013aacf0cdbe8ead70d06d6ca1c62') in 0.049231 seconds
-  Import took 0.054681 seconds .
+  Time since last request: 465.945440 seconds.
+  path: Assets/Try-yinpi/yinpi-scene.unity
+  artifactKey: Guid(4db011417c12d8d4eb982a7cac179319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/yinpi-scene.unity using Guid(4db011417c12d8d4eb982a7cac179319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88eb12ef52ae418ebc533d569c25556b') in 0.026750 seconds
+  Import took 0.037106 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 1.373954 seconds.
+  path: Assets/Try-yinpi/Turret2
+  artifactKey: Guid(28d8a2496330d1e44b4481c3a7a747b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2 using Guid(28d8a2496330d1e44b4481c3a7a747b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c46b0fffd4bc7e6c31395dc9909c79') in 0.006478 seconds
+  Import took 0.016678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078997 seconds.
+  path: Assets/Try-yinpi/Turret2/New Material.mat
+  artifactKey: Guid(c8e943c8cbda5f84dbbaca94ab5838af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/New Material.mat using Guid(c8e943c8cbda5f84dbbaca94ab5838af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87d5a3c63773c0a2d2a287c60789995b') in 0.489574 seconds
+  Import took 0.498989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.723159 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret
+  artifactKey: Guid(f0b312b2c840adb4eb460f8c7ea24552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret using Guid(f0b312b2c840adb4eb460f8c7ea24552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb0b3ae0b1532761f12664e43119cae') in 0.006958 seconds
+  Import took 0.017216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.814948 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/New Material 1.mat
+  artifactKey: Guid(d3e8a4e5d8997284da1bf27a3be6225b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/New Material 1.mat using Guid(d3e8a4e5d8997284da1bf27a3be6225b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dcb8ac0f41dd15d3a2d6d7a71a1081c') in 0.022522 seconds
+  Import took 0.037749 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000817 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/New Material.mat
+  artifactKey: Guid(0ec3727b95578eb4f9077d4d6b702186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/New Material.mat using Guid(0ec3727b95578eb4f9077d4d6b702186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881f93edcbd5eaa357395c9fd5b94a98') in 0.018541 seconds
+  Import took 0.036977 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001301 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/turet-test-arrow.asset
+  artifactKey: Guid(da354158cee09964ca8f94162b569ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/turet-test-arrow.asset using Guid(da354158cee09964ca8f94162b569ebb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210e2ab6988136d50e2d34d983f25aa4') in 0.010757 seconds
+  Import took 0.022515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000618 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/turret-test-magic.asset
+  artifactKey: Guid(2f206997b8687cc42ab54659086b2837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/turret-test-magic.asset using Guid(2f206997b8687cc42ab54659086b2837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a364a2fe6d7342e66397be9b463ae5a') in 0.014942 seconds
+  Import took 0.025969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000952 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/New Material 2.mat
+  artifactKey: Guid(17d9a82317f22174fb417ae2f4c3b2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/New Material 2.mat using Guid(17d9a82317f22174fb417ae2f4c3b2ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2378e210a9e0faf4f957c7b8aa894941') in 0.025228 seconds
+  Import took 0.036316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001091 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/projectile.prefab
+  artifactKey: Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/projectile.prefab using Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c1df4b7bca22009f664138ef1bd77c') in 0.044352 seconds
+  Import took 0.053722 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006821 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.23 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.919 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.31 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 130.9 MB.
+System memory in use after: 131.2 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3831.
+Total: 8.404100 ms (FindLiveObjects: 1.587600 ms CreateObjectMapping: 0.514100 ms MarkObjects: 6.225700 ms  DeleteObjects: 0.073800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 204.096546 seconds.
+  path: Assets/FX/Arrow/Arrow.prefab
+  artifactKey: Guid(e12f67aa396803b4db1f156b4de6a91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FX/Arrow/Arrow.prefab using Guid(e12f67aa396803b4db1f156b4de6a91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c8a8cfd18762c1aec72067ce0dc84f') in 0.829516 seconds
+  Import took 0.840704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000878 seconds.
+  path: Assets/FX/Arrow/Arrow_Particle.prefab
+  artifactKey: Guid(284e3aefefdff564f9f304ae2f67fa10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FX/Arrow/Arrow_Particle.prefab using Guid(284e3aefefdff564f9f304ae2f67fa10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c11f453940d03a5692d0835cd81606bb') in 0.015248 seconds
+  Import took 0.026128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000672 seconds.
+  path: Assets/FX/Arrow/Arrow_Impact.prefab
+  artifactKey: Guid(55c7ab685c7607b44b1c95bcefe666ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FX/Arrow/Arrow_Impact.prefab using Guid(55c7ab685c7607b44b1c95bcefe666ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88cf83198aab170bc230d97fb6ea41f2') in 0.011503 seconds
+  Import took 0.022283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000704 seconds.
+  path: Assets/FX/Arrow/Arrow.prefab
+  artifactKey: Guid(e12f67aa396803b4db1f156b4de6a91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FX/Arrow/Arrow.prefab using Guid(e12f67aa396803b4db1f156b4de6a91f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c8a8cfd18762c1aec72067ce0dc84f') in 0.019574 seconds
+  Import took 0.030252 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008992 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.667 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.1 MB.
+System memory in use after: 131.3 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3870.
+Total: 5.122800 ms (FindLiveObjects: 0.712200 ms CreateObjectMapping: 0.205200 ms MarkObjects: 4.150600 ms  DeleteObjects: 0.052500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006528 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.559 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.1 MB.
+System memory in use after: 131.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3873.
+Total: 6.342300 ms (FindLiveObjects: 1.174000 ms CreateObjectMapping: 0.211200 ms MarkObjects: 4.902300 ms  DeleteObjects: 0.052200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006936 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.655 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.1 MB.
+System memory in use after: 131.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3876.
+Total: 6.367000 ms (FindLiveObjects: 0.860100 ms CreateObjectMapping: 0.307900 ms MarkObjects: 5.149200 ms  DeleteObjects: 0.047300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 720.870638 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/Projectile.cs
+  artifactKey: Guid(3ad8dd1778f9c2b468fc7421a390a6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/Projectile.cs using Guid(3ad8dd1778f9c2b468fc7421a390a6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebdb84fa50ec7e73ee364ecebd9f9181') in 0.016525 seconds
+  Import took 0.027612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.674385 seconds.
+  path: Assets/try/script/Projectile.cs
+  artifactKey: Guid(3608a674a4a66f949a0cc69477e5e7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/script/Projectile.cs using Guid(3608a674a4a66f949a0cc69477e5e7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a939c9003af4a450283dac7b2c3d9fc1') in 0.007359 seconds
+  Import took 0.020406 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007042 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.431 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.1 MB.
+System memory in use after: 131.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3879.
+Total: 5.259700 ms (FindLiveObjects: 0.834300 ms CreateObjectMapping: 0.316000 ms MarkObjects: 4.029900 ms  DeleteObjects: 0.077300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006867 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.609 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3882.
+Total: 5.712500 ms (FindLiveObjects: 0.840100 ms CreateObjectMapping: 0.257100 ms MarkObjects: 4.569300 ms  DeleteObjects: 0.044000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 236.775470 seconds.
+  path: Assets/try/script/Projectile.cs
+  artifactKey: Guid(3ad8dd1778f9c2b468fc7421a390a6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/script/Projectile.cs using Guid(3ad8dd1778f9c2b468fc7421a390a6cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc397700916783b6889914fea09100e') in 0.014117 seconds
+  Import took 0.024286 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005995 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.16 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.426 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3885.
+Total: 6.424600 ms (FindLiveObjects: 0.683700 ms CreateObjectMapping: 0.268300 ms MarkObjects: 5.387500 ms  DeleteObjects: 0.082600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005243 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.05 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.713 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3888.
+Total: 6.292300 ms (FindLiveObjects: 1.008500 ms CreateObjectMapping: 0.256500 ms MarkObjects: 4.924600 ms  DeleteObjects: 0.099800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 624.097170 seconds.
+  path: Assets/try/GameData/Unit/AiData.cs
+  artifactKey: Guid(2901afc1825054fbfb1e2ccb7377328e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/try/GameData/Unit/AiData.cs using Guid(2901afc1825054fbfb1e2ccb7377328e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eac224dde65571bfa27cff0b1c8b417') in 0.022126 seconds
+  Import took 0.036236 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005526 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.376 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.2 MB.
+System memory in use after: 131.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3891.
+Total: 5.706700 ms (FindLiveObjects: 0.759100 ms CreateObjectMapping: 0.244300 ms MarkObjects: 4.657600 ms  DeleteObjects: 0.043400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.366182 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/projectile.prefab
+  artifactKey: Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/projectile.prefab using Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9b63a0664bbad20426ac82c3b89845') in 0.352140 seconds
+  Import took 0.368505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.248803 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/projectile.prefab
+  artifactKey: Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/projectile.prefab using Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8104d12a4f0282f401d669032efa51cd') in 0.019859 seconds
+  Import took 0.035843 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.731682 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/projectile.prefab
+  artifactKey: Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/projectile.prefab using Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a2a4c7274d5799a1be7b26c0dd1f21') in 0.024480 seconds
+  Import took 0.037899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.565047 seconds.
+  path: Assets/Try-yinpi/Turret2/new turret/projectile.prefab
+  artifactKey: Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Try-yinpi/Turret2/new turret/projectile.prefab using Guid(68490a99be47d124bb7b62066cee1fb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49d2421d358ede1ad70a527a38c7590') in 0.021540 seconds
+  Import took 0.034193 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005047 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.514 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.3 MB.
+System memory in use after: 131.6 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3930.
+Total: 5.541500 ms (FindLiveObjects: 0.950500 ms CreateObjectMapping: 0.317600 ms MarkObjects: 4.219700 ms  DeleteObjects: 0.050800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005472 seconds.
+Begin MonoManager ReloadAssembly
+A scripted class has a different serialization layout when loading. (Read 96 bytes but expected 100 bytes)
+Did you change any of your scripts when entering playmode?
+
+A scripted class has a different serialization layout when loading. (Read 96 bytes but expected 100 bytes)
+Did you change any of your scripts when entering playmode?
+
+The file 'MemoryStream' is corrupted! Remove it and launch unity again!
+[Position out of bounds!]
+
+Fatal Error! The file 'MemoryStream' is corrupted! Remove it and launch unity again!
+[Position out of bounds!]
+
+Crash!!!
+SymInit: Symbol-SearchPath: 'C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Mono;.;C:\Users\linfr\Downloads\Epita\Project_S2\BeforeDawn\111;C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor;C:\WINDOWS;C:\WINDOWS\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 534, UserName: 'linfr'
+OS-Version: 10.0.0
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Unity.exe:Unity.exe (00007FF61CDA0000), size: 134467584 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.3.0.46406
+C:\WINDOWS\SYSTEM32\ntdll.dll:ntdll.dll (00007FFF54210000), size: 2179072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\Program Files\Avast Software\Avast\aswhook.dll:aswhook.dll (00007FFF24B20000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.3.8047.0
+C:\WINDOWS\System32\KERNEL32.DLL:KERNEL32.DLL (00007FFF52700000), size: 794624 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\System32\KERNELBASE.dll:KERNELBASE.dll (00007FFF517A0000), size: 3784704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1555
+C:\WINDOWS\System32\CRYPT32.dll:CRYPT32.dll (00007FFF51DF0000), size: 1466368 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.674
+C:\WINDOWS\System32\ucrtbase.dll:ucrtbase.dll (00007FFF51CD0000), size: 1118208 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\System32\USER32.dll:USER32.dll (00007FFF53260000), size: 1748992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\System32\win32u.dll:win32u.dll (00007FFF51770000), size: 155648 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1555
+C:\WINDOWS\System32\GDI32.dll:GDI32.dll (00007FFF52390000), size: 167936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\libfbxsdk.dll:libfbxsdk.dll (00007FFF0EB00000), size: 8974336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2020.0.0.0
+C:\WINDOWS\System32\gdi32full.dll:gdi32full.dll (00007FFF51BB0000), size: 1126400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\optix.6.0.0.dll:optix.6.0.0.dll (00007FFF43A50000), size: 208896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.0.0.0
+C:\WINDOWS\System32\msvcp_win.dll:msvcp_win.dll (00007FFF51650000), size: 630784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\OpenImageDenoise.dll:OpenImageDenoise.dll (00007FFEB39A0000), size: 43806720 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\ADVAPI32.dll:ADVAPI32.dll (00007FFF52280000), size: 712704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\System32\msvcrt.dll:msvcrt.dll (00007FFF52650000), size: 684032 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.22621.608
+C:\WINDOWS\System32\sechost.dll:sechost.dll (00007FFF523D0000), size: 671744 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1555
+C:\WINDOWS\System32\RPCRT4.dll:RPCRT4.dll (00007FFF52140000), size: 1142784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1555
+C:\WINDOWS\System32\SHELL32.dll:SHELL32.dll (00007FFF53960000), size: 8323072 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\FreeImage.dll:FreeImage.dll (0000000180000000), size: 6414336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.18.0.0
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\umbraoptimizer64.dll:umbraoptimizer64.dll (00007FFF0FD40000), size: 1306624 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\ispc_texcomp.dll:ispc_texcomp.dll (00007FFF0FBB0000), size: 1609728 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\SHLWAPI.dll:SHLWAPI.dll (00007FFF52970000), size: 385024 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\System32\WS2_32.dll:WS2_32.dll (00007FFF53130000), size: 462848 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\System32\ole32.dll:ole32.dll (00007FFF527D0000), size: 1687552 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\System32\WLDAP32.dll:WLDAP32.dll (00007FFF52580000), size: 385024 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1194
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\WinPixEventRuntime.dll:WinPixEventRuntime.dll (00007FFF4ADC0000), size: 45056 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.0.1812.6001
+C:\WINDOWS\System32\combase.dll:combase.dll (00007FFF535D0000), size: 3706880 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\System32\Normaliz.dll:Normaliz.dll (00007FFF52380000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\System32\IMM32.dll:IMM32.dll (00007FFF52330000), size: 200704 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\WINDOWS\System32\SETUPAPI.dll:SETUPAPI.dll (00007FFF52CB0000), size: 4669440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\tbb.dll:tbb.dll (00007FFF439E0000), size: 413696 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2017.0.2016.1004
+C:\WINDOWS\SYSTEM32\VCRUNTIME140.dll:VCRUNTIME140.dll (00007FFF4AB40000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.34.31931.0
+C:\WINDOWS\System32\OLEAUT32.dll:OLEAUT32.dll (00007FFF534F0000), size: 880640 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\System32\WINTRUST.dll:WINTRUST.dll (00007FFF51B40000), size: 438272 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\SYSTEM32\GLU32.dll:GLU32.dll (00007FFED86C0000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\SYSTEM32\OPENGL32.dll:OPENGL32.dll (00007FFED66D0000), size: 1048576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\SYSTEM32\CRYPTBASE.DLL:CRYPTBASE.DLL (00007FFF50E80000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\MSVCP140.dll:MSVCP140.dll (00007FFF0FB20000), size: 581632 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.34.31931.0
+C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL:IPHLPAPI.DLL (00007FFF501B0000), size: 184320 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\WINHTTP.dll:WINHTTP.dll (00007FFF4BEA0000), size: 1273856 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\SYSTEM32\bcrypt.dll:bcrypt.dll (00007FFF51020000), size: 163840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\WINDOWS\SYSTEM32\WINMM.dll:WINMM.dll (00007FFF4A470000), size: 212992 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\SYSTEM32\HID.DLL:HID.DLL (00007FFF4FEF0000), size: 57344 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\RadeonImageFilters.dll:RadeonImageFilters.dll (00007FFF0F8B0000), size: 2535424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.1.0
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\SketchUpAPI.dll:SketchUpAPI.dll (00007FFECC7C0000), size: 8978432 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.0
+C:\WINDOWS\SYSTEM32\MSVCP120.dll:MSVCP120.dll (00007FFF0E960000), size: 679936 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.21005.1
+C:\WINDOWS\SYSTEM32\VERSION.dll:VERSION.dll (00007FFF4A400000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\MSVCR120.dll:MSVCR120.dll (00007FFF0EA10000), size: 978944 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 12.0.21005.1
+C:\WINDOWS\SYSTEM32\WSOCK32.dll:WSOCK32.dll (00007FFF3D1D0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\VCRUNTIME140_1.dll:VCRUNTIME140_1.dll (00007FFF4ADB0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 14.34.31931.0
+C:\WINDOWS\SYSTEM32\Secur32.dll:Secur32.dll (00007FFF390C0000), size: 49152 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\dxcore.dll:dxcore.dll (00007FFF4E900000), size: 221184 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\SketchUpCommonPreferences.dll:SketchUpCommonPreferences.dll (00007FFF0F830000), size: 483328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 19.0.753.20342
+C:\WINDOWS\SYSTEM32\SSPICLI.DLL:SSPICLI.DLL (00007FFF509C0000), size: 270336 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\OpenRL.dll:OpenRL.dll (00000255BDF00000), size: 12779520 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 1.5.0.2907
+C:\WINDOWS\SYSTEM32\MSVCR100.dll:MSVCR100.dll (0000000065480000), size: 860160 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+C:\WINDOWS\SYSTEM32\MSVCP100.dll:MSVCP100.dll (0000000065560000), size: 622592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.40219.325
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\embree.dll:embree.dll (00007FFEB29B0000), size: 16711680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.14.0.0
+C:\WINDOWS\SYSTEM32\cfgmgr32.DLL:cfgmgr32.DLL (00007FFF51340000), size: 319488 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\WINDOWS\SYSTEM32\MSWSOCK.DLL:MSWSOCK.DLL (00007FFF50BE0000), size: 430080 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\OpenRL_pthread.dll:OpenRL_pthread.dll (00000255BEB50000), size: 61440 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.9.0.0
+C:\WINDOWS\SYSTEM32\MSASN1.dll:MSASN1.dll (00007FFF50EC0000), size: 73728 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.819
+C:\WINDOWS\SYSTEM32\kernel.appcore.dll:kernel.appcore.dll (00007FFF50760000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\System32\bcryptPrimitives.dll:bcryptPrimitives.dll (00007FFF516F0000), size: 503808 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\WINDOWS\system32\uxtheme.dll:uxtheme.dll (00007FFF4E640000), size: 700416 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\System32\shcore.dll:shcore.dll (00007FFF52040000), size: 987136 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.900
+C:\WINDOWS\SYSTEM32\windows.storage.dll:windows.storage.dll (00007FFF4F620000), size: 9228288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\SYSTEM32\wintypes.dll:wintypes.dll (00007FFF4F4E0000), size: 1302528 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\SYSTEM32\profapi.dll:profapi.dll (00007FFF51580000), size: 135168 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\System32\clbcatq.dll:clbcatq.dll (00007FFF531B0000), size: 720896 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2001.12.10941.16384
+C:\WINDOWS\System32\netprofm.dll:netprofm.dll (00007FFF4BFE0000), size: 487424 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\System32\npmproxy.dll:npmproxy.dll (00007FFF492F0000), size: 98304 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\System32\NSI.dll:NSI.dll (00007FFF523C0000), size: 36864 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\dhcpcsvc6.DLL:dhcpcsvc6.DLL (00007FFF4ABC0000), size: 102400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\WINDOWS\SYSTEM32\dhcpcsvc.DLL:dhcpcsvc.DLL (00007FFF4AB20000), size: 126976 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\WINDOWS\SYSTEM32\DNSAPI.dll:DNSAPI.dll (00007FFF501E0000), size: 995328 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\System32\fwpuclnt.dll:fwpuclnt.dll (00007FFF48A80000), size: 536576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1105
+C:\Windows\System32\rasadhlp.dll:rasadhlp.dll (00007FFF4ABB0000), size: 40960 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\d3d11.dll:d3d11.dll (00007FFF4C950000), size: 2453504 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\WINDOWS\SYSTEM32\dxgi.dll:dxgi.dll (00007FFF4E780000), size: 1007616 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\SYSTEM32\directxdatabasehelper.dll:directxdatabasehelper.dll (00007FFF4AB60000), size: 294912 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\System32\DriverStore\FileRepository\u0383941.inf_amd64_06002aa6e4fd6275\B384029\aticfx64.dll:aticfx64.dll (00007FFF470D0000), size: 1814528 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 31.0.12034.4
+C:\WINDOWS\System32\DriverStore\FileRepository\u0383941.inf_amd64_06002aa6e4fd6275\B384029\atiuxp64.dll:atiuxp64.dll (00007FFF47010000), size: 233472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 31.0.12034.4
+C:\WINDOWS\System32\DriverStore\FileRepository\u0383941.inf_amd64_06002aa6e4fd6275\B384029\atidxx64.dll:atidxx64.dll (00007FFF45090000), size: 32673792 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 31.0.12034.4
+C:\WINDOWS\SYSTEM32\apphelp.dll:apphelp.dll (00007FFF4E230000), size: 614400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1485
+C:\WINDOWS\SYSTEM32\amdihk64.dll:amdihk64.dll (00007FFF44E80000), size: 217088 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.0.0.1788
+C:\WINDOWS\SYSTEM32\D3DSCache.dll:D3DSCache.dll (00007FFF447C0000), size: 192512 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\SYSTEM32\USERENV.dll:USERENV.dll (00007FFF50D00000), size: 163840 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\system32\wbem\wbemprox.dll:wbemprox.dll (00007FFF322A0000), size: 65536 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\wbemcomn.dll:wbemcomn.dll (00007FFF339F0000), size: 524288 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\system32\wbem\wbemsvc.dll:wbemsvc.dll (00007FFF2DED0000), size: 81920 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\system32\wbem\fastprox.dll:fastprox.dll (00007FFF2E2A0000), size: 1015808 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\WINDOWS\SYSTEM32\amsi.dll:amsi.dll (00007FFF2D6A0000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\Program Files\Avast Software\Avast\aswAMSI.dll:aswAMSI.dll (00007FFF2C680000), size: 614400 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 23.3.8047.0
+C:\WINDOWS\SYSTEM32\opencl.dll:opencl.dll (00007FFECE540000), size: 118784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 3.0.1.0
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\radeonrays.dll:radeonrays.dll (00007FFF1FC50000), size: 552960 (result: 0), SymType: '-deferred-', PDB: ''
+C:\Program Files\Unity\Hub\Editor\2020.3.0f1\Editor\Data\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll:mono-2.0-bdwgc.dll (00007FFEAD6E0000), size: 7790592 (result: 0), SymType: '-deferred-', PDB: ''
+C:\WINDOWS\System32\PSAPI.DLL:PSAPI.DLL (00007FFF52640000), size: 32768 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\ProgramData\Microsoft\VisualStudio\Setup\x64\Microsoft.VisualStudio.Setup.Configuration.Native.dll:Microsoft.VisualStudio.Setup.Configuration.Native.dll (00007FFEAD030000), size: 327680 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 2.11.72.18200
+C:\WINDOWS\SYSTEM32\CRYPTSP.dll:CRYPTSP.dll (00007FFF50E60000), size: 110592 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\system32\rsaenh.dll:rsaenh.dll (00007FFF506D0000), size: 217088 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\PROPSYS.dll:PROPSYS.dll (00007FFF4BDA0000), size: 1048576 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 7.0.22621.608
+C:\Windows\System32\Windows.System.Launcher.dll:Windows.System.Launcher.dll (00007FFF44F50000), size: 1265664 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\Windows\System32\msvcp110_win.dll:msvcp110_win.dll (00007FFF4DCD0000), size: 602112 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\windows.staterepositorycore.dll:windows.staterepositorycore.dll (00007FFF4A450000), size: 106496 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1344
+C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.608_none_a9444ca7c10bb01d\comctl32.dll:comctl32.dll (00007FFF48C30000), size: 2678784 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 6.10.22621.608
+C:\WINDOWS\SYSTEM32\WindowsCodecs.dll:WindowsCodecs.dll (00007FFF4C7A0000), size: 1769472 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.608
+C:\Windows\System32\thumbcache.dll:thumbcache.dll (00007FFF19EE0000), size: 450560 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+C:\WINDOWS\SYSTEM32\dbghelp.dll:dbghelp.dll (00007FFF4EEE0000), size: 2285568 (result: 0), SymType: '-deferred-', PDB: '', fileVersion: 10.0.22621.1
+
+========== OUTPUTTING STACK TRACE ==================
+
+0x00007FFF5182FDEC (KERNELBASE) RaiseException
+0x00007FF61F4A800D (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FF61F4A8F5A (Unity) EditorMonoConsole::LogToConsoleImplementation
+0x00007FF62105C61E (Unity) DebugStringToFilePostprocessedStacktrace
+0x00007FF62105BBCF (Unity) DebugStringToFile
+0x00007FF61E2AFCCE (Unity) CachedReader::OutOfBoundsError
+0x00007FF61E2B4214 (Unity) CachedReader::UpdateReadCache
+0x00007FF61D009FF5 (Unity) TransferPPtr<StreamedBinaryRead>
+0x00007FF61E9400FB (Unity) TransferField_NonArray<StreamedBinaryRead,Converter_UnityEngineObject>
+0x00007FF61E965652 (Unity) Transfer_UnityEngineObject<StreamedBinaryRead,0>
+0x00007FF61D19E946 (Unity) ExecuteSerializationCommands<ConfigSettingsRead>
+0x00007FF61E40AF03 (Unity) TransferScriptingObject<StreamedBinaryRead,0>
+0x00007FF61E426A5C (Unity) SerializableManagedRefTransfer::TransferBinaryInstanceOnly
+0x00007FF61E406458 (Unity) SerializableManagedRefTransfer::RestoreBackupImpl<SerializableManagedRefBackupGenerator>
+0x00007FF61E4062FB (Unity) SerializableManagedRefTransfer::RestoreBackup<SerializableManagedRefBackupGenerator>
+0x00007FF61E98ABED (Unity) SerializableManagedRefsUtilities::RestoreBackups
+0x00007FF61E8CE970 (Unity) MonoManager::EndReloadAssembly
+0x00007FF61E8D5859 (Unity) MonoManager::ReloadAssembly
+0x00007FF61FC741E1 (Unity) LoadDomainAndUserAssemblies
+0x00007FF61FC7468E (Unity) LoadUserAssemblies
+0x00007FF6200A70B8 (Unity) <lambda_79a3ebc38cb5166d44d10a16a21fca24>::operator()
+0x00007FF620172132 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)> >::do_complete
+0x00007FF620174290 (Unity) asio::detail::win_iocp_io_service::do_one
+0x00007FF620177A1E (Unity) asio::io_service::run
+0x00007FF6200EDC10 (Unity) RunAssetImportWorkerClientV2
+0x00007FF6200EDC60 (Unity) RunAssetImporterV2
+0x00007FF61F5FFED6 (Unity) Application::InitializeProject
+0x00007FF61FF7A372 (Unity) WinMain
+0x00007FF621DEF436 (Unity) __scrt_common_main_seh
+0x00007FFF5271269D (KERNEL32) BaseThreadInitThunk
+0x00007FFF5426A9F8 (ntdll) RtlUserThreadStart
+
+========== END OF STACKTRACE ===========
+
+A crash has been intercepted by the crash handler. For call stack and other details, see the latest crash report generated in:
+ * C:/Users/linfr/AppData/Local/Temp/Unity/Editor/Crashes

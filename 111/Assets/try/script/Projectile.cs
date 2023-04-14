@@ -36,10 +36,15 @@ public class Projectile : MonoBehaviour
             return;
         }
 
-        Enemy enemy = target.GetComponent<Enemy>();
+        AiBehavior enemy = target.GetComponent<AiBehavior>();
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
+        }
+        TowerBehavior tower = target.GetComponent<TowerBehavior>();
+        if (tower != null)
+        {
+            tower.TakeDamage(damage);
         }
 
         Destroy(gameObject);
