@@ -16,4 +16,3 @@ public class AiData : ScriptableObject
     public bool isLongRange;
     public GameObject projectilePrefab;
 }
-

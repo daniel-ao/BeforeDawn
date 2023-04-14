@@ -61,6 +61,7 @@ public class AiBehavior : MonoBehaviour
                 target = TowerB;
             }
         }
+
         Debug.Log(target);
         transform.LookAt(target.transform.position);
         Chasing(target);
@@ -74,6 +75,7 @@ public class AiBehavior : MonoBehaviour
                 Attacking(target);
                 Timer = 1f / TimeAttack;
             }
+
             Timer -= Time.deltaTime;
         }
         else
@@ -115,6 +117,7 @@ public class AiBehavior : MonoBehaviour
             return;
         }
     }
+
     private void LongRangeAttack(GameObject target)
     {
         Debug.Log("atta");
@@ -155,7 +158,8 @@ public class AiBehavior : MonoBehaviour
 
     void Fire(GameObject target)
     {
-        GameObject projectile = Instantiate(data.projectilePrefab, transform.position + popo, Quaternion.identity) as GameObject;
+        GameObject projectile =
+            Instantiate(data.projectilePrefab, transform.position + popo, Quaternion.identity) as GameObject;
         Projectile script = projectile.GetComponent<Projectile>();
         script.target = target.transform;
         script.damage = Damage;
@@ -173,6 +177,7 @@ public class AiBehavior : MonoBehaviour
         {
             AllEnemy = GameObject.FindGameObjectsWithTag("Red");
         }
+
         float closestDistance = Mathf.Infinity;
         GameObject closestEnemy = null;
         foreach (GameObject enemy in AllEnemy)
@@ -184,6 +189,7 @@ public class AiBehavior : MonoBehaviour
                 closestEnemy = enemy;
             }
         }
+
         if (closestEnemy != null && closestDistance <= SightRange)
         {
             target = closestEnemy;
@@ -195,6 +201,7 @@ public class AiBehavior : MonoBehaviour
 
         return target;
     }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.blue;
@@ -210,6 +217,7 @@ public class AiBehavior : MonoBehaviour
             StartCoroutine(WaitDie());
         }
     }
+
     public IEnumerator WaitDie()
     {
         Debug.Log("waiting");
