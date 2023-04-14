@@ -69,12 +69,17 @@ public class AiBehavior : MonoBehaviour
         float distance = Vector3.Distance(target.transform.position, transform.position);
         if (distance <= AttackRange)
         {
+            navAgent.isStopped = true;
             if (Timer <= 0f)
             {
                 Attacking(target);
                 Timer = 1f / TimeAttack;
             }
             Timer -= Time.deltaTime;
+        }
+        else
+        {
+            navAgent.isStopped = false;
         }
     }
 
