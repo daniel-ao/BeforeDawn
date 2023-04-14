@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Castle
   m_EditorClassIdentifier: 
   Health: 25
-  damage: 3
-  AttackRange: 5
+  damage: 15
+  AttackRange: 10
