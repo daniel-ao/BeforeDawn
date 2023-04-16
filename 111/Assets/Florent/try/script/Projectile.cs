@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     public float speed = 10f;
     public float damage;
     public Transform target;
+    bool ok;
 
     void Update()
     {
