@@ -8,95 +8,52 @@ Using pre-set license
 -name
 AssetImportWorker0
 -projectPath
-<<<<<<< HEAD:BeforeDown2/Logs/AssetImportWorker0.log
-/Users/wei/Documents/Kun/epita/s2/Projet_S2/BeforeDawn/BeforeDown2
--logFile
-Logs/AssetImportWorker0.log
--srvPort
-58261
-Successfully changed project path to: /Users/wei/Documents/Kun/epita/s2/Projet_S2/BeforeDawn/BeforeDown2
-/Users/wei/Documents/Kun/epita/s2/Projet_S2/BeforeDawn/BeforeDown2
-Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 47.22 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.0f1 (c7b5465681fb)
-[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/wei/Documents/Kun/epita/s2/Projet_S2/BeforeDawn/BeforeDown2/Assets
-GfxDevice: creating device client; threaded=0
-2023-04-17 12:23:44.304 Unity[69274:8537014] (null) preferred device: Apple M1 (high power)
-2023-04-17 12:23:44.304 Unity[69274:8537014] Metal devices available: 1
-2023-04-17 12:23:44.304 Unity[69274:8537014] 0: Apple M1 (high power)
-2023-04-17 12:23:44.305 Unity[69274:8537014] Using device Apple M1 (high power)
-=======
 /Users/wei/Documents/Kun/epita/s2/Projet_S2/BeforeDawn/BeforeDownV2
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59385
+59519
 Successfully changed project path to: /Users/wei/Documents/Kun/epita/s2/Projet_S2/BeforeDawn/BeforeDownV2
 /Users/wei/Documents/Kun/epita/s2/Projet_S2/BeforeDawn/BeforeDownV2
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 53.27 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 53.71 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.0f1 (c7b5465681fb)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/wei/Documents/Kun/epita/s2/Projet_S2/BeforeDawn/BeforeDownV2/Assets
 GfxDevice: creating device client; threaded=0
-2023-04-17 14:23:55.362 Unity[72650:8630639] (null) preferred device: Apple M1 (high power)
-2023-04-17 14:23:55.362 Unity[72650:8630639] Metal devices available: 1
-2023-04-17 14:23:55.362 Unity[72650:8630639] 0: Apple M1 (high power)
-2023-04-17 14:23:55.362 Unity[72650:8630639] Using device Apple M1 (high power)
->>>>>>> main:BeforeDownV2/Logs/AssetImportWorker0.log
+2023-04-17 15:48:01.979 Unity[74114:8673443] (null) preferred device: Apple M1 (high power)
+2023-04-17 15:48:01.979 Unity[74114:8673443] Metal devices available: 1
+2023-04-17 15:48:01.979 Unity[74114:8673443] 0: Apple M1 (high power)
+2023-04-17 15:48:01.980 Unity[74114:8673443] Using device Apple M1 (high power)
 Initializing Metal device caps: Apple M1
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/MonoBleedingEdge/etc'
-<<<<<<< HEAD:BeforeDown2/Logs/AssetImportWorker0.log
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56274
-=======
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56650
->>>>>>> main:BeforeDownV2/Logs/AssetImportWorker0.log
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56114
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2020.3.0f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-<<<<<<< HEAD:BeforeDown2/Logs/AssetImportWorker0.log
-Registered in 0.001656 seconds.
+Registered in 0.001366 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 46.24 ms, found 1 plugins.
-=======
-Registered in 0.002545 seconds.
-Native extension for LinuxStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 50.09 ms, found 1 plugins.
->>>>>>> main:BeforeDownV2/Logs/AssetImportWorker0.log
+Refreshing native plugins compatible for Editor in 50.21 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-<<<<<<< HEAD:BeforeDown2/Logs/AssetImportWorker0.log
-- Completed reload, in  3.065 seconds
+- Completed reload, in  2.770 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001552 seconds.
+Registered in 0.003048 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 47.01 ms, found 1 plugins.
-=======
-- Completed reload, in  2.828 seconds
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.001704 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 53.46 ms, found 1 plugins.
->>>>>>> main:BeforeDownV2/Logs/AssetImportWorker0.log
+Refreshing native plugins compatible for Editor in 60.90 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -112,276 +69,41 @@ Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f
 Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
 Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
 Mono: successfully reloaded assembly
-<<<<<<< HEAD:BeforeDown2/Logs/AssetImportWorker0.log
-- Completed reload, in  2.140 seconds
-=======
-- Completed reload, in  2.178 seconds
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launching external process: /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3031 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.8 MB.
-System memory in use after: 141.0 MB.
-
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3765.
-Total: 1.853333 ms (FindLiveObjects: 0.246083 ms CreateObjectMapping: 0.070542 ms MarkObjects: 1.471541 ms  DeleteObjects: 0.064375 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Kun/Gacha
-  artifactKey: Guid(e7bcd8bf80abc40f58c6237a81d4aba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kun/Gacha using Guid(e7bcd8bf80abc40f58c6237a81d4aba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '687e587b905ead70491a3f6fc109f2d8') in 0.009550 seconds
-  Import took 0.015166 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Kun/Gacha/Scenes/Gacha_Scene.unity
-  artifactKey: Guid(369a5c755437e464091f4c0656b5b8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kun/Gacha/Scenes/Gacha_Scene.unity using Guid(369a5c755437e464091f4c0656b5b8e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48227fca36cf9fb652c482624938e502') in 0.013875 seconds
-  Import took 0.018585 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Kun/Gacha/Scenes
-  artifactKey: Guid(4c2e6a7a89f6b437f8d808aa4c4f58da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kun/Gacha/Scenes using Guid(4c2e6a7a89f6b437f8d808aa4c4f58da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f0c733e2f3df68491368ac964590c3e') in 0.000718 seconds
-  Import took 0.005083 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 68.201248 seconds.
-  path: Assets/Kun/Gacha/Scenes/Scene2.unity
-  artifactKey: Guid(3f366bab618d84d589a60afe294be8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Kun/Gacha/Scenes/Scene2.unity using Guid(3f366bab618d84d589a60afe294be8b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97c0e0e92fa1c2dcb6ac880dea636a37') in 0.005124 seconds
-  Import took 0.043596 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001962 seconds.
-Begin MonoManager ReloadAssembly
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/Kernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Native extension for LinuxStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.281 seconds
->>>>>>> main:BeforeDownV2/Logs/AssetImportWorker0.log
+- Completed reload, in  2.196 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Launching external process: /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-<<<<<<< HEAD:BeforeDown2/Logs/AssetImportWorker0.log
-Unloading 2993 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 133.4 MB.
-System memory in use after: 133.6 MB.
+Unloading 3039 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 141.3 MB.
+System memory in use after: 141.5 MB.
 
-Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3725.
-Total: 2.040708 ms (FindLiveObjects: 0.266708 ms CreateObjectMapping: 0.090708 ms MarkObjects: 1.610833 ms  DeleteObjects: 0.071458 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/UnityRoyal/Characters/Archer/Model/Archer_avatarMask.mask
-  artifactKey: Guid(5f5e02ef59720dd44b5c053f1ed48524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/Characters/Archer/Model/Archer_avatarMask.mask using Guid(5f5e02ef59720dd44b5c053f1ed48524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1b49c039975d008f6b20adea8054e0') in 0.219367 seconds
-  Import took 0.224168 seconds .
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 3773.
+Total: 2.071416 ms (FindLiveObjects: 0.248750 ms CreateObjectMapping: 0.073042 ms MarkObjects: 1.667958 ms  DeleteObjects: 0.080166 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/UnityRoyal/Cinematics/Signals/GameOverCutscene.signal
-  artifactKey: Guid(261414fa8f87b4d23ba8703588d5104a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/Cinematics/Signals/GameOverCutscene.signal using Guid(261414fa8f87b4d23ba8703588d5104a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc07a718b3fabbe16353691f554be38c') in 0.079706 seconds
-  Import took 0.084035 seconds .
+  path: Assets/Kun/SoundManeger/Scenes/SampleScene.unity
+  artifactKey: Guid(0195d6bfb63eb47b983c10b5b8d5c1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kun/SoundManeger/Scenes/SampleScene.unity using Guid(0195d6bfb63eb47b983c10b5b8d5c1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f2035942846d6b58d672c1809dee83') in 0.022037 seconds
+  Import took 0.026864 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/UnityRoyal/FX/Tower/Construction Version 1/Models/ArcherTower_Stage1_Con_001.fbx
-  artifactKey: Guid(46246b82005583247b10cb61efe06e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/FX/Tower/Construction Version 1/Models/ArcherTower_Stage1_Con_001.fbx using Guid(46246b82005583247b10cb61efe06e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56b05692a6411be7a41c8673a035dc0') in 1.437652 seconds
-  Import took 1.441802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/UnityRoyal/UI/CardArt/Archers.png
-  artifactKey: Guid(2bf4029e327b74068936cf64d3fdbc9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/UI/CardArt/Archers.png using Guid(2bf4029e327b74068936cf64d3fdbc9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '436f9d8baef73b40bbfa50ef93e8a36b') in 0.153599 seconds
-  Import took 0.157734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/UnityRoyal/FX/Tower/Construction Version 1/Models/ArcherTower_Stage3_Con_001.fbx
-  artifactKey: Guid(c1a7b563b83862041a3240639c359164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/FX/Tower/Construction Version 1/Models/ArcherTower_Stage3_Con_001.fbx using Guid(c1a7b563b83862041a3240639c359164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c79f8caceb1a05bb9edc21d43e3b34a') in 0.046256 seconds
-  Import took 0.049900 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/UnityRoyal/Scenes
-  artifactKey: Guid(04ed40ccbfa1d414fbb6d6b6f123bc06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/Scenes using Guid(04ed40ccbfa1d414fbb6d6b6f123bc06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '514d2942f3936220f750f62d0c934ddd') in 0.000529 seconds
-  Import took 0.003660 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/UnityRoyal/FX/Tower/Destruction/ArcherTower_Des_111.fbx
-  artifactKey: Guid(32e414ff1ed67c74d9978832c80899c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/FX/Tower/Destruction/ArcherTower_Des_111.fbx using Guid(32e414ff1ed67c74d9978832c80899c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'UnityRoyale/RoyalToon': undeclared identifier '_LWRPLightingFunctionCustomFunction_559e95db54ed378298c743cf2810857c_Direction_1' at line 288 (on metal)
-
-Compiling Vertex program with _ADDITIONAL_LIGHTS_VERTEX
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
-Disabled keywords: DOTS_INSTANCING_ON _SCREEN_SPACE_OCCLUSION LIGHTMAP_ON DIRLIGHTMAP_COMBINED _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _ADDITIONAL_LIGHTS _ADDITIONAL_OFF _ADDITIONAL_LIGHT_SHADOWS _SHADOWS_SOFT LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK INSTANCING_ON FOG_LINEAR FOG_EXP FOG_EXP2 UNITY_NO_DXT5nm UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30
-
-Shader warning in 'UnityRoyale/RoyalToon': implicit truncation of vector type at line 1139 (on metal)
-
-Compiling Vertex program
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING UNITY_PASS_SHADOWCASTER
-Disabled keywords: DOTS_INSTANCING_ON INSTANCING_ON UNITY_NO_DXT5nm UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30
-
-Shader error in 'UnityRoyale/RoyalToon': undeclared identifier '_LWRPLightingFunctionCustomFunction_559e95db54ed378298c743cf2810857c_Direction_1' at line 288 (on metal)
-
-Compiling Vertex program with _ADDITIONAL_LIGHTS_VERTEX
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
-Disabled keywords: DOTS_INSTANCING_ON _SCREEN_SPACE_OCCLUSION LIGHTMAP_ON DIRLIGHTMAP_COMBINED _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _ADDITIONAL_LIGHTS _ADDITIONAL_OFF _ADDITIONAL_LIGHT_SHADOWS _SHADOWS_SOFT LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK INSTANCING_ON FOG_LINEAR FOG_EXP FOG_EXP2 UNITY_NO_DXT5nm UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30
-
-Shader warning in 'UnityRoyale/RoyalToon': implicit truncation of vector type at line 1139 (on metal)
-
-Compiling Vertex program
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING UNITY_PASS_SHADOWCASTER
-Disabled keywords: DOTS_INSTANCING_ON INSTANCING_ON UNITY_NO_DXT5nm UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30
-
- -> (artifact id: '98cd685c8a13c2e978fb5f1843e6e28f') in 0.851829 seconds
-  Import took 0.858902 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/UnityRoyal/FX/Tower/Construction Version 1/Models/ArcherTower_Stage4_Con_001.fbx
-  artifactKey: Guid(26420626d0ec44147a5058ced83946f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/FX/Tower/Construction Version 1/Models/ArcherTower_Stage4_Con_001.fbx using Guid(26420626d0ec44147a5058ced83946f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f321a102c980755815d18ba642ca0e') in 0.039594 seconds
-  Import took 0.043558 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/UnityRoyal/AddressableAssetsData/AddressableAssetSettings.asset
-  artifactKey: Guid(62fd5e501abef4d188f123698eca5c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/AddressableAssetsData/AddressableAssetSettings.asset using Guid(62fd5e501abef4d188f123698eca5c92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781d25889f021d1de668786d18614c49') in 0.074969 seconds
-  Import took 0.082478 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/UnityRoyal/Particles/Prefabs/AppearSmoke.prefab
-  artifactKey: Guid(edc0a065124ca4fdcabc3029287c77d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/Particles/Prefabs/AppearSmoke.prefab using Guid(edc0a065124ca4fdcabc3029287c77d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee140dace7280df072cf3f3b68eba002') in 0.059530 seconds
-  Import took 0.063670 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/UnityRoyal
-  artifactKey: Guid(1dd9cd0f28d404449b44bc60833672d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal using Guid(1dd9cd0f28d404449b44bc60833672d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb1855828fb1fc357291bb19af04b37') in 0.000547 seconds
-  Import took 0.003642 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000234 seconds.
-  path: Assets/UnityRoyal/GameData/2 Cards/Archers.asset
-  artifactKey: Guid(d7c71ca08e6ff4e9fa7e86dc215ccaed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/GameData/2 Cards/Archers.asset using Guid(d7c71ca08e6ff4e9fa7e86dc215ccaed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb2b995a572d87a3d6ad7f618bf7d3d') in 0.008143 seconds
-  Import took 0.013059 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/UnityRoyal/Characters/Archer/Model/Archer_Bindpose.fbx
-  artifactKey: Guid(67e4903d70c3a984dbdc388e7bd027a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/Characters/Archer/Model/Archer_Bindpose.fbx using Guid(67e4903d70c3a984dbdc388e7bd027a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'UnityRoyale/RoyalToon': undeclared identifier '_LWRPLightingFunctionCustomFunction_559e95db54ed378298c743cf2810857c_Direction_1' at line 288 (on metal)
-
-Compiling Vertex program with _ADDITIONAL_LIGHTS_VERTEX
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
-Disabled keywords: DOTS_INSTANCING_ON _SCREEN_SPACE_OCCLUSION LIGHTMAP_ON DIRLIGHTMAP_COMBINED _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _ADDITIONAL_LIGHTS _ADDITIONAL_OFF _ADDITIONAL_LIGHT_SHADOWS _SHADOWS_SOFT LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK INSTANCING_ON FOG_LINEAR FOG_EXP FOG_EXP2 UNITY_NO_DXT5nm UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30
-
-Shader warning in 'UnityRoyale/RoyalToon': implicit truncation of vector type at line 1139 (on metal)
-
-Compiling Vertex program
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING UNITY_PASS_SHADOWCASTER
-Disabled keywords: DOTS_INSTANCING_ON INSTANCING_ON UNITY_NO_DXT5nm UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30
-
-Shader error in 'UnityRoyale/RoyalToon': undeclared identifier '_LWRPLightingFunctionCustomFunction_559e95db54ed378298c743cf2810857c_Direction_1' at line 288 (on metal)
-
-Compiling Vertex program with _ADDITIONAL_LIGHTS_VERTEX
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING
-Disabled keywords: DOTS_INSTANCING_ON _SCREEN_SPACE_OCCLUSION LIGHTMAP_ON DIRLIGHTMAP_COMBINED _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _ADDITIONAL_LIGHTS _ADDITIONAL_OFF _ADDITIONAL_LIGHT_SHADOWS _SHADOWS_SOFT LIGHTMAP_SHADOW_MIXING SHADOWS_SHADOWMASK INSTANCING_ON FOG_LINEAR FOG_EXP FOG_EXP2 UNITY_NO_DXT5nm UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30
-
-Shader warning in 'UnityRoyale/RoyalToon': implicit truncation of vector type at line 1139 (on metal)
-
-Compiling Vertex program
-Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING UNITY_PASS_SHADOWCASTER
-Disabled keywords: DOTS_INSTANCING_ON INSTANCING_ON UNITY_NO_DXT5nm UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_NO_FULL_STANDARD_SHADER UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_COLORSPACE_GAMMA UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_FULL_HDR UNITY_VIRTUAL_TEXTURING UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_ASTC_NORMALMAP_ENCODING SHADER_API_GLES30
-
- -> (artifact id: 'fd6a4179c79cd13da54aa5db88ab5a9b') in 0.195622 seconds
-  Import took 0.200374 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000288 seconds.
-  path: Assets/UnityRoyal/FX/Tower/Construction Version 1/Models/ArcherTower_Stage2_Con_001.fbx
-  artifactKey: Guid(2bfc43c88061c1043a439480a2be956a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/FX/Tower/Construction Version 1/Models/ArcherTower_Stage2_Con_001.fbx using Guid(2bfc43c88061c1043a439480a2be956a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca88f90418e7e9cf9a1691069bdc4e94') in 0.044719 seconds
-  Import took 0.048581 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.100798 seconds.
-  path: Assets/UnityRoyal/Scenes/Main.unity
-  artifactKey: Guid(c20071dc6d348469b8f67970dc67bed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/Scenes/Main.unity using Guid(c20071dc6d348469b8f67970dc67bed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429971787ed0d33f3a63e7db8d2fa9d6') in 0.001775 seconds
-  Import took 0.007191 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004793 seconds.
-  path: Assets/UnityRoyal/Scenes/Main.unity
-  artifactKey: Guid(c20071dc6d348469b8f67970dc67bed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UnityRoyal/Scenes/Main.unity using Guid(c20071dc6d348469b8f67970dc67bed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '429971787ed0d33f3a63e7db8d2fa9d6') in 0.001013 seconds
-  Import took 0.005729 seconds .
+  Time since last request: 0.000245 seconds.
+  path: Assets/Kun/SoundManeger/Scenes
+  artifactKey: Guid(39cc0fcffb86c446d86a512336b24c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kun/SoundManeger/Scenes using Guid(39cc0fcffb86c446d86a512336b24c43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c90bf76158b99fe1c772a2c4784060b') in 0.000974 seconds
+  Import took 0.004730 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001057 seconds.
+Registered in 0.002077 seconds.
 Begin MonoManager ReloadAssembly
 Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
 Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
@@ -395,65 +117,21 @@ Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f
 Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
 Native extension for LinuxStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.55 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.421 seconds
+- Completed reload, in  2.115 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 0.61 GB.
-System memory in use after: 0.61 GB.
+Unloading 2856 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.9 MB.
+System memory in use after: 132.1 MB.
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3825.
-Total: 2.159917 ms (FindLiveObjects: 0.279125 ms CreateObjectMapping: 0.085083 ms MarkObjects: 1.750667 ms  DeleteObjects: 0.044083 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004611 seconds.
-Begin MonoManager ReloadAssembly
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/Kernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.dylib
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.so
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32.bundle
-Fallback handler could not load library /Applications/Unity/Hub/Editor/2020.3.0f1/Unity.app/Contents/Frameworks/Mono/lib/libKernel32
-Native extension for LinuxStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.545 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2846 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 0.61 GB.
-System memory in use after: 0.61 GB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3828.
-Total: 2.060500 ms (FindLiveObjects: 0.336750 ms CreateObjectMapping: 0.073958 ms MarkObjects: 1.611333 ms  DeleteObjects: 0.037333 ms)
-=======
-Unloading 2848 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.6 MB.
-System memory in use after: 131.9 MB.
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3768.
-Total: 5.678750 ms (FindLiveObjects: 0.507625 ms CreateObjectMapping: 0.068875 ms MarkObjects: 5.076083 ms  DeleteObjects: 0.025250 ms)
->>>>>>> main:BeforeDownV2/Logs/AssetImportWorker0.log
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3776.
+Total: 1.782542 ms (FindLiveObjects: 0.239667 ms CreateObjectMapping: 0.071375 ms MarkObjects: 1.446000 ms  DeleteObjects: 0.024584 ms)
 
