@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     public float speed = 10f;
     public float damage;
     public Transform target;
+    bool ok;
 
     void Update()
     {
@@ -45,6 +46,11 @@ public class Projectile : MonoBehaviour
         if (tower != null)
         {
             tower.TakeDamage(damage);
+        }
+        playerClickController hero = target.GetComponent<playerClickController>();
+        if (hero != null)
+        {
+            hero.TakeDamage(damage);
         }
 
         Destroy(gameObject);
