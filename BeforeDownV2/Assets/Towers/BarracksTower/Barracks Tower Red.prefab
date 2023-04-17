@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: -3108081858295548743}
   m_Layer: 0
   m_Name: Barracks Tower Red
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -290,7 +290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &208497965309559106
 Transform:
   m_ObjectHideFlags: 0

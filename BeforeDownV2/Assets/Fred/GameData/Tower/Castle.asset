@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Castle
   m_EditorClassIdentifier: 
   Health: 100
-  damage: 2
-  AttackRange: 1
+  damage: 5
+  AttackRange: 30
   fireRate: 1
   projectilePrefab: {fileID: 953002537907380271, guid: e12f67aa396803b4db1f156b4de6a91f,
     type: 3}

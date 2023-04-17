@@ -40,7 +40,7 @@ using UnityEngine.Playables;
         }
 
         FindTarget();
-        if (target != null)
+        if (target != null && !NoHealth)
         {
             if (fireCountdown <= 0f)
             {
@@ -60,7 +60,6 @@ using UnityEngine.Playables;
     }
     public IEnumerator WaitDestruction()
     {
-        Debug.Log("waiting");
         yield return new WaitForSeconds(5);
             
         Destroy(gameObject);

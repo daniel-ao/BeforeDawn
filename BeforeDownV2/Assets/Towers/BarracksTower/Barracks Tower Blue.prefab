@@ -1852,6 +1852,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barracks Tower Blue
       objectReference: {fileID: 0}
+    - target: {fileID: 3986183178789783211, guid: dd280e7a9315109438464a3cda98bd43,
+        type: 3}
+      propertyPath: m_TagString
+      value: Blue
+      objectReference: {fileID: 0}
     - target: {fileID: 5376684538624314614, guid: dd280e7a9315109438464a3cda98bd43,
         type: 3}
       propertyPath: m_RootOrder
