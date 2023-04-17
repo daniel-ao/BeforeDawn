@@ -46,6 +46,12 @@ MonoBehaviour:
     m_SerializedLabels: []
     m_MainAsset: {fileID: 11400000, guid: 3c5eb71ff2e974ce88c45317fe5ee720, type: 2}
     m_TargetAsset: {fileID: 11400000, guid: 3c5eb71ff2e974ce88c45317fe5ee720, type: 2}
+  - m_GUID: 81a96a988315e44e1980f8074e643590
+    m_Address: Assets/New Terrain.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 62fd5e501abef4d188f123698eca5c92, type: 2}
   m_SchemaSet:
