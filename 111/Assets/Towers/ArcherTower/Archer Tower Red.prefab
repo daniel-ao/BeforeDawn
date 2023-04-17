@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1470666708511806665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518662303240939073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d5fa6a6f7a35c74c85d3032a5e6ee5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turretData: {fileID: 11400000, guid: da354158cee09964ca8f94162b569ebb, type: 2}
 --- !u!95 &658430928335375761
 Animator:
   serializedVersion: 3
@@ -95,9 +82,12 @@ GameObject:
   - component: {fileID: 6485485287881123351}
   - component: {fileID: 7797893445555691319}
   - component: {fileID: 4999883666965513888}
+  - component: {fileID: 3587396604581353734}
+  - component: {fileID: 7877809245403131438}
+  - component: {fileID: 5051958350738144865}
   m_Layer: 0
   m_Name: Archer Tower Red
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,6 +267,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3587396604581353734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538807561037368355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b2c81219c84448a9d028c9feb2401b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castle: {fileID: 11400000, guid: f3422b0879d884c4a80a144efa1f2a0d, type: 2}
+  CastleCollapse: {fileID: 0}
+  Health: 0
+  popo: {x: 0, y: 0, z: 0}
+--- !u!54 &7877809245403131438
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538807561037368355}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &5051958350738144865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538807561037368355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5, z: 5}
+  m_Center: {x: 0, y: 3, z: 0}
 --- !u!1001 &177077207920626225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -414,12 +449,6 @@ GameObject:
 --- !u!4 &518662303240452713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: 573be51befacc0840ae26ab882e0583b,
-    type: 3}
-  m_PrefabInstance: {fileID: 518662303240839393}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &518662303240939073 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: 573be51befacc0840ae26ab882e0583b,
     type: 3}
   m_PrefabInstance: {fileID: 518662303240839393}
   m_PrefabAsset: {fileID: 0}

@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 3876371814190336408}
   - component: {fileID: 5243593324166516198}
   - component: {fileID: -3831782491473448284}
+  - component: {fileID: -2520996219153928058}
   m_Layer: 0
   m_Name: Barracks Tower Red
   m_TagString: Red
@@ -273,6 +274,20 @@ MonoBehaviour:
   castle: {fileID: 11400000, guid: f3422b0879d884c4a80a144efa1f2a0d, type: 2}
   CastleCollapse: {fileID: 5637483339985107377}
   Health: 0
+  popo: {x: 0, y: 0, z: 0}
+--- !u!114 &-2520996219153928058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986183178789783211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d0c7943800b48919d736e4644d68a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
 --- !u!1 &5706660947718540815
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +410,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 07a543839ac76014f9c907aa7ac985be, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 07a543839ac76014f9c907aa7ac985be, type: 3}
       propertyPath: m_RootOrder
@@ -4908,9 +4923,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5391742058438632580}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7903073592918295070 stripped
+--- !u!1 &7903073591829660794 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2845724498310653594, guid: 01e882be63e56fa44a1756649c69fe81,
+  m_CorrespondingSourceObject: {fileID: 2845724499394142462, guid: 01e882be63e56fa44a1756649c69fe81,
     type: 3}
   m_PrefabInstance: {fileID: 5391742058438632580}
   m_PrefabAsset: {fileID: 0}
@@ -4920,9 +4935,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5391742058438632580}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7903073591829660794 stripped
+--- !u!1 &7903073592918295070 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2845724499394142462, guid: 01e882be63e56fa44a1756649c69fe81,
+  m_CorrespondingSourceObject: {fileID: 2845724498310653594, guid: 01e882be63e56fa44a1756649c69fe81,
     type: 3}
   m_PrefabInstance: {fileID: 5391742058438632580}
   m_PrefabAsset: {fileID: 0}

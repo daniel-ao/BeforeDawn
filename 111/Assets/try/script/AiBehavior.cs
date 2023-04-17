@@ -47,9 +47,9 @@ public class AiBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(navAgent.isStopped);
         GameObject target;
         target = FindTarget();
+        Debug.Log(target);
         if (target is null)
         {
             if (CompareTag("Blue"))
@@ -61,17 +61,17 @@ public class AiBehavior : MonoBehaviour
                 target = TowerB;
             }
         }
-
-        Debug.Log(target);
         transform.LookAt(target.transform.position);
         Chasing(target);
 
         float distance = Vector3.Distance(target.transform.position, transform.position);
+        Debug.Log(distance);
         if (distance <= AttackRange)
         {
             navAgent.isStopped = true;
             if (Timer <= 0f)
             {
+                Debug.Log("attack");
                 Attacking(target);
                 Timer = 1f / TimeAttack;
             }
@@ -87,14 +87,11 @@ public class AiBehavior : MonoBehaviour
     private void Chasing(GameObject target)
     {
         navAgent.SetDestination(target.transform.position);
-        Debug.Log(target.transform.position);
-        Debug.Log(target);
         animator.SetBool("IsMoving", true);
     }
 
     private void ShortRangeAttack(GameObject target)
     {
-        Debug.Log("atta");
         if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
@@ -112,6 +109,14 @@ public class AiBehavior : MonoBehaviour
                 target.GetComponent<AiBehavior>().TakeDamage(Damage);
             }
         }
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponentss))
+        {
+            if (target.GetComponent<playerClickController>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<playerClickController>().TakeDamage(Damage);
+            }
+        }
         else
         {
             return;
@@ -120,7 +125,6 @@ public class AiBehavior : MonoBehaviour
 
     private void LongRangeAttack(GameObject target)
     {
-        Debug.Log("atta");
         if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
@@ -136,6 +140,14 @@ public class AiBehavior : MonoBehaviour
             {
                 animator.SetTrigger("Attack");
                 Fire(target);
+            }
+        }
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponentss))
+        {
+            if (target.GetComponent<playerClickController>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<playerClickController>().TakeDamage(Damage);
             }
         }
         else
@@ -158,13 +170,12 @@ public class AiBehavior : MonoBehaviour
 
     void Fire(GameObject target)
     {
-        GameObject projectile =
+        GameObject projectile = 
             Instantiate(data.projectilePrefab, transform.position + popo, Quaternion.identity) as GameObject;
         Projectile script = projectile.GetComponent<Projectile>();
         script.target = target.transform;
         script.damage = Damage;
     }
-
 
     private GameObject FindTarget()
     {
