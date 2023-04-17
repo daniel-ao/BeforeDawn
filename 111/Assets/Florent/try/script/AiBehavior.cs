@@ -49,6 +49,7 @@ public class AiBehavior : MonoBehaviour
     {
         GameObject target;
         target = FindTarget();
+        Debug.Log(target);
         if (target is null)
         {
             if (CompareTag("Blue"))
@@ -60,16 +61,21 @@ public class AiBehavior : MonoBehaviour
                 target = TowerB;
             }
         }
+<<<<<<< HEAD:111/Assets/try/script/AiBehavior.cs
+=======
 
+>>>>>>> dd0c589b612f653a29c0c58f5856b6aa3eb1689f:111/Assets/Florent/try/script/AiBehavior.cs
         transform.LookAt(target.transform.position);
         Chasing(target);
 
         float distance = Vector3.Distance(target.transform.position, transform.position);
+        Debug.Log(distance);
         if (distance <= AttackRange)
         {
             navAgent.isStopped = true;
             if (Timer <= 0f)
             {
+                Debug.Log("attack");
                 Attacking(target);
                 Timer = 1f / TimeAttack;
             }
@@ -90,7 +96,10 @@ public class AiBehavior : MonoBehaviour
 
     private void ShortRangeAttack(GameObject target)
     {
+<<<<<<< HEAD:111/Assets/try/script/AiBehavior.cs
+=======
 
+>>>>>>> dd0c589b612f653a29c0c58f5856b6aa3eb1689f:111/Assets/Florent/try/script/AiBehavior.cs
         if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
@@ -106,6 +115,14 @@ public class AiBehavior : MonoBehaviour
             {
                 animator.SetTrigger("Attack");
                 target.GetComponent<AiBehavior>().TakeDamage(Damage);
+            }
+        }
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponentss))
+        {
+            if (target.GetComponent<playerClickController>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<playerClickController>().TakeDamage(Damage);
             }
         }
         else
@@ -133,6 +150,14 @@ public class AiBehavior : MonoBehaviour
                 Fire(target);
             }
         }
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponentss))
+        {
+            if (target.GetComponent<playerClickController>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<playerClickController>().TakeDamage(Damage);
+            }
+        }
         else
         {
             return;
@@ -153,13 +178,12 @@ public class AiBehavior : MonoBehaviour
 
     void Fire(GameObject target)
     {
-        GameObject projectile =
+        GameObject projectile = 
             Instantiate(data.projectilePrefab, transform.position + popo, Quaternion.identity) as GameObject;
         Projectile script = projectile.GetComponent<Projectile>();
         script.target = target.transform;
         script.damage = Damage;
     }
-
 
     private GameObject FindTarget()
     {

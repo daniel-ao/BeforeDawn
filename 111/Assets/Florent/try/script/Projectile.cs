@@ -47,6 +47,11 @@ public class Projectile : MonoBehaviour
         {
             tower.TakeDamage(damage);
         }
+        playerClickController hero = target.GetComponent<playerClickController>();
+        if (hero != null)
+        {
+            hero.TakeDamage(damage);
+        }
 
         Destroy(gameObject);
     }

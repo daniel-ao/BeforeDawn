@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,53 +10,63 @@ using UnityEngine.AI;
     {
         public LayerMask clickOn;
         public HeroData playerdata;
-        public TagAttribute WhatIsEnemy;
-
+        public Camera camera;
+        public Vector3 popo;
+        public float Health;
+        
         private GameObject[] Enemy;
-        private float SightRange, AttackRange;
         private RaycastHit hitInfo;
         private Ray ray;
         private NavMeshAgent Nav;
         private Animator animator;
-        private Vector3 currentPosition;
         private float Timer = 0f;
+        private bool continueAttacking;
 
         // Start is called before the first frame update
+        private void Awake()
+        {
+            Health = playerdata.Health;
+        }
+
         private void Start()
         {
             animator = GetComponent<Animator>();
             Nav = GetComponent<NavMeshAgent>();
-            currentPosition = transform.position;
             Enemy = null;
         }
         // Update is called once per frame
 
         private void Update()
         {
-
-            //  for letf click
-            bool click1 = Input.GetMouseButtonDown(1);
-            click(click1);
             GameObject target;
+            bool attack;
+            bool clickIn = Input.GetMouseButtonDown(1);
+            click(clickIn);
             target = FindTarget();
+            Debug.Log(target);
             if (target != null)
             {
+                transform.LookAt(target.transform.position);
+                ChasingEnnemy(target);
+                
                 float distance = Vector3.Distance(target.transform.position, transform.position);
-                if (distance <= playerdata.SightRange)
-                {
-                    ChasingEnnemy(target);
-                }
-
                 if (distance <= playerdata.AttackRange)
                 {
+                    Nav.isStopped = true;
                     if (Timer <= 0f)
                     {
                         Attacking(target);
                         Timer = 1f / playerdata.TimeAttack;
                     }
+
                     Timer -= Time.deltaTime;
                 }
+                else
+                {
+                    Nav.isStopped = false;
+                }
             }
+            
         }
 
         private void click(bool click1)
@@ -63,34 +74,61 @@ using UnityEngine.AI;
             if (click1)
             {
                 animator.SetBool("IsMoving", true);
-                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, clickOn))
+                ray = camera.ScreenPointToRay(Input.mousePosition);
+                
+                if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity))
                 {
-                    Nav.SetDestination(hitInfo.point);
-                    Debug.Log(hitInfo.point);
+                    if (hitInfo.collider.CompareTag("Ground"))
+                    {
+                        Nav.SetDestination(hitInfo.point);
+                    } 
                 }
+                
             }
-
             else if (Nav.remainingDistance <= 0)
             {
                 animator.SetBool("IsMoving", false);
             }
+            
         }
 
         private void ChasingEnnemy(GameObject target)
         {
+            animator.SetBool("IsMoving", true);
             Nav.SetDestination(target.transform.position);
         }
-
-        private void Attacking(GameObject target)
+        private void ShortRangeAttack(GameObject target)
         {
-            transform.LookAt(target.transform);
             if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
             {
                 if (target.GetComponent<TowerBehavior>().Health > 0)
                 {
-                    target.GetComponent<TowerBehavior>().TakeDamage(playerdata.Damage);
                     animator.SetTrigger("Attack");
+                    target.GetComponent<TowerBehavior>().TakeDamage(playerdata.Damage);
+                }
+            }
+            else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponents))
+            {
+                if (target.GetComponent<AiBehavior>().Health > 0)
+                {
+                    animator.SetTrigger("Attack");
+                    target.GetComponent<AiBehavior>().TakeDamage(playerdata.Damage);
+                }
+            }
+            else
+            {
+                return;
+            }
+        }
+
+        private void LongRangeAttack(GameObject target)
+        {
+            if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
+            {
+                if (target.GetComponent<TowerBehavior>().Health > 0)
+                {
+                    animator.SetTrigger("Attack");
+                    Fire(target);
                 }
 
             }
@@ -98,21 +136,39 @@ using UnityEngine.AI;
             {
                 if (target.GetComponent<AiBehavior>().Health > 0)
                 {
-                    target.GetComponent<AiBehavior>().TakeDamage(playerdata.Damage);
                     animator.SetTrigger("Attack");
+                    Fire(target);
                 }
             }
             else
             {
                 return;
             }
-
-
         }
-        
 
+        private void Attacking(GameObject target)
+        {
+            if (playerdata.isLongRange)
+            {
+                LongRangeAttack(target);
+            }
+            else
+            {
+                ShortRangeAttack(target);
+            }
+        }
+
+        void Fire(GameObject target)
+        {
+            GameObject projectile = 
+                Instantiate(playerdata.projectilePrefab, transform.position + popo, Quaternion.identity) as GameObject;
+            Projectile script = projectile.GetComponent<Projectile>();
+            script.target = target.transform;
+            script.damage = playerdata.Damage;
+        }
         void OnDrawGizmosSelected()
         {
+            Gizmos.color = Color.cyan;
             Gizmos.DrawWireSphere(transform.position, playerdata.SightRange);
             Gizmos.DrawWireSphere(transform.position, playerdata.AttackRange);
         }
@@ -141,7 +197,7 @@ using UnityEngine.AI;
                 }
             }
 
-            if (closestEnemy != null && closestDistance <= SightRange)
+            if (closestEnemy != null && closestDistance <= playerdata.SightRange)
             {
                 target = closestEnemy;
             }
@@ -152,11 +208,42 @@ using UnityEngine.AI;
 
             return target;
         }
+        public Transform InteractionWithPlayer()
+        {
+            RaycastHit[] hits = Physics.RaycastAll(GetMouseHit());
+            foreach (var hit in hits)
+            {
+                AiBehavior target = hit.transform.GetComponent<AiBehavior>();
+                if (target == null)
+                {
+                    Debug.Log("pas la");
+                }
+                if (Input.GetMouseButtonDown(0))
+                {
+                    if (target.CompareTag("Red"))
+                    {
+                        return target.transform;
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        private Ray GetMouseHit()
+        {
+            return Camera.main.ScreenPointToRay(Input.mousePosition);
+        }
+
+        public void SelectedEnemy(AiBehavior target)
+        {
+            print("Enemy Selected");
+        }
 
         public void TakeDamage(float amout)
         {
-            playerdata.Health -= amout;
-            if (playerdata.Health <= 0)
+            Health -= amout;
+            if (Health <= 0)
             {
                 animator.ResetTrigger("Attack");
                 animator.SetTrigger("IsDead");
@@ -166,7 +253,6 @@ using UnityEngine.AI;
 
         public IEnumerator WaitDie()
         {
-            Debug.Log("waiting");
             yield return new WaitForSeconds(1.5f);
 
             Destroy(gameObject);

@@ -17,8 +17,13 @@ MonoBehaviour:
   speed: 3
   damage: 5
   SightRange: 10
+<<<<<<< HEAD:111/Assets/try/GameData/Unit/Archer.asset
+  AttackRange: 8
+  timeBetweenAttack: 2
+=======
   AttackRange: 40
   timeBetweenAttack: 0.5
+>>>>>>> dd0c589b612f653a29c0c58f5856b6aa3eb1689f:111/Assets/Florent/try/GameData/Unit/Archer.asset
   isLongRange: 1
   projectilePrefab: {fileID: 953002537907380271, guid: e12f67aa396803b4db1f156b4de6a91f,
     type: 3}
