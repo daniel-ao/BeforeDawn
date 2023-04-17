@@ -10,6 +10,8 @@ TagManager:
   - Target
   - Archer
   - Mage
+  - Blue
+  - Red
   layers:
   - Default
   - TransparentFX

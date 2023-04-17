@@ -590,7 +590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 677874270}
   - component: {fileID: 677874271}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Mage_Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -625,6 +625,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -636,6 +638,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -1385,9 +1388,11 @@ GameObject:
   - component: {fileID: 590187671794222575}
   - component: {fileID: 3368897962327348152}
   - component: {fileID: 5035176704641411430}
+  - component: {fileID: -8543433520488728793}
+  - component: {fileID: 5343025255997702847}
   m_Layer: 0
   m_Name: Mage Red
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1437,7 +1442,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122871589}
-  m_Enabled: 0
+  m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -1491,8 +1496,7 @@ AudioSource:
   m_GameObject: {fileID: 1122871589}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -2952065167930763301, guid: b2f83e2012e254719a32b3d8312da356,
-    type: 2}
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1579,6 +1583,37 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8543433520488728793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122871589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9746d9fd45d542aea4a78637bb613fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 211a6044e0738f849b576ec4c96fdb98, type: 2}
+  Health: 0
+  popo: {x: 0, y: 0, z: 0}
+--- !u!114 &5343025255997702847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122871589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_IgnoreFromBuild: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &1135473222
 GameObject:
   m_ObjectHideFlags: 0
@@ -2685,7 +2720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022460060}
   - component: {fileID: 2022460061}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Mage_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2720,6 +2755,8 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -2731,6 +2768,7 @@ SkinnedMeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -2891,10 +2929,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 792702753}
     m_Modifications:
+    - target: {fileID: 133694611614709299, guid: 16df5ca33880bf7409922364f4bdcc3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2348266241764958831, guid: 16df5ca33880bf7409922364f4bdcc3d,
         type: 3}
       propertyPath: m_Name
       value: Fire Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348266241764958831, guid: 16df5ca33880bf7409922364f4bdcc3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348266241764958832, guid: 16df5ca33880bf7409922364f4bdcc3d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2348266241764958832, guid: 16df5ca33880bf7409922364f4bdcc3d,
         type: 3}
@@ -2910,6 +2963,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348266241764958832, guid: 16df5ca33880bf7409922364f4bdcc3d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 2348266241764958832, guid: 16df5ca33880bf7409922364f4bdcc3d,
         type: 3}
@@ -2928,16 +2986,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2348266241764958832, guid: 16df5ca33880bf7409922364f4bdcc3d,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2348266241764958832, guid: 16df5ca33880bf7409922364f4bdcc3d,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2348266241764958832, guid: 16df5ca33880bf7409922364f4bdcc3d,
-        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -90
       objectReference: {fileID: 0}
@@ -2949,6 +2997,21 @@ PrefabInstance:
     - target: {fileID: 2348266241764958832, guid: 16df5ca33880bf7409922364f4bdcc3d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348266242545143782, guid: 16df5ca33880bf7409922364f4bdcc3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348266242546828558, guid: 16df5ca33880bf7409922364f4bdcc3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2645378951462034998, guid: 16df5ca33880bf7409922364f4bdcc3d,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2966,10 +3029,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1797861100}
     m_Modifications:
-    - target: {fileID: 1052028774637471983, guid: d43ab4448d19fb949a5003f639b54609,
+    - target: {fileID: 1052028774637471982, guid: d43ab4448d19fb949a5003f639b54609,
         type: 3}
-      propertyPath: m_Name
-      value: FaceFire
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1052028774637471982, guid: d43ab4448d19fb949a5003f639b54609,
         type: 3}
@@ -2988,6 +3051,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052028774637471982, guid: d43ab4448d19fb949a5003f639b54609,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5289791
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052028774637471982, guid: d43ab4448d19fb949a5003f639b54609,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.84863484
       objectReference: {fileID: 0}
@@ -3003,16 +3071,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1052028774637471982, guid: d43ab4448d19fb949a5003f639b54609,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5289791
-      objectReference: {fileID: 0}
-    - target: {fileID: 1052028774637471982, guid: d43ab4448d19fb949a5003f639b54609,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1052028774637471982, guid: d43ab4448d19fb949a5003f639b54609,
-        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -116.127
       objectReference: {fileID: 0}
@@ -3024,6 +3082,16 @@ PrefabInstance:
     - target: {fileID: 1052028774637471982, guid: d43ab4448d19fb949a5003f639b54609,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052028774637471983, guid: d43ab4448d19fb949a5003f639b54609,
+        type: 3}
+      propertyPath: m_Name
+      value: FaceFire
+      objectReference: {fileID: 0}
+    - target: {fileID: 1052028774637471983, guid: d43ab4448d19fb949a5003f639b54609,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
