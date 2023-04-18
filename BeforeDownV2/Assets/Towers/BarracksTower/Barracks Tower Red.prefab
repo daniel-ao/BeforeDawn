@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 3876371814190336408}
   - component: {fileID: 5243593324166516198}
   - component: {fileID: -3108081858295548743}
+  - component: {fileID: 5255297396370711283}
   m_Layer: 0
   m_Name: Barracks Tower Red
   m_TagString: Red
@@ -274,6 +275,19 @@ MonoBehaviour:
   CastleCollapse: {fileID: 0}
   Health: 0
   popo: {x: 0, y: 0, z: 0}
+--- !u!114 &5255297396370711283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3986183178789783211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee168c9319b04258b363fc4a24fc642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tower: {fileID: 3986183178789783211}
 --- !u!1 &5706660947718540815
 GameObject:
   m_ObjectHideFlags: 0
@@ -7841,24 +7855,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01e882be63e56fa44a1756649c69fe81, type: 3}
---- !u!4 &7903073591581362327 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2845724499112815635, guid: 01e882be63e56fa44a1756649c69fe81,
-    type: 3}
-  m_PrefabInstance: {fileID: 5391742058438632580}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7903073592918295070 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2845724498310653594, guid: 01e882be63e56fa44a1756649c69fe81,
-    type: 3}
-  m_PrefabInstance: {fileID: 5391742058438632580}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7903073591829660794 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2845724499394142462, guid: 01e882be63e56fa44a1756649c69fe81,
-    type: 3}
-  m_PrefabInstance: {fileID: 5391742058438632580}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7903073591835366595 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2845724499391459399, guid: 01e882be63e56fa44a1756649c69fe81,
@@ -7868,6 +7864,24 @@ GameObject:
 --- !u!1 &7903073592510109787 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2845724497910267103, guid: 01e882be63e56fa44a1756649c69fe81,
+    type: 3}
+  m_PrefabInstance: {fileID: 5391742058438632580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7903073591829660794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2845724499394142462, guid: 01e882be63e56fa44a1756649c69fe81,
+    type: 3}
+  m_PrefabInstance: {fileID: 5391742058438632580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7903073591581362327 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2845724499112815635, guid: 01e882be63e56fa44a1756649c69fe81,
+    type: 3}
+  m_PrefabInstance: {fileID: 5391742058438632580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7903073592918295070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2845724498310653594, guid: 01e882be63e56fa44a1756649c69fe81,
     type: 3}
   m_PrefabInstance: {fileID: 5391742058438632580}
   m_PrefabAsset: {fileID: 0}
@@ -8089,15 +8103,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 646aef89ec669b6419b96d287b0260eb, type: 3}
---- !u!1 &8991862179696102708 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100004, guid: 646aef89ec669b6419b96d287b0260eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 8991862179696200592}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8991862179695808788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 646aef89ec669b6419b96d287b0260eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 8991862179696200592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8991862179696102708 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: 646aef89ec669b6419b96d287b0260eb,
     type: 3}
   m_PrefabInstance: {fileID: 8991862179696200592}
   m_PrefabAsset: {fileID: 0}

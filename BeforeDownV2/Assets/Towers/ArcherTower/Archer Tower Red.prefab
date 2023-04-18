@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 7797893445555691319}
   - component: {fileID: 4999883666965513888}
   - component: {fileID: -2189432591629822093}
+  - component: {fileID: 6718782325437350925}
   m_Layer: 0
   m_Name: Archer Tower Red
   m_TagString: Red
@@ -281,6 +282,19 @@ MonoBehaviour:
   CastleCollapse: {fileID: 0}
   Health: 0
   popo: {x: 0, y: 0, z: 0}
+--- !u!114 &6718782325437350925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538807561037368355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee168c9319b04258b363fc4a24fc642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tower: {fileID: 3538807561037368355}
 --- !u!1001 &177077207920626225
 PrefabInstance:
   m_ObjectHideFlags: 0
