@@ -62,7 +62,7 @@ public class AiBehavior : MonoBehaviour
                 target = TowerB;
             }
         }
-        if (target != null)
+        if (target != null && isAlive)
         {
             transform.LookAt(target.transform.position);
 
@@ -218,6 +218,7 @@ public class AiBehavior : MonoBehaviour
         if (Health <= 0 && isAlive)
         {
             isAlive = false;
+            navAgent.isStopped = true;
             animator.SetTrigger("IsDead");
             StartCoroutine(WaitDie());
         }
