@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8abf13119c89c494ba02d4d1285d0b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _effectSound: {fileID: 8300000, guid: 8c4756635b1c64400879cb572b45850d, type: 3}
+  _effectSound: {fileID: 8300000, guid: e58710458803b4c95a1e9128fa4ba652, type: 3}
 --- !u!1 &1161955382
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb2c7dfb1c34418bb21c24e2d8779f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _effectSound: {fileID: 8300000, guid: 8c4756635b1c64400879cb572b45850d, type: 3}
+  _effectSound: {fileID: 8300000, guid: e58710458803b4c95a1e9128fa4ba652, type: 3}
   button: {fileID: 1161955386}
   OnButton: {fileID: 21300000, guid: 0b411cedad85f4274a3427e60d3a036b, type: 3}
   OffButton: {fileID: 21300000, guid: 8eeaa11d434934815b133e3600e65aa6, type: 3}
@@ -1289,7 +1289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb2c7dfb1c34418bb21c24e2d8779f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _effectSound: {fileID: 8300000, guid: 8c4756635b1c64400879cb572b45850d, type: 3}
+  _effectSound: {fileID: 8300000, guid: e58710458803b4c95a1e9128fa4ba652, type: 3}
   button: {fileID: 1354043123}
   OnButton: {fileID: 21300000, guid: 388d669d5e1c84d468fbd8941cd83d6d, type: 3}
   OffButton: {fileID: 21300000, guid: 071ed0a51f9e54a23832ac2115d43b96, type: 3}
@@ -1320,7 +1320,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8c4756635b1c64400879cb572b45850d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e58710458803b4c95a1e9128fa4ba652, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1447,7 +1447,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 79f0361a635c04d50b0d7b02863f384f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d0ce8cc0d750843a2b03971a54c7777b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

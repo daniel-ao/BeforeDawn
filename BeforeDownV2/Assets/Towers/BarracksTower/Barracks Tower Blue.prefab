@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &7571172766270232045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101698229715288973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee168c9319b04258b363fc4a24fc642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tower: {fileID: 2101698229715288973, guid: 0411bbd6c1ad5b84084f7036ccec0aba, type: 3}
 --- !u!1001 &3061180132822107430
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1949,6 +1962,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6f02d3a5a384c75409991386d154bf8e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd280e7a9315109438464a3cda98bd43, type: 3}
+--- !u!1 &2101698229715288973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3986183178789783211, guid: dd280e7a9315109438464a3cda98bd43,
+    type: 3}
+  m_PrefabInstance: {fileID: 3061180132822107430}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6247332840377550866 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8991862179696102708, guid: dd280e7a9315109438464a3cda98bd43,
