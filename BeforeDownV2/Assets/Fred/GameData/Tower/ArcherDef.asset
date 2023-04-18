@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 15
   damage: 3
-  AttackRange: 5
+  AttackRange: 40
   fireRate: 1
+  SpawningRate: 0.2
   projectilePrefab: {fileID: 953002537907380271, guid: e12f67aa396803b4db1f156b4de6a91f,
     type: 3}
