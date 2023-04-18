@@ -16,15 +16,12 @@ public class CheckPlacement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Red")||other.gameObject.CompareTag("Blue"))
+        if (other.gameObject.CompareTag("Red") || other.gameObject.CompareTag("Blue"))
         {
             _buildingManager.canPlace = false;
         }
-        else
-        {
-            _buildingManager.canPlace = true;
-        }
     }
+   
 
     private void OnTriggerExit(Collider other)
     {

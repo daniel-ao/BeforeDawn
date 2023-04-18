@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 4767547157159286562}
   - component: {fileID: 8085210790338931870}
   - component: {fileID: 7470878283493300259}
-  - component: {fileID: 1152738016711722876}
+  - component: {fileID: -3368216028379467981}
+  - component: {fileID: -6042905794944077840}
   m_Layer: 0
   m_Name: Magic Tower Red
   m_TagString: Red
@@ -76,7 +77,7 @@ PlayableDirector:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175758370400212679}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 9137d933e94f8134ab7ab0c67689c261, type: 2}
   m_InitialState: 1
@@ -220,6 +221,32 @@ MonoBehaviour:
   - {fileID: 5701704621631426976, guid: 36e93c435d1648a4c86d516057a9cbe2, type: 3}
   - {fileID: 1122871589, guid: ddbc89a2e5731354497399c2803d9354, type: 3}
   - {fileID: 5537164977549460556, guid: f7e6e31c5324d874db515c8ca4922190, type: 3}
+--- !u!114 &-3368216028379467981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175758370400212679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee168c9319b04258b363fc4a24fc642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tower: {fileID: 175758370400212679}
+--- !u!65 &-6042905794944077840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175758370400212679}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5, z: 6}
+  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!95 &598814153828119283
 Animator:
   serializedVersion: 3
@@ -306,7 +333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2365301758559086409
 Transform:
   m_ObjectHideFlags: 0
