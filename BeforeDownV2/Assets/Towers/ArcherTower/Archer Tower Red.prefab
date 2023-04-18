@@ -83,7 +83,8 @@ GameObject:
   - component: {fileID: 7797893445555691319}
   - component: {fileID: 4999883666965513888}
   - component: {fileID: -2189432591629822093}
-  - component: {fileID: 6718782325437350925}
+  - component: {fileID: -3313847369271373118}
+  - component: {fileID: -3399286260910735037}
   m_Layer: 0
   m_Name: Archer Tower Red
   m_TagString: Red
@@ -289,6 +290,35 @@ MonoBehaviour:
   - {fileID: 5701704621631426976, guid: 36e93c435d1648a4c86d516057a9cbe2, type: 3}
   - {fileID: 1122871589, guid: ddbc89a2e5731354497399c2803d9354, type: 3}
   - {fileID: 5537164977549460556, guid: f7e6e31c5324d874db515c8ca4922190, type: 3}
+--- !u!54 &-3313847369271373118
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538807561037368355}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &-3399286260910735037
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538807561037368355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 5, z: 6}
+  m_Center: {x: 0, y: 2.5, z: 0}
 --- !u!1001 &177077207920626225
 PrefabInstance:
   m_ObjectHideFlags: 0

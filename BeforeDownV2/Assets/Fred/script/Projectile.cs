@@ -47,6 +47,11 @@ public class Projectile : MonoBehaviour
         {
             tower.TakeDamage(damage);
         }
+        Spawner spawn = target.GetComponent<Spawner>();
+        if (spawn != null)
+        {
+            spawn.TakeDamage(damage);
+        }
 
         Destroy(gameObject);
     }

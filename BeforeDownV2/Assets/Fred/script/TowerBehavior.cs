@@ -14,12 +14,10 @@ public class TowerBehavior : MonoBehaviour
     private float Damage;
     private float AttackRange;
     private float fireCountdown = 0f;
-    private float SpawningCountdown = 0f;
     private Transform target;
     public Vector3 popo; //hauteur de la tower pour attaquer
     private bool NoHealth = false;
     private bool Dying = true;
-    public GameObject[] Units; //index : Blue -> [0:2], Red -> [3:5]
 
     private void Awake()
     {
@@ -37,8 +35,6 @@ public class TowerBehavior : MonoBehaviour
     {
         if (!NoHealth)
         {
-            TimeToSpawn();
-
             FindTarget();
             if (target != null && !NoHealth)
             {
@@ -109,37 +105,5 @@ public class TowerBehavior : MonoBehaviour
         Projectile script = projectile.GetComponent<Projectile>();
         script.target = target;
         script.damage = castle.damage;
-    }
-
-
-    void spawner()
-    {
-        int indexer = 0;
-        if (transform.tag == "Red")
-        {
-            indexer += 3;
-        }
-        Vector3 frontSpawn = new Vector3(-2, 0, 0);
-        System.Random random = new System.Random();
-        indexer += random.Next(0, 3);
-        GameObject unit = Instantiate(Units[indexer], transform.position + frontSpawn, Quaternion.identity) as GameObject;
-        if (indexer > 2)
-        {
-            unit.GetComponent<Transform>().tag = "Red";
-        }
-        else
-        {
-            unit.GetComponent<Transform>().tag = "Blue";
-        }
-    }
-
-    void TimeToSpawn()
-    {
-        if (SpawningCountdown <= 0f)
-        {
-            spawner();
-            SpawningCountdown = 1f / castle.SpawningRate;
-        }
-        SpawningCountdown -= Time.deltaTime;
     }
 }

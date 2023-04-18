@@ -118,6 +118,14 @@ public class AiBehavior : MonoBehaviour
                 target.GetComponent<AiBehavior>().TakeDamage(Damage);
             }
         }
+        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponentss))
+        {
+            if (target.GetComponent<Spawner>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<Spawner>().TakeDamage(Damage);
+            }
+        }
         else
         {
             return;
@@ -141,6 +149,14 @@ public class AiBehavior : MonoBehaviour
             {
                 animator.SetTrigger("Attack");
                 Fire(target);
+            }
+        }
+        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponentss))
+        {
+            if (target.GetComponent<Spawner>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<Spawner>().TakeDamage(Damage);
             }
         }
         else
