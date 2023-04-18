@@ -57,7 +57,7 @@ public class Spawner : MonoBehaviour
         Health -= amout;
         if (Health <= 0)
         {
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }
