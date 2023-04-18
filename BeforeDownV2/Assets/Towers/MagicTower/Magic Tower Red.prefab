@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4767547157159286562}
   - component: {fileID: 8085210790338931870}
   - component: {fileID: 7470878283493300259}
+  - component: {fileID: 1152738016711722876}
   m_Layer: 0
   m_Name: Magic Tower Red
   m_TagString: Red

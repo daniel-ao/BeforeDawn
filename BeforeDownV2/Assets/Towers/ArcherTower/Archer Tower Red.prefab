@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 7797893445555691319}
   - component: {fileID: 4999883666965513888}
   - component: {fileID: -2189432591629822093}
+  - component: {fileID: 6718782325437350925}
   m_Layer: 0
   m_Name: Archer Tower Red
   m_TagString: Red
