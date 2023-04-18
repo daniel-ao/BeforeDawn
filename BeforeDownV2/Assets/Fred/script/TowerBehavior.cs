@@ -8,7 +8,6 @@ using UnityEngine.Playables;
 public class TowerBehavior : MonoBehaviour
 {
     public CastleDATA castle;
-    public PlayableDirector CastleCollapse;
 
     public float Health;
     private float Damage;
@@ -16,7 +15,7 @@ public class TowerBehavior : MonoBehaviour
     private float fireCountdown = 0f;
     private Transform target;
     public Vector3 popo; //hauteur de la tower pour attaquer
-    private bool NoHealth = false;
+    public bool NoHealth = false;
     private bool Dying = true;
 
     private void Awake()
@@ -57,7 +56,6 @@ public class TowerBehavior : MonoBehaviour
 
         if (NoHealth && Dying)
         {
-            CastleCollapse.Play();
             StartCoroutine(WaitDestruction());
             Dying = false;
         }
