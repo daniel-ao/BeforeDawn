@@ -12,6 +12,7 @@ TagManager:
   - Mage
   - Blue
   - Red
+  - Mine
   layers:
   - Default
   - TransparentFX
