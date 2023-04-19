@@ -4,9 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
+
 {
+
+    public string sceneName;
     public void ChnageS()
     {
-        SceneManager.LoadScene("Scene2");
+        SceneManager.LoadScene(sceneName);
     }
 }

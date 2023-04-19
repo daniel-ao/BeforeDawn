@@ -922,6 +922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d7630c64782451c87c35c8d76cc775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!114 &812559579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,7 +1520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1407900463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3040,3 +3041,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36d7630c64782451c87c35c8d76cc775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: MapScene
