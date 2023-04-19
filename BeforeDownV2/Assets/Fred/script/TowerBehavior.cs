@@ -12,6 +12,7 @@ public class TowerBehavior : MonoBehaviour
 
     public float Health;
     private float Damage;
+    public float CurrentGold = 100f;
     private float AttackRange;
     private float fireCountdown = 0f;
     private Transform target;
@@ -106,4 +107,14 @@ public class TowerBehavior : MonoBehaviour
         script.target = target;
         script.damage = castle.damage;
     }
+    /*
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.TryGetComponent<Miner>(out Miner miner))
+        {
+            Debug.Log("A");
+            CurrentGold += miner.GoldStock;
+            miner.GoldStock = 0;
+        }
+    }*/
 }
