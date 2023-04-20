@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,51 +11,66 @@ using UnityEngine.AI;
         public LayerMask clickOn;
         public HeroData playerdata;
         public TagAttribute WhatIsEnemy;
+        public float Health;
 
         private GameObject[] Enemy;
-        private float SightRange, AttackRange;
+        private float SightRange, AttackRange,TimeAttack, Damage;
         private RaycastHit hitInfo;
         private Ray ray;
         private NavMeshAgent Nav;
         private Animator animator;
-        private Vector3 currentPosition;
         private float Timer = 0f;
+        private bool isAlive = true;
+
+        private void Awake()
+        {
+            Health = playerdata.Health;
+            SightRange = playerdata.SightRange;
+            AttackRange = playerdata.AttackRange;
+            TimeAttack = playerdata.TimeAttack;
+            Damage = playerdata.Damage;
+        }
 
         // Start is called before the first frame update
         private void Start()
         {
             animator = GetComponent<Animator>();
             Nav = GetComponent<NavMeshAgent>();
-            currentPosition = transform.position;
             Enemy = null;
+            
         }
         // Update is called once per frame
 
         private void Update()
         {
-
-            //  for letf click
             bool click1 = Input.GetMouseButtonDown(1);
             click(click1);
             GameObject target;
             target = FindTarget();
-            if (target != null)
+            if (target != null && isAlive)
             {
+                Debug.Log(Nav.isStopped);
                 float distance = Vector3.Distance(target.transform.position, transform.position);
-                if (distance <= playerdata.SightRange)
+                Debug.Log(distance);
+                if (distance <= SightRange && distance > AttackRange)
                 {
                     ChasingEnnemy(target);
                 }
 
-                if (distance <= playerdata.AttackRange)
+                else if (distance <= AttackRange)
                 {
+                    Nav.isStopped = true;
                     if (Timer <= 0f)
                     {
                         Attacking(target);
-                        Timer = 1f / playerdata.TimeAttack;
+                        Timer = 1f / TimeAttack;
                     }
                     Timer -= Time.deltaTime;
                 }
+            }
+            else
+            {
+                Nav.isStopped = false;
             }
         }
 
@@ -67,7 +83,6 @@ using UnityEngine.AI;
                 if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, clickOn))
                 {
                     Nav.SetDestination(hitInfo.point);
-                    Debug.Log(hitInfo.point);
                 }
             }
 
@@ -79,7 +94,13 @@ using UnityEngine.AI;
 
         private void ChasingEnnemy(GameObject target)
         {
+            animator.SetBool("IsMoving", true);
             Nav.SetDestination(target.transform.position);
+        }
+        
+        private void UnChasing()
+        {
+            animator.SetBool("IsMoving", false);
         }
 
         private void Attacking(GameObject target)
@@ -89,7 +110,7 @@ using UnityEngine.AI;
             {
                 if (target.GetComponent<TowerBehavior>().Health > 0)
                 {
-                    target.GetComponent<TowerBehavior>().TakeDamage(playerdata.Damage);
+                    target.GetComponent<TowerBehavior>().TakeDamage(Damage);
                     animator.SetTrigger("Attack");
                 }
 
@@ -98,7 +119,7 @@ using UnityEngine.AI;
             {
                 if (target.GetComponent<AiBehavior>().Health > 0)
                 {
-                    target.GetComponent<AiBehavior>().TakeDamage(playerdata.Damage);
+                    target.GetComponent<AiBehavior>().TakeDamage(Damage);
                     animator.SetTrigger("Attack");
                 }
             }
@@ -155,10 +176,11 @@ using UnityEngine.AI;
 
         public void TakeDamage(float amout)
         {
-            playerdata.Health -= amout;
-            if (playerdata.Health <= 0)
+            Health -= amout;
+            if (Health <= 0 && isAlive)
             {
-                animator.ResetTrigger("Attack");
+                isAlive = false;
+                Nav.isStopped = true;
                 animator.SetTrigger("IsDead");
                 StartCoroutine(WaitDie());
             }

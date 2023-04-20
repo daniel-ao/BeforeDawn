@@ -47,6 +47,12 @@ public class Projectile : MonoBehaviour
         {
             tower.TakeDamage(damage);
         }
+
+        playerClickController player = target.GetComponent<playerClickController>();
+        if (player != null)
+        {
+            player.TakeDamage(damage);
+        }
         Spawner spawn = target.GetComponent<Spawner>();
         if (spawn != null)
         {

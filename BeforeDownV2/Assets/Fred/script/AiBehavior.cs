@@ -126,6 +126,14 @@ public class AiBehavior : MonoBehaviour
                 target.GetComponent<Spawner>().TakeDamage(Damage);
             }
         }
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponentsss))
+        {
+            if (target.GetComponent<playerClickController>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<playerClickController>().TakeDamage(Damage);
+            }
+        }
         else
         {
             return;
