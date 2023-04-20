@@ -10,8 +10,7 @@ public class CheckPlacement : MonoBehaviour
     private BuildingManager _buildingManager;
     void Start()
     {
-        //buildingManager = GameObject.Find("BuildingManager").GetComponent<BuildingManager>();
-        
+        _buildingManager = GameObject.Find("BuildingManager").GetComponent<BuildingManager>();
     }
 
     private void OnTriggerEnter(Collider other)

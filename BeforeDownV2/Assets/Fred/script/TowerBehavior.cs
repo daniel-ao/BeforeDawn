@@ -23,6 +23,7 @@ public class TowerBehavior : MonoBehaviour
     {
         Health = castle.Health;
         AttackRange = castle.AttackRange;
+        popo = castle.popo;
     }
 
     void Start()

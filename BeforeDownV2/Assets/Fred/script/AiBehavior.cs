@@ -20,9 +20,9 @@ public class AiBehavior : MonoBehaviour
     private float SightRange;
     private float Speed;
     private bool IsLongRange;
-    public Vector3 popo; //hauteur l'archer/soso pour attaquer
     private float TimeAttack;
     private float Timer = 0f;
+    public Vector3 popo;
     private bool isAlive = true;
 
     private void Awake()
@@ -33,7 +33,8 @@ public class AiBehavior : MonoBehaviour
         SightRange = data.SightRange;
         Speed = data.speed;
         IsLongRange = data.isLongRange;
-        TimeAttack = data.timeBetweenAttack;
+        TimeAttack = data.timeBetweenAttack; 
+        popo = data.popo;
     }
 
     // Start is called before the first frame update

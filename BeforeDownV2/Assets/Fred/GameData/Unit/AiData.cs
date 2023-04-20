@@ -14,5 +14,6 @@ public class AiData : ScriptableObject
     public float AttackRange = 1f;
     public float timeBetweenAttack = 1f;
     public bool isLongRange;
+    public Vector3 popo; //hauteur l'archer/soso pour attaquer
     public GameObject projectilePrefab;
 }

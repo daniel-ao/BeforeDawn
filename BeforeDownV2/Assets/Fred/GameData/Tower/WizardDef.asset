@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 15
   damage: 3
-  AttackRange: 10
+  AttackRange: 30
   fireRate: 1
+  popo: {x: 0, y: 3.5, z: 0}
   projectilePrefab: {fileID: 2348266241764958831, guid: 16df5ca33880bf7409922364f4bdcc3d,
     type: 3}
