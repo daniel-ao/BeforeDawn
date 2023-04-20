@@ -11,6 +11,7 @@ public class TowerBehavior : MonoBehaviour
 
     public float Health;
     private float Damage;
+    public float CurrentGold = 100f;
     private float AttackRange;
     private float fireCountdown = 0f;
     private Transform target;

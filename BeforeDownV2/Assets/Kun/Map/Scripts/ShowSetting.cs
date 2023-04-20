@@ -6,6 +6,7 @@ using TMPro;
 public class ShowSetting : MonoBehaviour
 {
     public GameObject SETTingsPanel;
+    private bool Showed = false;
      
 
     public void Showsetting()
@@ -18,5 +19,20 @@ public class ShowSetting : MonoBehaviour
         SETTingsPanel.SetActive(false);
     }
 
+    public void ShowSettingOrNot()
+    {
+       
+        if(Showed)
+        {
+            Hidesetting();
+            Showed = false;
+        }
+
+        else
+        {
+            Showsetting();
+            Showed = true;
+        }
+    }
 
 }
