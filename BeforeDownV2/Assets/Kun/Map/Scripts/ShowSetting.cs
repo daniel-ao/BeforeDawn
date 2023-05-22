@@ -6,8 +6,10 @@ using TMPro;
 public class ShowSetting : MonoBehaviour
 {
     public GameObject SETTingsPanel;
-    private bool Showed = false;
-     
+    private bool Showed;
+
+
+
 
     public void Showsetting()
     {
@@ -22,16 +24,14 @@ public class ShowSetting : MonoBehaviour
     public void ShowSettingOrNot()
     {
        
-        if(Showed)
+        if(SETTingsPanel.activeSelf)
         {
             Hidesetting();
-            Showed = false;
         }
 
         else
         {
             Showsetting();
-            Showed = true;
         }
     }
 
