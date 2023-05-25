@@ -52,7 +52,7 @@ public class BuildingManager : MonoBehaviour
     {
         GameObject TowerInstanciate = pendingObject.GetComponent<CheckPlacement>().Tower;
         Destroy(pendingObject);
-        Instantiate(TowerInstanciate, pos, transform.rotation);
+        Instantiate(TowerInstanciate, pos, pendingObject.transform.rotation);
         pendingObject = null;
     }
 

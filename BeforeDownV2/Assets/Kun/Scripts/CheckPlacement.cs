@@ -11,7 +11,6 @@ public class CheckPlacement : MonoBehaviour
     void Start()
     {
         _buildingManager = GameObject.Find("BuildingManager").GetComponent<BuildingManager>();
-        
     }
 
     private void OnTriggerEnter(Collider other)

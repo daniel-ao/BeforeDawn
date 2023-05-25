@@ -16,6 +16,6 @@ MonoBehaviour:
   damage: 3
   AttackRange: 40
   fireRate: 1
-  SpawningRate: 0.2
+  popo: {x: 0, y: 4, z: 0}
   projectilePrefab: {fileID: 953002537907380271, guid: e12f67aa396803b4db1f156b4de6a91f,
     type: 3}
