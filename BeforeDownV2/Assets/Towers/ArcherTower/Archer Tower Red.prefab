@@ -85,6 +85,7 @@ GameObject:
   - component: {fileID: -2189432591629822093}
   - component: {fileID: -3313847369271373118}
   - component: {fileID: -3399286260910735037}
+  - component: {fileID: 2336978174420948169}
   m_Layer: 0
   m_Name: Archer Tower Red
   m_TagString: Red
@@ -280,16 +281,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   castle: {fileID: 11400000, guid: 1487eeee041df834c985eed86f403341, type: 2}
-  CastleCollapse: {fileID: 0}
   Health: 0
+  CurrentGold: 100
   popo: {x: 0, y: 0, z: 0}
-  Units:
-  - {fileID: 2803772846224482086, guid: 3d7094a1663ab0a44ab8e11c1defd922, type: 3}
-  - {fileID: 8584991783828831444, guid: 4d4319dde2f198845ac34608a1013ffc, type: 3}
-  - {fileID: 4506006686708116928, guid: 93ddf5fff26bcb642a6f1f94462963b2, type: 3}
-  - {fileID: 5701704621631426976, guid: 36e93c435d1648a4c86d516057a9cbe2, type: 3}
-  - {fileID: 1122871589, guid: ddbc89a2e5731354497399c2803d9354, type: 3}
-  - {fileID: 5537164977549460556, guid: f7e6e31c5324d874db515c8ca4922190, type: 3}
+  NoHealth: 0
 --- !u!54 &-3313847369271373118
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -319,6 +314,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6, y: 5, z: 6}
   m_Center: {x: 0, y: 2.5, z: 0}
+--- !u!114 &2336978174420948169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3538807561037368355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee168c9319b04258b363fc4a24fc642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tower: {fileID: 4095182627200622710, guid: 38c1d0859d9d97248a2f46016078465c, type: 3}
 --- !u!1001 &177077207920626225
 PrefabInstance:
   m_ObjectHideFlags: 0
