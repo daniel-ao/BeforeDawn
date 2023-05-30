@@ -12,7 +12,7 @@ public class StartGame : MonoBehaviour
         drawEndPanel.SetActive(false);
     }
 
-    public void StartTheGame(string CharacterName)
+    public void StartDraw(string CharacterName)
     {
         drawEndPanel.SetActive(true);
         drawEndPanel.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = CharacterName;

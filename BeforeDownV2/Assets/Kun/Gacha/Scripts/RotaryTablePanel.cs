@@ -15,6 +15,8 @@ public class RotaryTablePanel : MonoBehaviour
     // les images des Récompenses
     private Transform[] rewardTransArr;
 
+    public int selectedCharacter = 0;
+
     // état par default 
     private bool isInitState;
     // gacha finie -- état terminé，le halo ne tourne plus
@@ -99,6 +101,8 @@ public class RotaryTablePanel : MonoBehaviour
             // avoir un ID rundom
             rewardIndex = Random.Range(0, rewardTransArr.Length);
             Debug.Log("c'est le récompense numéro " + (rewardIndex+1) + " que l'utilisateur va avoir.");
+            selectedCharacter = rewardIndex;
+            PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
             isOnClickPlaying = true;
             drawEnd = false;
             drawWinning = false;
@@ -133,8 +137,7 @@ public class RotaryTablePanel : MonoBehaviour
 
     void StartG(string CharacterName)
     {
-        startGame.StartTheGame(CharacterName);
+        startGame.StartDraw(CharacterName);
         gameObject.SetActive(false);
     }
-
 }
