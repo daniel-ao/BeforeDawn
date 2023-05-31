@@ -1927,6 +1927,17 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[2].value
       value: 
       objectReference: {fileID: 2811408750215358569}
+    - target: {fileID: 6972469364104826447, guid: dd280e7a9315109438464a3cda98bd43,
+        type: 3}
+      propertyPath: TowerB
+      value: 
+      objectReference: {fileID: 2101698229715288973}
+    - target: {fileID: 6972469364104826447, guid: dd280e7a9315109438464a3cda98bd43,
+        type: 3}
+      propertyPath: TowerR
+      value: 
+      objectReference: {fileID: 3986183178789783211, guid: dd280e7a9315109438464a3cda98bd43,
+        type: 3}
     - target: {fileID: 8991862179698103280, guid: dd280e7a9315109438464a3cda98bd43,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1949,6 +1960,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 6f02d3a5a384c75409991386d154bf8e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd280e7a9315109438464a3cda98bd43, type: 3}
+--- !u!1 &2101698229715288973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3986183178789783211, guid: dd280e7a9315109438464a3cda98bd43,
+    type: 3}
+  m_PrefabInstance: {fileID: 3061180132822107430}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6247332840377550866 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8991862179696102708, guid: dd280e7a9315109438464a3cda98bd43,

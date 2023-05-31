@@ -336,6 +336,8 @@ GameObject:
   - component: {fileID: 7614559563628724848}
   - component: {fileID: -2571738347893919167}
   - component: {fileID: 8126170465678974595}
+  - component: {fileID: -662273543242740956}
+  - component: {fileID: -6017096030147524592}
   m_Layer: 0
   m_Name: model MagicTower
   m_TagString: Untagged
@@ -374,7 +376,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee168c9319b04258b363fc4a24fc642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tower: {fileID: 175758370400212679, guid: 3ff00a54555991142af79653a79d0d88, type: 3}
+  Towers:
+  - {fileID: 175758370400212679, guid: 3ff00a54555991142af79653a79d0d88, type: 3}
+  - {fileID: 7101576874435252295, guid: fa3ea7da533782847bff2be95946c678, type: 3}
 --- !u!54 &-2571738347893919167
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -404,6 +408,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6, y: 5, z: 6}
   m_Center: {x: 0, y: 2.5, z: 0}
+--- !u!114 &-662273543242740956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509025023792059704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: -6017096030147524592}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &-6017096030147524592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509025023792059704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1509025023792059706
 GameObject:
   m_ObjectHideFlags: 0

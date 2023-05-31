@@ -336,6 +336,8 @@ GameObject:
   - component: {fileID: -1692408891714502013}
   - component: {fileID: 2144098000991787222}
   - component: {fileID: 1069956222653827543}
+  - component: {fileID: -1540134785324946568}
+  - component: {fileID: -5229430781793513745}
   m_Layer: 0
   m_Name: model Barracks
   m_TagString: Untagged
@@ -373,7 +375,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee168c9319b04258b363fc4a24fc642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tower: {fileID: 3986183178789783211, guid: dd280e7a9315109438464a3cda98bd43, type: 3}
+  Towers:
+  - {fileID: 3986183178789783211, guid: dd280e7a9315109438464a3cda98bd43, type: 3}
+  - {fileID: 2101698229715288973, guid: 0411bbd6c1ad5b84084f7036ccec0aba, type: 3}
 --- !u!54 &2144098000991787222
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -403,3 +407,42 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6, y: 5, z: 6}
   m_Center: {x: 0, y: 2.5, z: 0}
+--- !u!114 &-1540134785324946568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6212260778329304991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: -5229430781793513745}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &-5229430781793513745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6212260778329304991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
