@@ -135,15 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barracks Tower Red
       objectReference: {fileID: 0}
-    - target: {fileID: 3986183178789783211, guid: dd280e7a9315109438464a3cda98bd43,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5376684538624314614, guid: dd280e7a9315109438464a3cda98bd43,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5376684538624314614, guid: dd280e7a9315109438464a3cda98bd43,
         type: 3}
@@ -200,11 +195,6 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9118972004340353876, guid: dd280e7a9315109438464a3cda98bd43,
-        type: 3}
-      propertyPath: sceneViewId
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd280e7a9315109438464a3cda98bd43, type: 3}
 --- !u!1001 &270259841
@@ -214,15 +204,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1122496941667393093, guid: b6269ce7e4b3aa440a7adee70f27456f,
-        type: 3}
-      propertyPath: sceneViewId
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2166428451308690947, guid: b6269ce7e4b3aa440a7adee70f27456f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2166428451308690947, guid: b6269ce7e4b3aa440a7adee70f27456f,
         type: 3}
@@ -278,11 +263,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: mine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3538807561037368355, guid: b6269ce7e4b3aa440a7adee70f27456f,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3538807561037368355, guid: b6269ce7e4b3aa440a7adee70f27456f,
         type: 3}
@@ -350,7 +330,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &869892035 stripped
 GameObject:
@@ -384,7 +364,7 @@ GameObject:
   - component: {fileID: 882474231}
   - component: {fileID: 882474230}
   - component: {fileID: 882474229}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -466,82 +446,8 @@ Transform:
   m_LocalScale: {x: 10.05, y: 10.05, z: 10.05}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &945387390
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2740742614209823967, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: sceneViewId
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555449122, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_Name
-      value: HeroKnight
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.69081783
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 15.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6226894851555476802, guid: 0050baaf6c3264001836bb7d13652ca4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0050baaf6c3264001836bb7d13652ca4, type: 3}
 --- !u!1001 &1162231728
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -549,25 +455,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -7699709957355516529, guid: 36e93c435d1648a4c86d516057a9cbe2,
-        type: 3}
-      propertyPath: sceneViewId
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 5701704621631426976, guid: 36e93c435d1648a4c86d516057a9cbe2,
         type: 3}
       propertyPath: m_Name
       value: miner
       objectReference: {fileID: 0}
-    - target: {fileID: 5701704621631426976, guid: 36e93c435d1648a4c86d516057a9cbe2,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6826973555475864791, guid: 36e93c435d1648a4c86d516057a9cbe2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6826973555475864791, guid: 36e93c435d1648a4c86d516057a9cbe2,
         type: 3}
@@ -705,7 +601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166159763}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 13.65, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -771,7 +667,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362657533
 GameObject:
@@ -864,7 +760,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1788342296 stripped
 GameObject:
@@ -928,25 +824,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barracks Tower Blue
       objectReference: {fileID: 0}
-    - target: {fileID: 2101698229715288973, guid: 0411bbd6c1ad5b84084f7036ccec0aba,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5384142334644145001, guid: 0411bbd6c1ad5b84084f7036ccec0aba,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6122194704259354226, guid: 0411bbd6c1ad5b84084f7036ccec0aba,
-        type: 3}
-      propertyPath: sceneViewId
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6982458511155382736, guid: 0411bbd6c1ad5b84084f7036ccec0aba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6982458511155382736, guid: 0411bbd6c1ad5b84084f7036ccec0aba,
         type: 3}

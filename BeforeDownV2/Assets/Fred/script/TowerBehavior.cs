@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
-using Photon.Pun;
 
-public class TowerBehavior : MonoBehaviourPun
+
+public class TowerBehavior : MonoBehaviour
 {
     public CastleDATA castle;
 
@@ -26,6 +26,12 @@ public class TowerBehavior : MonoBehaviourPun
         popo = castle.popo;
     }
 
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
     void Update()
     {
         if (!NoHealth)
@@ -35,14 +41,13 @@ public class TowerBehavior : MonoBehaviourPun
             {
                 if (fireCountdown <= 0f)
                 {
-                    photonView.RPC("Fire",RpcTarget.AllViaServer);
+                    Fire();
                     fireCountdown = 1f / castle.fireRate;
                 }
                 fireCountdown -= Time.deltaTime;
             }
         }
     }
-    [PunRPC]
     public void TakeDamage(float amout)
     {
         Health -= amout;
@@ -61,7 +66,7 @@ public class TowerBehavior : MonoBehaviourPun
     {
         yield return new WaitForSeconds(4);
 
-        PhotonNetwork.Destroy(gameObject);
+        Destroy(gameObject);
     }
     void FindTarget()
     {
@@ -94,7 +99,6 @@ public class TowerBehavior : MonoBehaviourPun
             target = null;
         }
     }
-    [PunRPC]
     void Fire()
     {
         GameObject projectile = Instantiate(castle.projectilePrefab, transform.position + popo, Quaternion.identity) as GameObject;
