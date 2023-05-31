@@ -4,14 +4,16 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.AI;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class AiBehavior : MonoBehaviour
+public class AiBehavior : MonoBehaviourPun
 {
     public AiData data;
 
     private GameObject TowerB, TowerR;
     private Animator animator;
-    public NavMeshAgent navAgent;
+    private NavMeshAgent navAgent;
 
     private GameObject[] AllEnemy;
     public float Health;
@@ -43,8 +45,8 @@ public class AiBehavior : MonoBehaviour
         navAgent = GetComponent<NavMeshAgent>();
 
         animator = GetComponent<Animator>();
-        TowerR = GameObject.Find("Barracks Tower Red");
-        TowerB = GameObject.Find("Barracks Tower Blue");
+        TowerR = GameObject.Find("Barracks Tower Red(Clone)");
+        TowerB = GameObject.Find("Barracks Tower Blue(Clone)");
     }
 
     // Update is called once per frame
@@ -107,7 +109,7 @@ public class AiBehavior : MonoBehaviour
             if (target.GetComponent<TowerBehavior>().Health > 0)
             {
                 animator.SetTrigger("Attack");
-                target.GetComponent<TowerBehavior>().TakeDamage(Damage);
+                target.GetComponent<TowerBehavior>().photonView.RPC("TakeDamage",RpcTarget.AllViaServer,Damage);
             }
 
         }
@@ -116,7 +118,7 @@ public class AiBehavior : MonoBehaviour
             if (target.GetComponent<AiBehavior>().Health > 0)
             {
                 animator.SetTrigger("Attack");
-                target.GetComponent<AiBehavior>().TakeDamage(Damage);
+                target.GetComponent<AiBehavior>().photonView.RPC("TakeDamage",RpcTarget.AllViaServer,Damage);
             }
         }
         else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponentss))
@@ -168,6 +170,14 @@ public class AiBehavior : MonoBehaviour
                 target.GetComponent<Spawner>().TakeDamage(Damage);
             }
         }
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponentsss))
+        {
+            if (target.GetComponent<playerClickController>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<playerClickController>().TakeDamage(Damage);
+            }
+        }
         else
         {
             return;
@@ -189,7 +199,7 @@ public class AiBehavior : MonoBehaviour
     void Fire(GameObject target)
     {
         GameObject projectile =
-            Instantiate(data.projectilePrefab, transform.position + popo, Quaternion.identity) as GameObject;
+            PhotonNetwork.Instantiate(data.projectilePrefab.name, transform.position + popo, Quaternion.identity) as GameObject;
         Projectile script = projectile.GetComponent<Projectile>();
         script.target = target.transform;
         script.damage = Damage;
@@ -231,12 +241,6 @@ public class AiBehavior : MonoBehaviour
 
         return target;
     }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position, AttackRange);
-    }
     public void TakeDamage(float amout)
     {
         Health -= amout;
@@ -252,6 +256,7 @@ public class AiBehavior : MonoBehaviour
     public IEnumerator WaitDie()
     {
         yield return new WaitForSeconds(1.5f);
-        Destroy(gameObject);
+        if (photonView.IsMine)
+            PhotonNetwork.Destroy(gameObject);
     }
 }

@@ -1,17 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using Photon.Realtime;
 
-
-    public class playerClickController : MonoBehaviour
+    public class playerClickController : MonoBehaviourPun
     {
+        [Header("Info")] public int id;
+
         public LayerMask clickOn;
         public HeroData playerdata;
         public TagAttribute WhatIsEnemy;
         public float Health;
+        
 
         private GameObject[] Enemy;
         private float SightRange, AttackRange,TimeAttack, Damage;
@@ -21,6 +25,7 @@ using UnityEngine.AI;
         private Animator animator;
         private float Timer = 0f;
         private bool isAlive = true;
+        private PhotonView view;
 
         private void Awake()
         {
@@ -37,10 +42,8 @@ using UnityEngine.AI;
             animator = GetComponent<Animator>();
             Nav = GetComponent<NavMeshAgent>();
             Enemy = null;
-            
+            view = GetComponent<PhotonView>();
         }
-        // Update is called once per frame
-
         private void Update()
         {
             bool click1 = Input.GetMouseButtonDown(1);
@@ -49,9 +52,7 @@ using UnityEngine.AI;
             target = FindTarget();
             if (target != null && isAlive)
             {
-                Debug.Log(Nav.isStopped);
                 float distance = Vector3.Distance(target.transform.position, transform.position);
-                Debug.Log(distance);
                 if (distance <= SightRange && distance > AttackRange)
                 {
                     ChasingEnnemy(target);
@@ -129,13 +130,6 @@ using UnityEngine.AI;
             }
 
 
-        }
-        
-
-        void OnDrawGizmosSelected()
-        {
-            Gizmos.DrawWireSphere(transform.position, playerdata.SightRange);
-            Gizmos.DrawWireSphere(transform.position, playerdata.AttackRange);
         }
 
         private GameObject FindTarget()

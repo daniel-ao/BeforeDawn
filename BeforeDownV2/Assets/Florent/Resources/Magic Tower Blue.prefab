@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3368216028379467981, guid: 3ff00a54555991142af79653a79d0d88,
+        type: 3}
+      propertyPath: TowerB
+      value: 
+      objectReference: {fileID: 7101576874435252295}
     - target: {fileID: 175758370400212679, guid: 3ff00a54555991142af79653a79d0d88,
         type: 3}
       propertyPath: m_Name
@@ -124,3 +129,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ff00a54555991142af79653a79d0d88, type: 3}
+--- !u!1 &7101576874435252295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 175758370400212679, guid: 3ff00a54555991142af79653a79d0d88,
+    type: 3}
+  m_PrefabInstance: {fileID: 6988942050768324224}
+  m_PrefabAsset: {fileID: 0}
