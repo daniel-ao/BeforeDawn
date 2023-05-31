@@ -12,10 +12,9 @@ public class StartGame : MonoBehaviour
         drawEndPanel.SetActive(false);
     }
 
-    public void StartDraw(string CharacterName)
+    public void StartTheGame(string CharacterName)
     {
         drawEndPanel.SetActive(true);
-        drawEndPanel.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>().text = CharacterName;
-        //drawEndPanel.transform.GetChild(drawEndPanel.transform.childCount - 1).GetComponent<TextMeshProUGUI>().text = CharacterName;
+        drawEndPanel.transform.GetChild(drawEndPanel.transform.childCount - 1).GetComponent<TextMeshProUGUI>().text = CharacterName;
     }
 }
