@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Photon.Pun;
 
-public class BuildingManager : MonoBehaviourPun
+public class BuildingManager : MonoBehaviour
 {
     public GameObject[] objects;
 
     private GameObject pendingObject;
+    [SerializeField] private Material[] materials;
     private Vector3 pos;
     private RaycastHit hit;
     [SerializeField] private LayerMask layerMask;
@@ -20,6 +20,7 @@ public class BuildingManager : MonoBehaviourPun
     public float gridSize;
     [SerializeField] private Toggle gridToggle;
 
+    // Update is called once per frame
     void Update()
     {
         if (pendingObject != null)
@@ -37,7 +38,7 @@ public class BuildingManager : MonoBehaviourPun
             
             if (Input.GetMouseButtonDown(0) && canPlace )
             {
-                photonView.RPC("PlaceObject",RpcTarget.All); 
+                PlaceObject(); 
             }
 
             if (Input.GetKeyDown(KeyCode.R))
@@ -46,35 +47,27 @@ public class BuildingManager : MonoBehaviourPun
             }
         }
     }
-    [PunRPC]
+
     public void PlaceObject()
     {
-        GameObject towerInstanciate = pendingObject.GetComponent<CheckPlacement>().SelectTower();
-        if (photonView.IsMine)
-        {
-            Destroy(pendingObject);
-            PhotonNetwork.Instantiate(towerInstanciate.name, pos, pendingObject.transform.rotation);
-            pendingObject = null;
-        }
+        GameObject TowerInstanciate = pendingObject.GetComponent<CheckPlacement>().Tower;
+        Destroy(pendingObject);
+        Instantiate(TowerInstanciate, pos, pendingObject.transform.rotation);
+        pendingObject = null;
     }
+
     public void RotateObject()
     {
         pendingObject.transform.Rotate(Vector3.up, rotateAmount);
     }
-    
+
+
     private void FixedUpdate()
     {
-        Camera cam = Camera.main;
-        Ray ray;
-
-        if (cam != null)
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, 1000, layerMask))
         {
-            ray = cam.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit, 1000, layerMask))
-            {
-                pos = hit.point;
-            }
+            pos = hit.point;
         }
     }
 

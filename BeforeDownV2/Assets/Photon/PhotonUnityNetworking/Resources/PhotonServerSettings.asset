@@ -38,15 +38,6 @@ MonoBehaviour:
   - ClickRpc
   - DestroyRpc
   - UpdateLobbyUI
-  - ImInGame
-  - Initialize
-  - SpawnPlayer
-  - SpawnTower
-  - TakeDamage
-  - TimeToSpawn
-  - Fire
-  - PlaceObject
-  - RotateObject
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

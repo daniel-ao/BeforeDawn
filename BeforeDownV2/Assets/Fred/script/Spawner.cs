@@ -1,41 +1,47 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
-using Photon.Realtime;
 
-public class Spawner : MonoBehaviourPun
+
+public class Spawner : MonoBehaviour
 {
     public float Health = 50; 
     public float SpawningRate = 0.2f;
     private float SpawningCountdown = 0f;
-    private GameObject player;
-    
-    public Transform SpawnPosition;
     public GameObject[] Units; //index : Blue -> [0:2], Red -> [3:5]
+    // Start is called before the first frame update
+    void Start()
+    {
 
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        photonView.RPC("TimeToSpawn",RpcTarget.AllViaServer);
+        TimeToSpawn();
     }
+
     void spawner()
     {
-        if (photonView.IsMine)
+        int indexer = 0;
+        if (transform.tag == "Red")
         {
-            int indexer = 0;
-            if (gameObject.CompareTag("Red"))
-            {
-                indexer += 3;
-            }
-
-            System.Random random = new System.Random();
-            indexer += random.Next(0, 3);
-            Debug.Log(indexer);
-            GameObject unit = PhotonNetwork.Instantiate(Units[indexer].name, SpawnPosition.position, Quaternion.identity);
+            indexer += 3;
+        }
+        Vector3 frontSpawn = new Vector3(-2, 0, 0);
+        System.Random random = new System.Random();
+        indexer += random.Next(0, 3);
+        GameObject unit = Instantiate(Units[indexer], transform.position + frontSpawn, Quaternion.identity) as GameObject;
+        if (indexer > 2)
+        {
+            unit.GetComponent<Transform>().tag = "Red";
+        }
+        else
+        {
+            unit.GetComponent<Transform>().tag = "Blue";
         }
     }
-    [PunRPC]
+
     void TimeToSpawn()
     {
         if (SpawningCountdown <= 0f)
@@ -45,14 +51,13 @@ public class Spawner : MonoBehaviourPun
         }
         SpawningCountdown -= Time.deltaTime;
     }
-    [PunRPC]
+
     public void TakeDamage(float amout)
     {
         Health -= amout;
         if (Health <= 0)
         {
-            if (photonView.IsMine)
-                Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 }
