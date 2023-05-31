@@ -374,7 +374,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee168c9319b04258b363fc4a24fc642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tower: {fileID: 175758370400212679, guid: 3ff00a54555991142af79653a79d0d88, type: 3}
+  Towers:
+  - {fileID: 175758370400212679, guid: 3ff00a54555991142af79653a79d0d88, type: 3}
+  - {fileID: 7101576874435252295, guid: fa3ea7da533782847bff2be95946c678, type: 3}
 --- !u!54 &-2571738347893919167
 Rigidbody:
   m_ObjectHideFlags: 0
