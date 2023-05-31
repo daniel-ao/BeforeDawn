@@ -1,9 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
+using System.Linq;
 
-public class CameraController : MonoBehaviour
+public class CameraController : MonoBehaviourPun
 {
+    [Header("Info")] public int id;
+    public int joueur;
+    public Player photonPlayer;
+    
     public float panSpeed = 20f;
     public float ScrollSpeed = 200f;
 
@@ -16,30 +23,42 @@ public class CameraController : MonoBehaviour
     public float panLimit_Max_Y;
     public float panLimit_Min_Y;
     
+    [PunRPC]
+    public void Initialize (Player player)
+    {
+        id = player.ActorNumber;
+        photonPlayer = player;
+        _GameManager.instance.players[id - 1] = this;
+    
+        // is this not our local player?
+        if(!photonView.IsMine)
+        {
+            GetComponentInChildren<Camera>().gameObject.SetActive(false);
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 Pos = transform.position;
-    
         if (Input.mousePosition.y >= Screen.height - panBorderThickness)
-        {
-            Pos.z += panSpeed * Time.deltaTime;
-        }
-
-        if (Input.mousePosition.y <= panBorderThickness)
-        {
-            Pos.z -= panSpeed * Time.deltaTime;
-        }
-
-        if (Input.mousePosition.x >= Screen.width - panBorderThickness)
         {
             Pos.x += panSpeed * Time.deltaTime;
         }
 
-        if (Input.mousePosition.x <= panBorderThickness)
+        if (Input.mousePosition.y <= panBorderThickness)
         {
             Pos.x -= panSpeed * Time.deltaTime;
+        }
+
+        if (Input.mousePosition.x >= Screen.width - panBorderThickness)
+        {
+            Pos.z -= panSpeed * Time.deltaTime;
+        }
+
+        if (Input.mousePosition.x <= panBorderThickness)
+        {
+            Pos.z += panSpeed * Time.deltaTime;
         }
 
         float scroll = Input.GetAxis("Mouse ScrollWheel");
