@@ -2,28 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class Timer : MonoBehaviour
+
+namespace UnityRoyale
 {
-    [SerializeField] Text TimeText;
-    [SerializeField] GameObject Win;
-    [SerializeField] GameObject Lose;
-
-    float time;
-
-    void FixedUpdate()
+    public class Timer : MonoBehaviour
     {
+        [SerializeField] Text TimeText;
+        [SerializeField] GameObject Win;
+        [SerializeField] GameObject Lose;
 
-        if (Win.activeSelf || Lose.activeSelf)
-        {
-            return;
-        }
+        float time;
 
-        else
+        void FixedUpdate()
         {
-            time += Time.fixedDeltaTime;
-            TimeText.text = System.TimeSpan.FromSeconds(time).ToString(@"mm\:ss\:ff");
+
+            if (Win.activeSelf || Lose.activeSelf)
+            {
+                return;
+            }
+
+            else
+            {
+                time += Time.fixedDeltaTime;
+                TimeText.text = System.TimeSpan.FromSeconds(time).ToString(@"mm\:ss\:ff");
+            }
             
         }
-        
     }
 }

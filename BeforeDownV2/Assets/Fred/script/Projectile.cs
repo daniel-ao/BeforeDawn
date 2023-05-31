@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
 
-public class Projectile : MonoBehaviourPun
+public class Projectile : MonoBehaviour
 {
     public float speed = 10f;
     public float damage;
@@ -14,8 +13,7 @@ public class Projectile : MonoBehaviourPun
     {
         if (target == null)
         {
-            if (photonView.IsMine)
-                PhotonNetwork.Destroy(gameObject);
+            Destroy(gameObject);
             return;
         }
 
@@ -60,7 +58,7 @@ public class Projectile : MonoBehaviourPun
         {
             spawn.TakeDamage(damage);
         }
-        if (photonView.IsMine)
-            PhotonNetwork.Destroy(gameObject);
+
+        Destroy(gameObject);
     }
 }
