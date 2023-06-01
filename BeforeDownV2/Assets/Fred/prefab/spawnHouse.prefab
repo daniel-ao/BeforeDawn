@@ -59,7 +59,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 2c943da0e34b02a4ab944b5ed2278d1d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Red
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 2c943da0e34b02a4ab944b5ed2278d1d, type: 3}
       propertyPath: m_StaticEditorFlags

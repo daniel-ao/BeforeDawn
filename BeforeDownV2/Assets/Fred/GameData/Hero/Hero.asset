@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b053f9beb9e1440787c41b303f5511d, type: 3}
   m_Name: Hero
   m_EditorClassIdentifier: 
-  Health: 30
-  Damage: 8
+  Health: 500
+  Damage: 50
   Speed: 2
   AttackRange: 3
   SightRange: 8
