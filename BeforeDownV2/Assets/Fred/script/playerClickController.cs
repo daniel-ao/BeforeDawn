@@ -1,196 +1,190 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using Photon.Realtime;
 
+public class playerClickController : MonoBehaviourPun
+{
+    [Header("Info")] public int id;
 
-    public class playerClickController : MonoBehaviour
+    public LayerMask clickOn;
+    public HeroData playerdata;
+    public TagAttribute WhatIsEnemy;
+    public float Health;
+    
+
+    private GameObject[] Enemy;
+    private float SightRange, AttackRange,TimeAttack, Damage;
+    private RaycastHit hitInfo;
+    private Ray ray;
+    private NavMeshAgent Nav;
+    private Animator animator;
+    private float Timer = 0f;
+    private bool isAlive = true;
+    private PhotonView view;
+
+    private void Awake()
     {
-        public LayerMask clickOn;
-        public HeroData playerdata;
-        public TagAttribute WhatIsEnemy;
-        public float Health;
+        Health = playerdata.Health;
+        SightRange = playerdata.SightRange;
+        AttackRange = playerdata.AttackRange;
+        TimeAttack = playerdata.TimeAttack;
+        Damage = playerdata.Damage;
+    }
 
-        private GameObject[] Enemy;
-        private float SightRange, AttackRange,TimeAttack, Damage;
-        private RaycastHit hitInfo;
-        private Ray ray;
-        private NavMeshAgent Nav;
-        private Animator animator;
-        private float Timer = 0f;
-        private bool isAlive = true;
-
-        private void Awake()
+    // Start is called before the first frame update
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+        Nav = GetComponent<NavMeshAgent>();
+        Enemy = null;
+        view = GetComponent<PhotonView>();
+    }
+    private void Update()
+    {
+        bool click1 = Input.GetMouseButtonDown(1);
+        click(click1);
+        GameObject target;
+        target = FindTarget();
+        if (target != null && isAlive)
         {
-            Health = playerdata.Health;
-            SightRange = playerdata.SightRange;
-            AttackRange = playerdata.AttackRange;
-            TimeAttack = playerdata.TimeAttack;
-            Damage = playerdata.Damage;
-        }
-
-        // Start is called before the first frame update
-        private void Start()
-        {
-            animator = GetComponent<Animator>();
-            Nav = GetComponent<NavMeshAgent>();
-            Enemy = null;
-            
-        }
-        // Update is called once per frame
-
-        private void Update()
-        {
-            bool click1 = Input.GetMouseButtonDown(1);
-            click(click1);
-            GameObject target;
-            target = FindTarget();
-            if (target != null && isAlive)
+            float distance = Vector3.Distance(target.transform.position, transform.position);
+            if (distance <= SightRange && distance > AttackRange)
             {
-                Debug.Log(Nav.isStopped);
-                float distance = Vector3.Distance(target.transform.position, transform.position);
-                Debug.Log(distance);
-                if (distance <= SightRange && distance > AttackRange)
+                ChasingEnnemy(target);
+            }
+
+            else if (distance <= AttackRange)
+            {
+                Nav.isStopped = true;
+                if (Timer <= 0f)
                 {
-                    ChasingEnnemy(target);
+                    Attacking(target);
+                    Timer = 1f / TimeAttack;
                 }
-
-                else if (distance <= AttackRange)
-                {
-                    Nav.isStopped = true;
-                    if (Timer <= 0f)
-                    {
-                        Attacking(target);
-                        Timer = 1f / TimeAttack;
-                    }
-                    Timer -= Time.deltaTime;
-                }
-            }
-            else
-            {
-                Nav.isStopped = false;
+                Timer -= Time.deltaTime;
             }
         }
-
-        private void click(bool click1)
+        else
         {
-            if (click1)
-            {
-                animator.SetBool("IsMoving", true);
-                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, clickOn))
-                {
-                    Nav.SetDestination(hitInfo.point);
-                }
-            }
-
-            else if (Nav.remainingDistance <= 0)
-            {
-                animator.SetBool("IsMoving", false);
-            }
+            Nav.isStopped = false;
         }
+    }
 
-        private void ChasingEnnemy(GameObject target)
+    private void click(bool click1)
+    {
+        if (click1)
         {
             animator.SetBool("IsMoving", true);
-            Nav.SetDestination(target.transform.position);
+            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, clickOn))
+            {
+                Nav.SetDestination(hitInfo.point);
+            }
         }
-        
-        private void UnChasing()
+
+        else if (Nav.remainingDistance <= 0)
         {
             animator.SetBool("IsMoving", false);
         }
+    }
 
-        private void Attacking(GameObject target)
+    private void ChasingEnnemy(GameObject target)
+    {
+        animator.SetBool("IsMoving", true);
+        Nav.SetDestination(target.transform.position);
+    }
+    
+    private void UnChasing()
+    {
+        animator.SetBool("IsMoving", false);
+    }
+
+    private void Attacking(GameObject target)
+    {
+        transform.LookAt(target.transform);
+        if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
         {
-            transform.LookAt(target.transform);
-            if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
+            if (target.GetComponent<TowerBehavior>().Health > 0)
             {
-                if (target.GetComponent<TowerBehavior>().Health > 0)
-                {
-                    target.GetComponent<TowerBehavior>().TakeDamage(Damage);
-                    animator.SetTrigger("Attack");
-                }
-
+                target.GetComponent<TowerBehavior>().TakeDamage(Damage);
+                animator.SetTrigger("Attack");
             }
-            else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponents))
-            {
-                if (target.GetComponent<AiBehavior>().Health > 0)
-                {
-                    target.GetComponent<AiBehavior>().TakeDamage(Damage);
-                    animator.SetTrigger("Attack");
-                }
-            }
-            else
-            {
-                return;
-            }
-
 
         }
-        
-
-        void OnDrawGizmosSelected()
+        else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponents))
         {
-            Gizmos.DrawWireSphere(transform.position, playerdata.SightRange);
-            Gizmos.DrawWireSphere(transform.position, playerdata.AttackRange);
+            if (target.GetComponent<AiBehavior>().Health > 0)
+            {
+                target.GetComponent<AiBehavior>().TakeDamage(Damage);
+                animator.SetTrigger("Attack");
+            }
+        }
+        else
+        {
+            return;
         }
 
-        private GameObject FindTarget()
+
+    }
+
+    private GameObject FindTarget()
+    {
+        GameObject target;
+        if (transform.CompareTag("Red"))
         {
-            GameObject target;
-            if (transform.CompareTag("Red"))
-            {
-                Enemy = GameObject.FindGameObjectsWithTag("Blue");
-            }
-            else
-            {
-                Enemy = GameObject.FindGameObjectsWithTag("Red");
-            }
-
-            float closestDistance = Mathf.Infinity;
-            GameObject closestEnemy = null;
-            foreach (GameObject enemy in Enemy)
-            {
-                float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-                if (distanceToEnemy < closestDistance)
-                {
-                    closestDistance = distanceToEnemy;
-                    closestEnemy = enemy;
-                }
-            }
-
-            if (closestEnemy != null && closestDistance <= SightRange)
-            {
-                target = closestEnemy;
-            }
-            else
-            {
-                target = null;
-            }
-
-            return target;
+            Enemy = GameObject.FindGameObjectsWithTag("Blue");
+        }
+        else
+        {
+            Enemy = GameObject.FindGameObjectsWithTag("Red");
         }
 
-        public void TakeDamage(float amout)
+        float closestDistance = Mathf.Infinity;
+        GameObject closestEnemy = null;
+        foreach (GameObject enemy in Enemy)
         {
-            Health -= amout;
-            if (Health <= 0 && isAlive)
+            float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
+            if (distanceToEnemy < closestDistance)
             {
-                isAlive = false;
-                Nav.isStopped = true;
-                animator.SetTrigger("IsDead");
-                StartCoroutine(WaitDie());
+                closestDistance = distanceToEnemy;
+                closestEnemy = enemy;
             }
         }
 
-        public IEnumerator WaitDie()
+        if (closestEnemy != null && closestDistance <= SightRange)
         {
-            Debug.Log("waiting");
-            yield return new WaitForSeconds(1.5f);
+            target = closestEnemy;
+        }
+        else
+        {
+            target = null;
+        }
 
-            Destroy(gameObject);
+        return target;
+    }
+
+    public void TakeDamage(float amout)
+    {
+        Health -= amout;
+        if (Health <= 0 && isAlive)
+        {
+            isAlive = false;
+            Nav.isStopped = true;
+            animator.SetTrigger("IsDead");
+            StartCoroutine(WaitDie());
         }
     }
+
+    public IEnumerator WaitDie()
+    {
+        Debug.Log("waiting");
+        yield return new WaitForSeconds(1.5f);
+
+        Destroy(gameObject);
+    }
+}

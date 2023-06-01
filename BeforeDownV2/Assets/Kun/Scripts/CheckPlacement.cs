@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using Unity.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class CheckPlacement : MonoBehaviour
+public class CheckPlacement : MonoBehaviourPun
 {
-    public GameObject Tower;
+    [SerializeField] private GameObject[] Towers;
     private BuildingManager _buildingManager;
     void Start()
     {
@@ -37,6 +39,22 @@ public class CheckPlacement : MonoBehaviour
         {
             _buildingManager.canPlace = true;
         }
+    }
+    public GameObject SelectTower()
+    {
+        GameObject tower;
+        if (PhotonNetwork.IsMasterClient)
+        {
+            tower = Towers[0];
+            tower.tag = "Red";
+        }
+        else
+        {
+            tower = Towers[1];
+            tower.tag = "Blue";
+        }
+
+        return tower;
     }
 }
 

@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 7470878283493300259}
   - component: {fileID: -3368216028379467981}
   - component: {fileID: -6042905794944077840}
+  - component: {fileID: 4268377679384464032}
+  - component: {fileID: -4004049119356852670}
   m_Layer: 0
   m_Name: Magic Tower Red
   m_TagString: Red
@@ -211,16 +213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   castle: {fileID: 11400000, guid: a6a6a6e68a126854d9a5059eecaa9d5b, type: 2}
-  CastleCollapse: {fileID: 0}
   Health: 0
+  CurrentGold: 100
   popo: {x: 0, y: 0, z: 0}
-  Units:
-  - {fileID: 2803772846224482086, guid: 3d7094a1663ab0a44ab8e11c1defd922, type: 3}
-  - {fileID: 8584991783828831444, guid: 4d4319dde2f198845ac34608a1013ffc, type: 3}
-  - {fileID: 4506006686708116928, guid: 93ddf5fff26bcb642a6f1f94462963b2, type: 3}
-  - {fileID: 5701704621631426976, guid: 36e93c435d1648a4c86d516057a9cbe2, type: 3}
-  - {fileID: 1122871589, guid: ddbc89a2e5731354497399c2803d9354, type: 3}
-  - {fileID: 5537164977549460556, guid: f7e6e31c5324d874db515c8ca4922190, type: 3}
+  NoHealth: 0
 --- !u!114 &-3368216028379467981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dee168c9319b04258b363fc4a24fc642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tower: {fileID: 175758370400212679}
+  Towers:
+  - {fileID: 175758370400212679}
+  - {fileID: 7101576874435252295, guid: fa3ea7da533782847bff2be95946c678, type: 3}
 --- !u!65 &-6042905794944077840
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -247,6 +245,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6, y: 5, z: 6}
   m_Center: {x: 0, y: 2.5, z: 0}
+--- !u!114 &4268377679384464032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175758370400212679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: -4004049119356852670}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &-4004049119356852670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175758370400212679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!95 &598814153828119283
 Animator:
   serializedVersion: 3
@@ -1620,15 +1657,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fc65d7b0a17d12428eb1eb4021dd145, type: 3}
---- !u!1 &7559244068242982102 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100010, guid: 5fc65d7b0a17d12428eb1eb4021dd145,
-    type: 3}
-  m_PrefabInstance: {fileID: 7559244068243079804}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7559244068243216630 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400010, guid: 5fc65d7b0a17d12428eb1eb4021dd145,
+    type: 3}
+  m_PrefabInstance: {fileID: 7559244068243079804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7559244068242982102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: 5fc65d7b0a17d12428eb1eb4021dd145,
     type: 3}
   m_PrefabInstance: {fileID: 7559244068243079804}
   m_PrefabAsset: {fileID: 0}
