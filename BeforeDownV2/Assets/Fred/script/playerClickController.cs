@@ -25,9 +25,12 @@ public class playerClickController : MonoBehaviourPun
     private Ray ray;
     private NavMeshAgent Nav;
     private Animator animator;
+    private bool IsLongRange;
     private float Timer = 0f;
     private bool isAlive = true;
     private bool isMovable = false;
+    public Vector3 popo;
+
 
     public HealthBar healthBar;
 
@@ -42,6 +45,7 @@ public class playerClickController : MonoBehaviourPun
         AttackRange = playerdata.AttackRange;
         TimeAttack = playerdata.TimeAttack;
         Damage = playerdata.Damage;
+        popo = playerdata.popo;
 
         healthBar.SetMaxHealth(MaxHealth);
 
@@ -60,8 +64,6 @@ public class playerClickController : MonoBehaviourPun
     {
         bool click1 = Input.GetMouseButtonDown(1);
         click(click1);
-<<<<<<< HEAD
-
         GameObject target;
         target = FindTarget();
         if (target != null && isAlive && isMovable)
@@ -120,15 +122,15 @@ public class playerClickController : MonoBehaviourPun
         animator.SetBool("IsMoving", false);
     }
 
-    private void Attacking(GameObject target)
+    private void ShortRangeAttack(GameObject target)
     {
-        transform.LookAt(target.transform);
+
         if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent1))
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
             {
-                target.GetComponent<TowerBehavior>().TakeDamage(Damage);
                 animator.SetTrigger("Attack");
+                target.GetComponent<TowerBehavior>().photonView.RPC("TakeDamage", RpcTarget.AllViaServer, Damage);
             }
 
         }
@@ -136,27 +138,69 @@ public class playerClickController : MonoBehaviourPun
         {
             if (target.GetComponent<AiBehavior>().Health > 0)
             {
-                target.GetComponent<AiBehavior>().TakeDamage(Damage);
                 animator.SetTrigger("Attack");
+                target.GetComponent<AiBehavior>().photonView.RPC("TakeDamage", RpcTarget.AllViaServer, Damage);
             }
         }
-        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponent3))
-        {
-            if (target.GetComponent<playerClickController>().Health > 0)
-            {
-                target.GetComponent<playerClickController>().TakeDamage(Damage);
-                animator.SetTrigger("Attack");
-            }
-        }
-        else if (target.gameObject.TryGetComponent<Miner>(out Miner enemyComponent4))
+        else if (target.gameObject.TryGetComponent<Miner>(out Miner enemyComponent3))
         {
             if (target.GetComponent<Miner>().Health > 0)
             {
-                target.GetComponent<Miner>().TakeDamage(Damage);
                 animator.SetTrigger("Attack");
+                target.GetComponent<Miner>().TakeDamage(Damage);
             }
         }
-        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponent5))
+        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponent4))
+        {
+            if (target.GetComponent<Spawner>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<Spawner>().TakeDamage(Damage);
+            }
+        }
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponent5))
+        {
+            if (target.GetComponent<playerClickController>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<playerClickController>().TakeDamage(Damage);
+            }
+        }
+        else
+        {
+            return;
+        }
+    }
+
+    private void LongRangeAttack(GameObject target)
+    {
+        if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent1))
+        {
+            if (target.GetComponent<TowerBehavior>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                Fire(target);
+            }
+
+        }
+        else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponent2))
+        {
+            if (target.GetComponent<AiBehavior>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                Fire(target);
+            }
+        }
+        else if (target.gameObject.TryGetComponent<Miner>(out Miner enemyComponent3))
+        {
+            if (target.GetComponent<Miner>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                Fire(target);
+            }
+
+        }
+        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponent4))
         {
             if (target.GetComponent<Spawner>().Health > 0)
             {
@@ -165,10 +209,39 @@ public class playerClickController : MonoBehaviourPun
                 target.GetComponent<Spawner>().TakeDamage(Damage);
             }
         }
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponent5))
+        {
+            if (target.GetComponent<playerClickController>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<playerClickController>().TakeDamage(Damage);
+            }
+        }
         else
         {
             return;
         }
+    }
+
+    private void Attacking(GameObject target)
+    {
+        if (IsLongRange)
+        {
+            LongRangeAttack(target);
+        }
+        else
+        {
+            ShortRangeAttack(target);
+        }
+    }
+
+    void Fire(GameObject target)
+    {
+        GameObject projectile =
+            PhotonNetwork.Instantiate(playerdata.projectilePrefab.name, transform.position + popo, Quaternion.identity) as GameObject;
+        Projectile script = projectile.GetComponent<Projectile>();
+        script.target = target.transform;
+        script.damage = Damage;
     }
 
 
