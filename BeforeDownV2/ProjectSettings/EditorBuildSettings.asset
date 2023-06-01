@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: c20071dc6d348469b8f67970dc67bed9
+    path: Assets/Kun/EnterScene/Scene/EnterScene.unity
+    guid: c68e2ee68d8c14613bf08b0770c50b6e
+  - enabled: 1
+    path: Assets/Florent/lobby/lobby.unity
+    guid: 0a4a2c23c649345e98737528c182bcee
   - enabled: 1
     path: Assets/Kun/Gacha/Scenes/Gacha_Scene.unity
     guid: 369a5c755437e464091f4c0656b5b8e5

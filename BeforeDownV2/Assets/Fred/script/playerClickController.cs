@@ -1,21 +1,26 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using Photon.Realtime;
 
-
-public class playerClickController : MonoBehaviour
+public class playerClickController : MonoBehaviourPun
 {
+    [Header("Info")] public int id;
+
     public LayerMask clickOn;
     public HeroData playerdata;
     public TagAttribute WhatIsEnemy;
     public float MaxHealth;
     public float Health;
 
+
     private GameObject[] Enemy;
     private float SightRange, AttackRange, TimeAttack, Damage;
+
     private RaycastHit hitInfo;
     private Ray ray;
     private NavMeshAgent Nav;
@@ -26,6 +31,7 @@ public class playerClickController : MonoBehaviour
 
     public HealthBar healthBar;
 
+    private PhotonView view;
 
     private void Awake()
     {
@@ -48,24 +54,21 @@ public class playerClickController : MonoBehaviour
         Nav = GetComponent<NavMeshAgent>();
         Enemy = null;
 
+        view = GetComponent<PhotonView>();
     }
-    // Update is called once per frame
-
     private void Update()
     {
         bool click1 = Input.GetMouseButtonDown(1);
         click(click1);
+<<<<<<< HEAD
 
         GameObject target;
         target = FindTarget();
-        Debug.Log(click1);
         if (target != null && isAlive && isMovable)
         {
             float distance = Vector3.Distance(target.transform.position, transform.position);
-            Debug.Log(distance);
             if (distance <= SightRange && distance > AttackRange)
             {
-                Debug.Log("2");
                 ChasingEnnemy(target);
             }
 
@@ -74,10 +77,8 @@ public class playerClickController : MonoBehaviour
                 Nav.isStopped = true;
                 if (Timer <= 0f)
                 {
-                    Debug.Log("3");
                     Attacking(target);
                     Timer = 1f / TimeAttack;
-                    Debug.Log("4");
                 }
                 Timer -= Time.deltaTime;
             }
@@ -86,7 +87,6 @@ public class playerClickController : MonoBehaviour
         {
             Nav.isStopped = false;
         }
-
     }
 
     private void click(bool click1)

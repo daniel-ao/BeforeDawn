@@ -6,8 +6,25 @@ using TMPro;
 public class ShowSetting : MonoBehaviour
 {
     public GameObject SETTingsPanel;
-    private bool Showed = false;
-     
+    public GameObject ExitPannel;
+    public GameObject LosePannel;
+    private bool Showed;
+
+
+    public void ShowLosePannel()
+    {
+        LosePannel.SetActive(true);
+    }
+
+    public void ShowExit()
+    {
+        ExitPannel.SetActive(true);
+    }
+
+    public void HideExit()
+    {
+        ExitPannel.SetActive(false);
+    }
 
     public void Showsetting()
     {
@@ -22,16 +39,18 @@ public class ShowSetting : MonoBehaviour
     public void ShowSettingOrNot()
     {
        
-        if(Showed)
+        if(SETTingsPanel.activeSelf)
         {
             Hidesetting();
-            Showed = false;
+            if(ExitPannel.activeSelf)
+            {
+                HideExit();
+            }
         }
 
         else
         {
             Showsetting();
-            Showed = true;
         }
     }
 
