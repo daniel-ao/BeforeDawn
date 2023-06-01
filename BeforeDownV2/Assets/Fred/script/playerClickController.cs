@@ -14,26 +14,37 @@ public class playerClickController : MonoBehaviourPun
     public LayerMask clickOn;
     public HeroData playerdata;
     public TagAttribute WhatIsEnemy;
+    public float MaxHealth;
     public float Health;
-    
+
 
     private GameObject[] Enemy;
-    private float SightRange, AttackRange,TimeAttack, Damage;
+    private float SightRange, AttackRange, TimeAttack, Damage;
+
     private RaycastHit hitInfo;
     private Ray ray;
     private NavMeshAgent Nav;
     private Animator animator;
     private float Timer = 0f;
     private bool isAlive = true;
+    private bool isMovable = false;
+
+    public HealthBar healthBar;
+
     private PhotonView view;
 
     private void Awake()
     {
+
+        MaxHealth = playerdata.Health;
         Health = playerdata.Health;
         SightRange = playerdata.SightRange;
         AttackRange = playerdata.AttackRange;
         TimeAttack = playerdata.TimeAttack;
         Damage = playerdata.Damage;
+
+        healthBar.SetMaxHealth(MaxHealth);
+
     }
 
     // Start is called before the first frame update
@@ -42,15 +53,18 @@ public class playerClickController : MonoBehaviourPun
         animator = GetComponent<Animator>();
         Nav = GetComponent<NavMeshAgent>();
         Enemy = null;
+
         view = GetComponent<PhotonView>();
     }
     private void Update()
     {
         bool click1 = Input.GetMouseButtonDown(1);
         click(click1);
+<<<<<<< HEAD
+
         GameObject target;
         target = FindTarget();
-        if (target != null && isAlive)
+        if (target != null && isAlive && isMovable)
         {
             float distance = Vector3.Distance(target.transform.position, transform.position);
             if (distance <= SightRange && distance > AttackRange)
@@ -79,6 +93,7 @@ public class playerClickController : MonoBehaviourPun
     {
         if (click1)
         {
+            isMovable = false;
             animator.SetBool("IsMoving", true);
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, clickOn))
@@ -90,6 +105,7 @@ public class playerClickController : MonoBehaviourPun
         else if (Nav.remainingDistance <= 0)
         {
             animator.SetBool("IsMoving", false);
+            isMovable = true;
         }
     }
 
@@ -98,7 +114,7 @@ public class playerClickController : MonoBehaviourPun
         animator.SetBool("IsMoving", true);
         Nav.SetDestination(target.transform.position);
     }
-    
+
     private void UnChasing()
     {
         animator.SetBool("IsMoving", false);
@@ -107,7 +123,7 @@ public class playerClickController : MonoBehaviourPun
     private void Attacking(GameObject target)
     {
         transform.LookAt(target.transform);
-        if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
+        if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent1))
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
             {
@@ -116,7 +132,7 @@ public class playerClickController : MonoBehaviourPun
             }
 
         }
-        else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponents))
+        else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponent2))
         {
             if (target.GetComponent<AiBehavior>().Health > 0)
             {
@@ -124,12 +140,42 @@ public class playerClickController : MonoBehaviourPun
                 animator.SetTrigger("Attack");
             }
         }
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponent3))
+        {
+            if (target.GetComponent<playerClickController>().Health > 0)
+            {
+                target.GetComponent<playerClickController>().TakeDamage(Damage);
+                animator.SetTrigger("Attack");
+            }
+        }
+        else if (target.gameObject.TryGetComponent<Miner>(out Miner enemyComponent4))
+        {
+            if (target.GetComponent<Miner>().Health > 0)
+            {
+                target.GetComponent<Miner>().TakeDamage(Damage);
+                animator.SetTrigger("Attack");
+            }
+        }
+        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponent5))
+        {
+            if (target.GetComponent<Spawner>().Health > 0)
+            {
+
+                animator.SetTrigger("Attack");
+                target.GetComponent<Spawner>().TakeDamage(Damage);
+            }
+        }
         else
         {
             return;
         }
+    }
 
 
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, playerdata.SightRange);
+        Gizmos.DrawWireSphere(transform.position, playerdata.AttackRange);
     }
 
     private GameObject FindTarget()
@@ -171,6 +217,7 @@ public class playerClickController : MonoBehaviourPun
     public void TakeDamage(float amout)
     {
         Health -= amout;
+        healthBar.SetHealth(Health);
         if (Health <= 0 && isAlive)
         {
             isAlive = false;

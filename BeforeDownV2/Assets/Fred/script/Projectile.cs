@@ -44,12 +44,16 @@ public class Projectile : MonoBehaviourPun
         {
             enemy.TakeDamage(damage);
         }
+        Miner miner = target.GetComponent<Miner>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
         TowerBehavior tower = target.GetComponent<TowerBehavior>();
         if (tower != null)
         {
             tower.TakeDamage(damage);
         }
-
         playerClickController player = target.GetComponent<playerClickController>();
         if (player != null)
         {

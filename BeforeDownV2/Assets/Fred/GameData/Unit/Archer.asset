@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Archer
   m_EditorClassIdentifier: 
   Type: {fileID: 0}
-  Health: 7
-  speed: 3
+  Health: 34
+  speed: 6
   damage: 3
   SightRange: 40
   AttackRange: 20
