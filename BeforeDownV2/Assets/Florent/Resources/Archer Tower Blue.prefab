@@ -92,6 +92,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2336978174420948169, guid: b6269ce7e4b3aa440a7adee70f27456f,
+        type: 3}
+      propertyPath: Towers.Array.data[1]
+      value: 
+      objectReference: {fileID: 8725731050529014804}
     - target: {fileID: 3538807561037368355, guid: b6269ce7e4b3aa440a7adee70f27456f,
         type: 3}
       propertyPath: m_Name
@@ -104,3 +109,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6269ce7e4b3aa440a7adee70f27456f, type: 3}
+--- !u!1 &8725731050529014804 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3538807561037368355, guid: b6269ce7e4b3aa440a7adee70f27456f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5189370058693511223}
+  m_PrefabAsset: {fileID: 0}

@@ -1310,7 +1310,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16
   playerdata: {fileID: 11400000, guid: 3dbbfefa43b5b4d3593b705a8b2457b2, type: 2}
+  MaxHealth: 0
   Health: 0
+  popo: {x: 0, y: 0, z: 0}
+  healthBar: {fileID: 1608806801529048136, guid: 6aa1f3e6b1cfa4141be2a5a39acd6dc2,
+    type: 3}
 --- !u!114 &2740742614209823967
 MonoBehaviour:
   m_ObjectHideFlags: 0

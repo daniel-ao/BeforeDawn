@@ -46,6 +46,7 @@ public class playerClickController : MonoBehaviourPun
         TimeAttack = playerdata.TimeAttack;
         Damage = playerdata.Damage;
         popo = playerdata.popo;
+        IsLongRange = playerdata.IsLongRange;
 
         healthBar.SetMaxHealth(MaxHealth);
 
