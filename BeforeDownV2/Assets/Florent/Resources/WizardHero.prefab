@@ -740,6 +740,7 @@ GameObject:
   - component: {fileID: 4249664417906390430}
   - component: {fileID: 3783889260114958877}
   - component: {fileID: 7500218251067287889}
+  - component: {fileID: 5019742305277459757}
   m_Layer: 0
   m_Name: WizardHero
   m_TagString: Untagged
@@ -851,7 +852,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters: []
+  m_SynchronizeParameters:
+  - Type: 9
+    SynchronizeType: 0
+    Name: IsDead
+  - Type: 9
+    SynchronizeType: 0
+    Name: Attack
+  - Type: 9
+    SynchronizeType: 0
+    Name: GetHit
+  - Type: 4
+    SynchronizeType: 0
+    Name: IsMoving
+  - Type: 1
+    SynchronizeType: 0
+    Name: MoveSpeed
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
@@ -870,12 +886,35 @@ MonoBehaviour:
   id: 0
   clickOn:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 16
   playerdata: {fileID: 11400000, guid: 564f33b61ff8eb9418f2eb16d4a6e965, type: 2}
   MaxHealth: 0
   Health: 0
+  isAlive: 1
   popo: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 5222159303033383601}
+--- !u!195 &5019742305277459757
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3837243125544021702}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &3837247547619583464
 GameObject:
   m_ObjectHideFlags: 0

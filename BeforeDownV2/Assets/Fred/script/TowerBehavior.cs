@@ -12,7 +12,8 @@ public class TowerBehavior : MonoBehaviourPun
 
     public float MaxHealth;
     public float Health;
-    public float CurrentGold = 100f;
+    public float CurrentGold;
+    public float Price;
     private float AttackRange;
     private float fireCountdown = 0f;
     private Transform target;
@@ -30,17 +31,19 @@ public class TowerBehavior : MonoBehaviourPun
     private void Awake()
     {
         MaxHealth = castle.Health;
-        this.Health = MaxHealth;
+        Health = MaxHealth;
         AttackRange = castle.AttackRange;
+        CurrentGold = castle.CurrentGold;
+        Price = castle.Price;
         popo = castle.popo;
-
-        healthBar.SetMaxHealth(MaxHealth);
 
     }
 
     private void Start()
     {
-        
+        healthBar.SetMaxHealth(MaxHealth);
+
+
         if ( gameObject == TowerR || gameObject == TowerB)
             winAndLose = GameObject.Find("_GameManager").GetComponent<WinAndLose>();
     }

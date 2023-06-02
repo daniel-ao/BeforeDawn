@@ -41,13 +41,13 @@ public class AiBehavior : MonoBehaviourPun
         IsLongRange = data.isLongRange;
         TimeAttack = data.timeBetweenAttack; 
         popo = data.popo;
-
-        healthBar.SetMaxHealth(MaxHealth);
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        healthBar.SetMaxHealth(MaxHealth);
+
         navAgent = GetComponent<NavMeshAgent>();
 
         animator = GetComponent<Animator>();

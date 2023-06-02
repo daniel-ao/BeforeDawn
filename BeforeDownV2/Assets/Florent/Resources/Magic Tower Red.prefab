@@ -217,8 +217,11 @@ MonoBehaviour:
   MaxHealth: 0
   Health: 0
   CurrentGold: 100
+  Price: 0
   popo: {x: 0, y: 0, z: 0}
   NoHealth: 0
+  TowerR: {fileID: 0}
+  TowerB: {fileID: 0}
   healthBar: {fileID: 0}
 --- !u!114 &-3368216028379467981
 MonoBehaviour:

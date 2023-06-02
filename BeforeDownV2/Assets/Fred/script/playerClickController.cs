@@ -48,14 +48,13 @@ public class playerClickController : MonoBehaviourPun
         Damage = playerdata.Damage;
         popo = playerdata.popo;
         IsLongRange = playerdata.IsLongRange;
-
-        healthBar.SetMaxHealth(MaxHealth);
-
     }
 
     // Start is called before the first frame update
     private void Start()
     {
+        healthBar.SetMaxHealth(MaxHealth);
+
         animator = GetComponent<Animator>();
         Nav = GetComponent<NavMeshAgent>();
         Enemy = null;
@@ -68,6 +67,7 @@ public class playerClickController : MonoBehaviourPun
         click(click1);
         GameObject target;
         target = FindTarget();
+        Debug.Log(target);
         if (target != null && isAlive && isMovable)
         {
             float distance = Vector3.Distance(target.transform.position, transform.position);
@@ -75,7 +75,6 @@ public class playerClickController : MonoBehaviourPun
             {
                 ChasingEnnemy(target);
             }
-
             else if (distance <= AttackRange)
             {
                 Nav.isStopped = true;

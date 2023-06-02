@@ -223,10 +223,11 @@ MonoBehaviour:
   id: 0
   clickOn:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 16
   playerdata: {fileID: 11400000, guid: 8ed78e367a61a9045a3fd04e02dd33b0, type: 2}
   MaxHealth: 0
   Health: 0
+  isAlive: 1
   popo: {x: 0, y: 0, z: 0}
   healthBar: {fileID: 4629719853223378703}
 --- !u!195 &811258847921949450

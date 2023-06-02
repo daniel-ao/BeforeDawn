@@ -1089,6 +1089,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5737243919187264515, guid: 0411bbd6c1ad5b84084f7036ccec0aba,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5737243919187264515, guid: 0411bbd6c1ad5b84084f7036ccec0aba,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6122194704259354226, guid: 0411bbd6c1ad5b84084f7036ccec0aba,
         type: 3}
       propertyPath: sceneViewId
@@ -4173,6 +4183,7 @@ MonoBehaviour:
   - {fileID: 4095182627200622710, guid: 38c1d0859d9d97248a2f46016078465c, type: 3}
   - {fileID: 1997144393598588853, guid: 3c0aff39859db4931bccce6c9ad694be, type: 3}
   - {fileID: 1509025023792059704, guid: 8963b66ceb0d267479f97062697437a4, type: 3}
+  prices: 000000000000000000000000
   layerMask:
     serializedVersion: 2
     m_Bits: 16
@@ -7946,12 +7957,12 @@ PrefabInstance:
     - target: {fileID: 6446237306977990338, guid: c5a644fab3b8b4928b2f7cfb90e1d38c,
         type: 3}
       propertyPath: m_Name
-      value: Player2
+      value: Player2(Clone)
       objectReference: {fileID: 0}
     - target: {fileID: 6446237306977990338, guid: c5a644fab3b8b4928b2f7cfb90e1d38c,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6446237306977990342, guid: c5a644fab3b8b4928b2f7cfb90e1d38c,
         type: 3}

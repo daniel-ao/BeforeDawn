@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.UI;
-using Photon.Pun;
 
 public class BuildingManager : MonoBehaviourPun
 {
@@ -20,6 +17,26 @@ public class BuildingManager : MonoBehaviourPun
     public float gridSize;
     [SerializeField] private Toggle gridToggle;
 
+    private GameObject YourMainTower;
+    private TowerBehavior MainTower;
+    public int[] prices;
+
+    private void Start()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            YourMainTower = GameObject.Find("Barracks Tower Red(Clone)");
+        }
+        else
+        {
+            YourMainTower = GameObject.Find("Barracks Tower Blue(Clone)");
+        }
+
+        if (YourMainTower.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent1))
+        {
+                MainTower = YourMainTower.GetComponent<TowerBehavior>();
+        }
+    }
     void Update()
     {
         if (pendingObject != null)
@@ -34,7 +51,7 @@ public class BuildingManager : MonoBehaviourPun
             {
                 pendingObject.transform.position = pos;
             }
-            
+
             if (Input.GetMouseButtonDown(0) && canPlace)
             {
                 PlaceObject();
@@ -43,7 +60,6 @@ public class BuildingManager : MonoBehaviourPun
             if (Input.GetMouseButtonDown(1))
             {
                 Destroy(pendingObject);
-                canPlace = false;
             }
             if (Input.GetKeyDown(KeyCode.R))
             {
@@ -51,7 +67,6 @@ public class BuildingManager : MonoBehaviourPun
             }
         }
     }
-    [PunRPC]
     public void PlaceObject()
     {
         GameObject towerInstanciate = pendingObject.GetComponent<CheckPlacement>().SelectTower();
@@ -63,7 +78,7 @@ public class BuildingManager : MonoBehaviourPun
     {
         pendingObject.transform.Rotate(Vector3.up, rotateAmount);
     }
-    
+
     private void FixedUpdate()
     {
         Camera cam = Camera.main;
@@ -82,7 +97,15 @@ public class BuildingManager : MonoBehaviourPun
 
     public void SelectObject(int index)
     {
-        pendingObject = Instantiate(objects[index], pos, transform.rotation);
+        float price = prices[index];
+        if (MainTower.CurrentGold >= price)
+        {
+            pendingObject = Instantiate(objects[index], pos, transform.rotation);
+        }
+        else
+        {
+            return;
+        }
     }
 
     public void ToggleGrid()

@@ -279,6 +279,7 @@ MonoBehaviour:
   MaxHealth: 0
   Health: 0
   CurrentGold: 100
+  Price: 0
   popo: {x: 0, y: 0, z: 0}
   NoHealth: 0
   TowerR: {fileID: 3986183178789783211}

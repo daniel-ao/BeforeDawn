@@ -27,15 +27,16 @@ public class _GameManager : MonoBehaviourPun
     void Awake ()
     {
         instance = this;
-    }
-
-    private void Start()
-    {
         Hero = new GameObject[PhotonNetwork.PlayerList.Length];
         players = new CameraController[PhotonNetwork.PlayerList.Length];
         selectedCharater1 = PlayerPrefs.GetInt("selectedCharacter1");
         selectedCharater2 = PlayerPrefs.GetInt("selectedCharacter2");
-        photonView.RPC("ImInGame", RpcTarget.AllBuffered,selectedCharater1, selectedCharater2);
+        photonView.RPC("ImInGame", RpcTarget.AllBuffered, selectedCharater1, selectedCharater2);
+    }
+
+    private void Start()
+    {
+        return;
     }
 
     [PunRPC]
