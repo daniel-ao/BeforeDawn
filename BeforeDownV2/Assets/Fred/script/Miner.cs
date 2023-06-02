@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using Photon.Pun;
 
-
-public class Miner : MonoBehaviour
+public class Miner : MonoBehaviourPun
 {
     Animator animator;
     public NavMeshAgent navAgent;
@@ -22,12 +22,12 @@ public class Miner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        healthBar.SetMaxHealth(MaxHealth);
+        //healthBar.SetMaxHealth(MaxHealth);
         navAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
 
-        TowerR = GameObject.Find("Barracks Tower Red");
-        TowerB = GameObject.Find("Barracks Tower Blue");
+        TowerR = GameObject.Find("Barracks Tower Red(Clone)");
+        TowerB = GameObject.Find("Barracks Tower Blue(Clone)");
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class Miner : MonoBehaviour
         }
         else
         {
-            if (target.tag != "Mine")
+            if (!target.CompareTag("Mine"))
             {
                 Chasing(target);
                 navAgent.isStopped = false;
@@ -50,7 +50,7 @@ public class Miner : MonoBehaviour
                 float distance = Vector3.Distance(target.transform.position, transform.position);
                 if (distance <= pickGoldRange && GoldStock == 0f && isAlive)
                 {
-                    //UnChasing();
+                    UnChasing();
                     navAgent.isStopped = true;
                     PickUpGold();
                 }
@@ -91,7 +91,7 @@ public class Miner : MonoBehaviour
         }
         else
         {
-            if (transform.CompareTag("Red"))
+            if (transform.CompareTag("MinerRed"))
             {
                 target = TowerR;
             }
@@ -99,21 +99,21 @@ public class Miner : MonoBehaviour
             {
                 target = TowerB;
             }
-            // animator.SetBool("IsMoving", true);
+            animator.SetBool("IsMoving", true);
         }
     }
 
     private void Chasing(GameObject target)
     {
         navAgent.SetDestination(target.transform.position);
-        // animator.SetBool("IsMoving", true);
+        animator.SetBool("IsMoving", true);
     }
-    /*
+    
     private void UnChasing()
     {
         animator.SetBool("IsMoving", false);
     }
-    */
+    
 
     void PickUpGold()
     {
@@ -137,7 +137,7 @@ public class Miner : MonoBehaviour
         {
             isAlive = false;
             navAgent.isStopped = true;
-            //animator.SetTrigger("IsDead");
+            animator.SetTrigger("IsDead");
             StartCoroutine(WaitDie());
         }
     }

@@ -246,7 +246,7 @@ public class AiBehavior : MonoBehaviourPun
         foreach (GameObject enemy in AllEnemy)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < closestDistance && (enemy.name != "Player1(Clone)" && enemy.name != "Player2(Clone)"))
+            if (distanceToEnemy < closestDistance && enemy.name != "Player1(Clone)" && enemy.name != "Player2(Clone)")
             {
                 closestDistance = distanceToEnemy;
                 closestEnemy = enemy;

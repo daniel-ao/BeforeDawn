@@ -1567,7 +1567,7 @@ Transform:
   m_Children:
   - {fileID: 1350990697001468092}
   - {fileID: 5978569977506100116}
-  - {fileID: 7160268939583829360}
+  - {fileID: 4288612278247288934}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1754,7 +1754,7 @@ MonoBehaviour:
   MaxHealth: 0
   Health: 0
   popo: {x: 0, y: 0, z: 0}
-  healthBar: {fileID: 7160268939574321704}
+  healthBar: {fileID: 4288612278778062654}
 --- !u!114 &2571786394362276699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1808,7 +1808,7 @@ MonoBehaviour:
   ObservedComponents:
   - {fileID: -7302875870153602382}
   - {fileID: 2389721048409486037}
-  sceneViewId: 1
+  sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
 --- !u!114 &2389721048409486037
@@ -2864,7 +2864,7 @@ Transform:
   m_Father: {fileID: 8607726995547389447}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 12.273389, y: 12.01562, z: -31.002913}
---- !u!1001 &2651051005108774673
+--- !u!1001 &8939707224638726663
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2991,19 +2991,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5157763407857537634, guid: ea789dc59484fe6439f07af78d6278c2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea789dc59484fe6439f07af78d6278c2, type: 3}
---- !u!224 &7160268939583829360 stripped
+--- !u!224 &4288612278247288934 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5157763407857537633, guid: ea789dc59484fe6439f07af78d6278c2,
     type: 3}
-  m_PrefabInstance: {fileID: 2651051005108774673}
+  m_PrefabInstance: {fileID: 8939707224638726663}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7160268939574321704 stripped
+--- !u!114 &4288612278778062654 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5157763407832958265, guid: ea789dc59484fe6439f07af78d6278c2,
     type: 3}
-  m_PrefabInstance: {fileID: 2651051005108774673}
+  m_PrefabInstance: {fileID: 8939707224638726663}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
