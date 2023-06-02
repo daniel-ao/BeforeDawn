@@ -27,7 +27,8 @@ public class playerClickController : MonoBehaviourPun
     private Animator animator;
     private bool IsLongRange;
     private float Timer = 0f;
-    private bool isAlive = true;
+    public bool isAlive = true;
+
     private bool isMovable = false;
     public Vector3 popo;
 
@@ -303,9 +304,8 @@ public class playerClickController : MonoBehaviourPun
 
     public IEnumerator WaitDie()
     {
-        Debug.Log("waiting");
         yield return new WaitForSeconds(1.5f);
-
-        Destroy(gameObject);
+        if (photonView.IsMine)
+            PhotonNetwork.Destroy(gameObject);
     }
 }

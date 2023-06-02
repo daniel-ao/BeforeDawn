@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviourPun
 
     void Update()
     {
-        photonView.RPC("TimeToSpawn",RpcTarget.AllViaServer);
+        TimeToSpawn();
     }
     void spawner()
     {
@@ -31,11 +31,9 @@ public class Spawner : MonoBehaviourPun
 
             System.Random random = new System.Random();
             indexer += random.Next(0, 3);
-            Debug.Log(indexer);
             GameObject unit = PhotonNetwork.Instantiate(Units[indexer].name, SpawnPosition.position, Quaternion.identity);
         }
     }
-    [PunRPC]
     void TimeToSpawn()
     {
         if (SpawningCountdown <= 0f)
@@ -45,14 +43,13 @@ public class Spawner : MonoBehaviourPun
         }
         SpawningCountdown -= Time.deltaTime;
     }
-    [PunRPC]
     public void TakeDamage(float amout)
     {
         Health -= amout;
         if (Health <= 0)
         {
             if (photonView.IsMine)
-                Destroy(gameObject);
+                PhotonNetwork.Destroy(gameObject);
         }
     }
 }
