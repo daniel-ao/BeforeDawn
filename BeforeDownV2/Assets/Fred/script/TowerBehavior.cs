@@ -9,8 +9,8 @@ public class TowerBehavior : MonoBehaviourPun
 {
     public CastleDATA castle;
 
+    public float MaxHealth;
     public float Health;
-    private float Damage;
     public float CurrentGold = 100f;
     private float AttackRange;
     private float fireCountdown = 0f;
@@ -19,11 +19,18 @@ public class TowerBehavior : MonoBehaviourPun
     public bool NoHealth = false;
     private bool Dying = true;
 
+    public HealthBar healthBar;
+
+
     private void Awake()
     {
-        Health = castle.Health;
+        MaxHealth = castle.Health;
+        this.Health = MaxHealth;
         AttackRange = castle.AttackRange;
         popo = castle.popo;
+
+        healthBar.SetMaxHealth(MaxHealth);
+
     }
 
     void Update()
@@ -46,6 +53,7 @@ public class TowerBehavior : MonoBehaviourPun
     public void TakeDamage(float amout)
     {
         Health -= amout;
+        healthBar.SetHealth(Health);
         if (Health <= 0)
         {
             NoHealth = true;

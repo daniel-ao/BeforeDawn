@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b053f9beb9e1440787c41b303f5511d, type: 3}
-  m_Name: Hero
+  m_Name: WizardHero
   m_EditorClassIdentifier: 
-  Health: 500
-  Damage: 50
-  Speed: 2
-  AttackRange: 3
-  SightRange: 8
-  TimeAttack: 1
+  Health: 65
+  Damage: 9
+  Speed: 3
+  AttackRange: 15
+  SightRange: 40
+  TimeAttack: 1.7
+  IsLongRange: 1
+  popo: {x: 0, y: 0, z: 0}
+  projectilePrefab: {fileID: 2348266241764958831, guid: 16df5ca33880bf7409922364f4bdcc3d,
+    type: 3}

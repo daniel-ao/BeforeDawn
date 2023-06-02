@@ -11,6 +11,7 @@ public class HeroData : ScriptableObject
     public float AttackRange = 3f;
     public float SightRange = 8f;
     public float TimeAttack = 1f;
+    public bool IsLongRange;
     public Vector3 popo; //hauteur l'archer/soso pour attaquer
     public GameObject projectilePrefab;
 }
