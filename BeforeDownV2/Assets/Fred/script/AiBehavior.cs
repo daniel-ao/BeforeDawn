@@ -16,6 +16,7 @@ public class AiBehavior : MonoBehaviourPun
     private NavMeshAgent navAgent;
 
     private GameObject[] AllEnemy;
+    public float MaxHealth;
     public float Health;
     private float Damage;
     private float AttackRange;
@@ -27,8 +28,11 @@ public class AiBehavior : MonoBehaviourPun
     public Vector3 popo;
     private bool isAlive = true;
 
+    public HealthBar healthBar;
+
     private void Awake()
     {
+        MaxHealth = data.Health;
         Health = data.Health;
         Damage = data.damage;
         AttackRange = data.AttackRange;
@@ -37,6 +41,8 @@ public class AiBehavior : MonoBehaviourPun
         IsLongRange = data.isLongRange;
         TimeAttack = data.timeBetweenAttack; 
         popo = data.popo;
+
+        healthBar.SetMaxHealth(MaxHealth);
     }
 
     // Start is called before the first frame update
@@ -104,7 +110,7 @@ public class AiBehavior : MonoBehaviourPun
     private void ShortRangeAttack(GameObject target)
     {
 
-        if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
+        if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent1))
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
             {
@@ -113,7 +119,7 @@ public class AiBehavior : MonoBehaviourPun
             }
 
         }
-        else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponents))
+        else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponent2))
         {
             if (target.GetComponent<AiBehavior>().Health > 0)
             {
@@ -121,7 +127,15 @@ public class AiBehavior : MonoBehaviourPun
                 target.GetComponent<AiBehavior>().TakeDamage(Damage);
             }
         }
-        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponentss))
+        else if (target.gameObject.TryGetComponent<Miner>(out Miner enemyComponent3))
+        {
+            if (target.GetComponent<Miner>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                target.GetComponent<Miner>().TakeDamage(Damage);
+            }
+        }
+        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponent4))
         {
             if (target.GetComponent<Spawner>().Health > 0)
             {
@@ -129,7 +143,7 @@ public class AiBehavior : MonoBehaviourPun
                 target.GetComponent<Spawner>().TakeDamage(Damage);
             }
         }
-        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponentsss))
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponent5))
         {
             if (target.GetComponent<playerClickController>().Health > 0)
             {
@@ -145,7 +159,7 @@ public class AiBehavior : MonoBehaviourPun
 
     private void LongRangeAttack(GameObject target)
     {
-        if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent))
+        if (target.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent1))
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
             {
@@ -154,7 +168,7 @@ public class AiBehavior : MonoBehaviourPun
             }
 
         }
-        else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponents))
+        else if (target.gameObject.TryGetComponent<AiBehavior>(out AiBehavior enemyComponent2))
         {
             if (target.GetComponent<AiBehavior>().Health > 0)
             {
@@ -162,15 +176,25 @@ public class AiBehavior : MonoBehaviourPun
                 Fire(target);
             }
         }
-        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponentss))
+        else if (target.gameObject.TryGetComponent<Miner>(out Miner enemyComponent3))
+        {
+            if (target.GetComponent<Miner>().Health > 0)
+            {
+                animator.SetTrigger("Attack");
+                Fire(target);
+            }
+
+        }
+        else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponent4))
         {
             if (target.GetComponent<Spawner>().Health > 0)
             {
+
                 animator.SetTrigger("Attack");
                 target.GetComponent<Spawner>().TakeDamage(Damage);
             }
         }
-        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponentsss))
+        else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponent5))
         {
             if (target.GetComponent<playerClickController>().Health > 0)
             {
@@ -243,6 +267,7 @@ public class AiBehavior : MonoBehaviourPun
     public void TakeDamage(float amout)
     {
         Health -= amout;
+        healthBar.SetHealth(Health);
         if (Health <= 0 && isAlive)
         {
             isAlive = false;

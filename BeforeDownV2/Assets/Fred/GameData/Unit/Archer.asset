@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Archer
   m_EditorClassIdentifier: 
   Type: {fileID: 0}
-  Health: 7
-  speed: 3
+  Health: 18
+  speed: 6
   damage: 3
   SightRange: 40
-  AttackRange: 20
+  AttackRange: 10
   timeBetweenAttack: 0.9
   isLongRange: 1
   popo: {x: 0, y: 1, z: 0}

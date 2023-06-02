@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fb72ca248874fcc826ace4ded37b5d, type: 3}
   m_Name: Castle
   m_EditorClassIdentifier: 
-  Health: 100
+  Health: 200
   damage: 5
   AttackRange: 30
   fireRate: 1

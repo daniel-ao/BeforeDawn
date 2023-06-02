@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2901afc1825054fbfb1e2ccb7377328e, type: 3}
-  m_Name: Warrior
+  m_Script: {fileID: 11500000, guid: 7b053f9beb9e1440787c41b303f5511d, type: 3}
+  m_Name: MagicienHero
   m_EditorClassIdentifier: 
-  Type: {fileID: 0}
-  Health: 30
-  speed: 10
-  damage: 9
-  SightRange: 25
-  AttackRange: 3
-  timeBetweenAttack: 1.1
-  isLongRange: 0
+  Health: 65
+  Damage: 15
+  Speed: 6
+  AttackRange: 15
+  SightRange: 40
+  TimeAttack: 1.4
+  IsLongRange: 1
   popo: {x: 0, y: 0, z: 0}
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 2348266241764958831, guid: 208c852a323ae3d44998f5b371b37ce4,
+    type: 3}

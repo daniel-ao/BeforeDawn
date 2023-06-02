@@ -11,15 +11,18 @@ public class Miner : MonoBehaviour
     GameObject target;
     private GameObject TowerB, TowerR;
 
-
+    public float MaxHealth = 12f;
     public float Health = 12f;
     private bool isAlive = true;
     public float GoldStock = 0f;
     float pickGoldRange = 2f;
 
+    public HealthBar healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
+        healthBar.SetMaxHealth(MaxHealth);
         navAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
 
@@ -129,6 +132,7 @@ public class Miner : MonoBehaviour
     public void TakeDamage(float amout)
     {
         Health -= amout;
+        healthBar.SetHealth(Health);
         if (Health <= 0 && isAlive)
         {
             isAlive = false;
