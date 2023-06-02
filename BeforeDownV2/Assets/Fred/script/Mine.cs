@@ -1,26 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using UnityEngine.UI;
+using TMPro;
 
 
-public class Mine : MonoBehaviour
+public class Mine : MonoBehaviourPun
 {
     float TimeBeforeDestroy = 40f;
     public float timer = 0f;
     public float GoldStockage = 500;
-    // Start is called before the first frame update
+    private _GameManager gameManager;
     void Start()
     {
-
+        gameManager = GameObject.Find("_GameManager").GetComponent<_GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         timer += Time.deltaTime;
         if (timer >= TimeBeforeDestroy)
         {
-            Destroy(gameObject);
+            if (photonView.IsMine)
+            {
+                PhotonNetwork.Destroy(gameObject);
+                gameManager.photonView.RPC("SpawnMine", RpcTarget.All);
+            }
         }
     }
 

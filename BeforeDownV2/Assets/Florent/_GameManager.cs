@@ -16,6 +16,7 @@ public class _GameManager : MonoBehaviourPun
     private GameObject[] Hero;
 
     public Transform[] spawnPoints;
+    private BuildingManager _buildingManager;
     private int playersInGame;
     public static _GameManager instance;
 
@@ -31,11 +32,13 @@ public class _GameManager : MonoBehaviourPun
 
     private void Start()
     {
+        _buildingManager = GameObject.Find("BuildingManager").GetComponent<BuildingManager>();
         Hero = new GameObject[PhotonNetwork.PlayerList.Length];
         players = new CameraController[PhotonNetwork.PlayerList.Length];
         selectedCharater1 = PlayerPrefs.GetInt("selectedCharacter1");
         selectedCharater2 = PlayerPrefs.GetInt("selectedCharacter2");
         photonView.RPC("ImInGame", RpcTarget.AllBuffered,selectedCharater1, selectedCharater2);
+        
     }
 
     [PunRPC]
@@ -44,8 +47,13 @@ public class _GameManager : MonoBehaviourPun
         playersInGame++;
         if (PhotonNetwork.IsMasterClient && playersInGame == PhotonNetwork.PlayerList.Length)
         {
-            photonView.RPC("SpawnPlayer", RpcTarget.All, hero1, hero2);
+            photonView.RPC("SpawnPlayer", RpcTarget.All);
+            photonView.RPC("SpawnHero", RpcTarget.All, hero1, hero2);
             photonView.RPC("SpawnTower",RpcTarget.All);
+            photonView.RPC("SpawnMiner", RpcTarget.AllBuffered);
+            photonView.RPC("SpawnMine", RpcTarget.AllBuffered);
+            
+            _buildingManager.photonView.RPC("OwnTower",RpcTarget.AllBuffered, true);
         }
             
     }
@@ -63,44 +71,103 @@ public class _GameManager : MonoBehaviourPun
 
         }
     }
-    
+
     [PunRPC]
-    void SpawnPlayer (int hero1, int hero2)
+    void SpawnHero(int hero1, int hero2)
     {
-        GameObject playerObj;
         GameObject HeroObj;
         GameObject prefab1 = charaterPrefabs[hero1];
         GameObject prefab2 = charaterPrefabs[hero2];
         if (PhotonNetwork.IsMasterClient)
         {
-            playerObj = PhotonNetwork.Instantiate("Player1", spawnPoints[0].position, Quaternion.identity);
             HeroObj = PhotonNetwork.Instantiate(prefab1.name, spawnPoints[2].position, Quaternion.identity);
             Hero[0] = HeroObj;
-            
-            playerObj.tag = "Red";
+
             HeroObj.tag = "Red";
         }
 
         else
         {
-            playerObj = PhotonNetwork.Instantiate("Player2", spawnPoints[1].position, Quaternion.identity);
             HeroObj = PhotonNetwork.Instantiate(prefab2.name, spawnPoints[3].position, Quaternion.identity);
             Hero[1] = HeroObj;
-            
-            var transformRotation = playerObj.transform.rotation;
+
+            var transformRotation = new Quaternion();
             transformRotation.y = 180;
             HeroObj.transform.rotation = transformRotation;
 
-            playerObj.tag = "Blue";
             HeroObj.tag = "Blue";
         }
+    }
+
+    [PunRPC]
+    void SpawnPlayer ()
+    {
+        
+        if (PhotonNetwork.IsMasterClient)
+        {
+            GameObject playerObj;
+            playerObj = PhotonNetwork.Instantiate("Player1", spawnPoints[0].position, Quaternion.identity);
+            
+            playerObj.tag = "Red";
+            playerObj.GetComponent<CameraController>().photonView.RPC("Initialize", RpcTarget.All, PhotonNetwork.LocalPlayer);
+        }
+
+        else
+        {
+            GameObject playerObj2;
+            playerObj2 = PhotonNetwork.Instantiate("Player2", spawnPoints[1].position, Quaternion.identity);
+
+            playerObj2.tag = "Blue";
+            playerObj2.GetComponent<CameraController>().photonView.RPC("Initialize", RpcTarget.All, PhotonNetwork.LocalPlayer);
+        }
         // initialize the player for all other players
-        playerObj.GetComponent<CameraController>().photonView.RPC("Initialize", RpcTarget.All, PhotonNetwork.LocalPlayer);
+        
+    }
+
+    [PunRPC]
+    void SpawnMiner()
+    {
+        
+        if (PhotonNetwork.IsMasterClient)
+        {
+            GameObject Miner;
+            Miner = PhotonNetwork.Instantiate("miner", spawnPoints[6].position, Quaternion.identity);
+            Miner.tag = "MinerRed";
+        }
+        else
+        {
+            GameObject Miner2;
+            Miner2 = PhotonNetwork.Instantiate("miner", spawnPoints[7].position, Quaternion.identity);
+            Miner2.tag = "MinerBlue";
+        }
+        
     }
 
     [PunRPC]
     void SpawnMine()
     {
-        
+        GameObject Mine;
+        float x = Random.Range(-31, 31);
+        float z = Random.Range(0, 31);
+        Vector3 position = new Vector3();
+        var positionPosition = position;
+        if (PhotonNetwork.IsMasterClient)
+        {
+            Debug.Log("MineRed");
+            positionPosition.x = TowerR.transform.position.x + x;
+            positionPosition.z = TowerR.transform.position.z + z;
+            position = positionPosition;
+            Mine = PhotonNetwork.Instantiate("Mine", position, Quaternion.identity);
+            Mine.tag = "Mine";
+        }
+        else
+        {
+            Debug.Log("BlueMine");
+            positionPosition.x = TowerB.transform.position.x + x;
+            positionPosition.z = TowerB.transform.position.z - z;
+            position = positionPosition;
+            Mine = PhotonNetwork.Instantiate("Mine", position, Quaternion.identity);
+            Mine.tag = "Mine";
+        }
     }
 }

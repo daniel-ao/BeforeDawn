@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using TMPro;
 
 public class BuildingManager : MonoBehaviourPun
 {
@@ -20,45 +21,78 @@ public class BuildingManager : MonoBehaviourPun
     public float gridSize;
     [SerializeField] private Toggle gridToggle;
 
-    void Update()
+    public Text ShowGold;
+    private GameObject YourMainTower;
+    private TowerBehavior MainTower;
+    public int[] prices;
+    private float fixprice = 0;
+
+    [PunRPC]
+    void OwnTower(bool valid)
     {
-        if (pendingObject != null)
+        if (valid)
         {
-            if (gridOn)
+            if (PhotonNetwork.IsMasterClient)
             {
-                pendingObject.transform.position = new Vector3(
-                    RoundToNearestGrid(pos.x), RoundToNearestGrid(pos.y), RoundToNearestGrid(pos.z)
-                    );
+                YourMainTower = GameObject.Find("Barracks Tower Red(Clone)");
             }
             else
             {
-                pendingObject.transform.position = pos;
-            }
-            
-            if (Input.GetMouseButtonDown(0) && canPlace)
-            {
-                PlaceObject();
+                YourMainTower = GameObject.Find("Barracks Tower Blue(Clone)");
             }
 
-            if (Input.GetMouseButtonDown(1))
+            if (YourMainTower.gameObject.TryGetComponent<TowerBehavior>(out TowerBehavior enemyComponent1))
             {
-                Destroy(pendingObject);
-                canPlace = false;
-            }
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                RotateObject();
+                MainTower = YourMainTower.GetComponent<TowerBehavior>();
             }
         }
     }
-    [PunRPC]
-    public void PlaceObject()
+    void Update()
     {
+        //ShowGold.text = MainTower.CurrentGold.ToString();
+        if (YourMainTower != null)
+        {
+            if (pendingObject != null)
+            {
+                if (gridOn)
+                {
+                    pendingObject.transform.position = new Vector3(
+                        RoundToNearestGrid(pos.x), RoundToNearestGrid(pos.y), RoundToNearestGrid(pos.z)
+                    );
+                }
+                else
+                {
+                    pendingObject.transform.position = pos;
+                }
+
+                if (Input.GetMouseButtonDown(0) && canPlace)
+                {
+                    PlaceObject(fixprice);
+                }
+
+                if (Input.GetMouseButtonDown(1))
+                {
+                    Destroy(pendingObject);
+                }
+
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    RotateObject();
+                }
+            }
+
+        }
+    }
+
+    public void PlaceObject(float price)
+    {
+        MainTower.CurrentGold -= fixprice;
         GameObject towerInstanciate = pendingObject.GetComponent<CheckPlacement>().SelectTower();
         Destroy(pendingObject);
         PhotonNetwork.Instantiate(towerInstanciate.name, pos, pendingObject.transform.rotation);
         pendingObject = null;
     }
+    
     public void RotateObject()
     {
         pendingObject.transform.Rotate(Vector3.up, rotateAmount);
@@ -82,7 +116,17 @@ public class BuildingManager : MonoBehaviourPun
 
     public void SelectObject(int index)
     {
-        pendingObject = Instantiate(objects[index], pos, transform.rotation);
+        float price = prices[index];
+        if (MainTower.CurrentGold >= price)
+        {
+            fixprice = price;
+            pendingObject = Instantiate(objects[index], pos, transform.rotation);
+
+        }
+        else
+        {
+            return;
+        }
     }
 
     public void ToggleGrid()

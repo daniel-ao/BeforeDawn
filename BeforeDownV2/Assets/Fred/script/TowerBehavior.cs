@@ -74,7 +74,6 @@ public class TowerBehavior : MonoBehaviourPun
         {
             if (gameObject == TowerR || gameObject == TowerB)
             {
-                Debug.Log("tower is destroying");
                 winAndLose.photonView.RPC("GameEnd",RpcTarget.All, PhotonNetwork.IsMasterClient);
             }
             StartCoroutine(WaitDestruction());
@@ -103,7 +102,7 @@ public class TowerBehavior : MonoBehaviourPun
         foreach (GameObject enemy in enemies)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < closestDistance)
+            if (distanceToEnemy < closestDistance && enemy.name != "Player1(Clone)" && enemy.name != "Player2(Clone)")
             {
                 closestDistance = distanceToEnemy;
                 closestEnemy = enemy.transform;

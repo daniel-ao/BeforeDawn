@@ -70,6 +70,7 @@ public class playerClickController : MonoBehaviourPun
         target = FindTarget();
         if (target != null && isAlive && isMovable)
         {
+            transform.LookAt(target.transform);
             float distance = Vector3.Distance(target.transform.position, transform.position);
             if (distance <= SightRange && distance > AttackRange)
             {
@@ -95,21 +96,24 @@ public class playerClickController : MonoBehaviourPun
 
     private void click(bool click1)
     {
-        if (click1)
+        if (photonView.IsMine)
         {
-            isMovable = false;
-            animator.SetBool("IsMoving", true);
-            ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, clickOn))
+            if (click1)
             {
-                Nav.SetDestination(hitInfo.point);
+                isMovable = false;
+                animator.SetBool("IsMoving", true);
+                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity, clickOn))
+                {
+                    Nav.SetDestination(hitInfo.point);
+                }
             }
-        }
 
-        else if (Nav.remainingDistance <= 0)
-        {
-            animator.SetBool("IsMoving", false);
-            isMovable = true;
+            else if (Nav.remainingDistance <= 0)
+            {
+                animator.SetBool("IsMoving", false);
+                isMovable = true;
+            }
         }
     }
 
@@ -132,7 +136,7 @@ public class playerClickController : MonoBehaviourPun
             if (target.GetComponent<TowerBehavior>().Health > 0)
             {
                 animator.SetTrigger("Attack");
-                target.GetComponent<TowerBehavior>().photonView.RPC("TakeDamage", RpcTarget.AllViaServer, Damage);
+                target.GetComponent<TowerBehavior>().TakeDamage(Damage);
             }
 
         }
@@ -141,7 +145,7 @@ public class playerClickController : MonoBehaviourPun
             if (target.GetComponent<AiBehavior>().Health > 0)
             {
                 animator.SetTrigger("Attack");
-                target.GetComponent<AiBehavior>().photonView.RPC("TakeDamage", RpcTarget.AllViaServer, Damage);
+                target.GetComponent<AiBehavior>().TakeDamage(Damage);
             }
         }
         else if (target.gameObject.TryGetComponent<Miner>(out Miner enemyComponent3))
@@ -182,6 +186,7 @@ public class playerClickController : MonoBehaviourPun
             {
                 animator.SetTrigger("Attack");
                 Fire(target);
+                target.GetComponent<Spawner>().TakeDamage(Damage);
             }
 
         }
@@ -191,6 +196,7 @@ public class playerClickController : MonoBehaviourPun
             {
                 animator.SetTrigger("Attack");
                 Fire(target);
+                target.GetComponent<Spawner>().TakeDamage(Damage);
             }
         }
         else if (target.gameObject.TryGetComponent<Miner>(out Miner enemyComponent3))
@@ -199,6 +205,7 @@ public class playerClickController : MonoBehaviourPun
             {
                 animator.SetTrigger("Attack");
                 Fire(target);
+                target.GetComponent<Spawner>().TakeDamage(Damage);
             }
 
         }

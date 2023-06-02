@@ -53,6 +53,12 @@ MonoBehaviour:
   - EndGame
   - GameEnd
   - SpawnMine
+  - SpawnMiner
+  - OwnTower
+  - ShowYourGold
+  - SpawnHeor
+  - SpawnHero
+  - ShowingGold
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

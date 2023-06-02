@@ -992,7 +992,6 @@ GameObject:
   - component: {fileID: -6721141332891186901}
   - component: {fileID: -7699709957355516529}
   - component: {fileID: 3200241013532557379}
-  - component: {fileID: -4030142093484636473}
   m_Layer: 0
   m_Name: Warrior Red
   m_TagString: Red
@@ -1013,7 +1012,7 @@ Transform:
   m_Children:
   - {fileID: 8712995619191707845}
   - {fileID: 3212355651134351048}
-  - {fileID: 1064979040943203088}
+  - {fileID: 5947893195399942580}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1199,7 +1198,7 @@ MonoBehaviour:
   MaxHealth: 0
   Health: 0
   popo: {x: 0, y: 0, z: 0}
-  healthBar: {fileID: 1064979040782840904}
+  healthBar: {fileID: 5947893195344561900}
 --- !u!114 &-6721141332891186901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,7 +1235,6 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 3200241013532557379}
-  - {fileID: -4030142093484636473}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1256,39 +1254,6 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &-4030142093484636473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5701704621631426976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8c4a61274f60b4ea5fb4299cfdbf14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShowLayerWeightsInspector: 1
-  ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 9
-    SynchronizeType: 1
-    Name: IsDead
-  - Type: 9
-    SynchronizeType: 1
-    Name: Attack
-  - Type: 9
-    SynchronizeType: 1
-    Name: GetHit
-  - Type: 4
-    SynchronizeType: 1
-    Name: IsMoving
-  - Type: 1
-    SynchronizeType: 1
-    Name: MoveSpeed
-  m_SynchronizeLayers:
-  - SynchronizeType: 0
-    LayerIndex: 0
 --- !u!1 &5709216429091363622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,7 +2426,7 @@ Transform:
   m_Father: {fileID: 4656222718675292831}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &5283741290284757361
+--- !u!1001 &1521978247550436309
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2590,17 +2555,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea789dc59484fe6439f07af78d6278c2, type: 3}
---- !u!224 &1064979040943203088 stripped
+--- !u!224 &5947893195399942580 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5157763407857537633, guid: ea789dc59484fe6439f07af78d6278c2,
     type: 3}
-  m_PrefabInstance: {fileID: 5283741290284757361}
+  m_PrefabInstance: {fileID: 1521978247550436309}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1064979040782840904 stripped
+--- !u!114 &5947893195344561900 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5157763407832958265, guid: ea789dc59484fe6439f07af78d6278c2,
     type: 3}
-  m_PrefabInstance: {fileID: 5283741290284757361}
+  m_PrefabInstance: {fileID: 1521978247550436309}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1

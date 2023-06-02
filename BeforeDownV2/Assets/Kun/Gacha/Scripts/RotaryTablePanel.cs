@@ -108,7 +108,6 @@ public class RotaryTablePanel : MonoBehaviourPun
             drawEnd = false;
             drawWinning = false;
             StartCoroutine(StartDrawAni());
-            Debug.Log(PhotonNetwork.IsMasterClient);
             if (PhotonNetwork.IsMasterClient)
             {
                 selectedCharacter1 = rewardIndex;

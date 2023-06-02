@@ -7,13 +7,20 @@ using Photon.Realtime;
 
 public class Spawner : MonoBehaviourPun
 {
+    public float MaxHealth = 50;
     public float Health = 50; 
     public float SpawningRate = 0.2f;
     private float SpawningCountdown = 0f;
     private GameObject player;
-    
+    public HealthBar healthBar;
+
     public Transform SpawnPosition;
     public GameObject[] Units; //index : Blue -> [0:2], Red -> [3:5]
+
+    private void Start()
+    {
+        healthBar.SetMaxHealth(MaxHealth);
+    }
 
     void Update()
     {
@@ -46,6 +53,7 @@ public class Spawner : MonoBehaviourPun
     public void TakeDamage(float amout)
     {
         Health -= amout;
+        healthBar.SetHealth(Health);
         if (Health <= 0)
         {
             if (photonView.IsMine)
