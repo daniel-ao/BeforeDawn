@@ -279,6 +279,8 @@ MonoBehaviour:
   CurrentGold: 100
   popo: {x: 0, y: 0, z: 0}
   NoHealth: 0
+  TowerR: {fileID: 3986183178789783211}
+  TowerB: {fileID: 2101698229715288973, guid: 0411bbd6c1ad5b84084f7036ccec0aba, type: 3}
 --- !u!114 &6972469364104826447
 MonoBehaviour:
   m_ObjectHideFlags: 0

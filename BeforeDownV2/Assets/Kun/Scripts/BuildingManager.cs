@@ -40,6 +40,11 @@ public class BuildingManager : MonoBehaviourPun
                 PlaceObject();
             }
 
+            if (Input.GetMouseButtonDown(1))
+            {
+                Destroy(pendingObject);
+                canPlace = false;
+            }
             if (Input.GetKeyDown(KeyCode.R))
             {
                 RotateObject();

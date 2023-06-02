@@ -398,7 +398,7 @@ PrefabInstance:
         type: 3}
       propertyPath: projectilePrefab
       value: 
-      objectReference: {fileID: 2348266241764958831, guid: 208c852a323ae3d44998f5b371b37ce4,
+      objectReference: {fileID: 2348266241764958831, guid: bacd262aaeb43481a9f40bb84a0b057d,
         type: 3}
     - target: {fileID: 3368897962327348152, guid: ddbc89a2e5731354497399c2803d9354,
         type: 3}
@@ -419,6 +419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
       value: 0.4669811
+      objectReference: {fileID: 0}
+    - target: {fileID: 8294036407156484499, guid: ddbc89a2e5731354497399c2803d9354,
+        type: 3}
+      propertyPath: m_SynchronizeParameters.Array.data[0].SynchronizeType
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddbc89a2e5731354497399c2803d9354, type: 3}

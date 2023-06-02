@@ -1,11 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
-public class RotaryTablePanel : MonoBehaviour
+public class RotaryTablePanel : MonoBehaviourPun
 {
     public StartGame startGame;
 
+    public Button startGameButton;
     // le button start
     public Button drawBtn;
     // l'élément parent des Récompenses
@@ -15,14 +17,15 @@ public class RotaryTablePanel : MonoBehaviour
     // les images des Récompenses
     private Transform[] rewardTransArr;
 
-    public int selectedCharacter = 0;
+    public int selectedCharacter1 = 0;
+    public int selectedCharacter2 = 0;
 
     // état par default 
     private bool isInitState;
     // gacha finie -- état terminé，le halo ne tourne plus
     private bool drawEnd;
     // gagner
-    private bool drawWinning;
+    public bool drawWinning;
 
     // temps --> pour controller la vitesse de halo
     private float rewardTime = 0.8f;
@@ -92,7 +95,7 @@ public class RotaryTablePanel : MonoBehaviour
             StartG(CharacterName);
         }
     }
-
+    
     // cliquer sur le statrt
     void OnClickDrawFun()
     {
@@ -101,12 +104,22 @@ public class RotaryTablePanel : MonoBehaviour
             // avoir un ID rundom
             rewardIndex = Random.Range(0, rewardTransArr.Length);
             Debug.Log("c'est le récompense numéro " + (rewardIndex+1) + " que l'utilisateur va avoir.");
-            selectedCharacter = rewardIndex;
-            PlayerPrefs.SetInt("selectedCharacter", selectedCharacter);
             isOnClickPlaying = true;
             drawEnd = false;
             drawWinning = false;
             StartCoroutine(StartDrawAni());
+            Debug.Log(PhotonNetwork.IsMasterClient);
+            if (PhotonNetwork.IsMasterClient)
+            {
+                selectedCharacter1 = rewardIndex;
+                PlayerPrefs.SetInt("selectedCharacter1", selectedCharacter1);
+            }
+            else
+            {
+                selectedCharacter2 = rewardIndex;
+                PlayerPrefs.SetInt("selectedCharacter2", selectedCharacter2);
+            }
+            
         }
     }
 
@@ -137,7 +150,9 @@ public class RotaryTablePanel : MonoBehaviour
 
     void StartG(string CharacterName)
     {
+        startGameButton.interactable = PhotonNetwork.IsMasterClient;
         startGame.StartDraw(CharacterName);
         gameObject.SetActive(false);
     }
+    
 }

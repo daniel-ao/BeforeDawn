@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: TowerB
       value: 
       objectReference: {fileID: 7101576874435252295}
+    - target: {fileID: -3368216028379467981, guid: 3ff00a54555991142af79653a79d0d88,
+        type: 3}
+      propertyPath: Towers.Array.data[1]
+      value: 
+      objectReference: {fileID: 7101576874435252295}
     - target: {fileID: 175758370400212679, guid: 3ff00a54555991142af79653a79d0d88,
         type: 3}
       propertyPath: m_Name

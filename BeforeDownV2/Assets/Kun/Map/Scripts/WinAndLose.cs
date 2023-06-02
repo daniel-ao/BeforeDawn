@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 using TMPro;
 
-public class WinAndLose : MonoBehaviour
+public class WinAndLose : MonoBehaviourPun
 {
-    private TowerBehavior tower;
-    public bool Bleu = false;
-    public bool Red = false;
-
+    public GameObject TowerB;
+    public GameObject TowerR;
+    
     public bool win = false;
     public bool lose = false;
 
@@ -17,35 +17,57 @@ public class WinAndLose : MonoBehaviour
 
     private void Start()
     {
-        tower = GetComponent<TowerBehavior>();
         WinPanel.SetActive(false);
         LosePanel.SetActive(false);
     }
 
 
-    void Update()
+    [PunRPC]
+    public void GameEnd(bool master)
     {
-        if(Bleu && (tower.NoHealth || lose))
+        Debug.Log("enter on script WINADNLOSE");
+        if (!master)
         {
-            ShowLose(); 
-        }
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Debug.Log("!masterIf");
+                ShowWin();
+            }
 
-        if(win)
+                
+        
+            else
+            {
+                Debug.Log("!masterElse");
+                ShowLose();
+            }
+            
+        }
+        else
         {
-            ShowWin();
+            Debug.Log("master");
+            if (PhotonNetwork.IsMasterClient)
+            {
+                Debug.Log("showLose");
+                ShowLose();
+            }
+                
+            else
+            {
+                Debug.Log("showWin");
+                ShowWin();
+            }
         }
     }
 
     public void ShowWin()
     {
         WinPanel.SetActive(true);
-        WinPanel.transform.GetChild(WinPanel.transform.childCount - 1).GetComponent<TextMeshProUGUI>().text = "YOU WIN !";
       
     }
 
     public void ShowLose()
     {
         LosePanel.SetActive(true);
-        LosePanel.transform.GetChild(LosePanel.transform.childCount - 1).GetComponent<TextMeshProUGUI>().text = "YOU LOSE !";
     }
 }

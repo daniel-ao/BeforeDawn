@@ -35,5 +35,5 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene(nb,LoadSceneMode.Single);
     }
-
+    
 }

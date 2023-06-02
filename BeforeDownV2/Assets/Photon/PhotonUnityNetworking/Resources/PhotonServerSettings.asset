@@ -46,6 +46,13 @@ MonoBehaviour:
   - TakeDamage
   - TimeToSpawn
   - Fire
+  - DestroyGameObject
+  - LookAt
+  - OnClickDrawFun
+  - Character
+  - EndGame
+  - GameEnd
+  - SpawnMine
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

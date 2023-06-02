@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using Photon.Pun;
+using UnityEngine.Serialization;
 
 public class TowerBehavior : MonoBehaviourPun
 {
@@ -19,11 +20,22 @@ public class TowerBehavior : MonoBehaviourPun
     public bool NoHealth = false;
     private bool Dying = true;
 
+    public GameObject TowerR;
+    public GameObject TowerB;
+    private WinAndLose winAndLose;
+
     private void Awake()
     {
         Health = castle.Health;
         AttackRange = castle.AttackRange;
         popo = castle.popo;
+    }
+
+    private void Start()
+    {
+        
+        if ( gameObject == TowerR || gameObject == TowerB)
+            winAndLose = GameObject.Find("_GameManager").GetComponent<WinAndLose>();
     }
 
     void Update()
@@ -35,14 +47,13 @@ public class TowerBehavior : MonoBehaviourPun
             {
                 if (fireCountdown <= 0f)
                 {
-                    photonView.RPC("Fire",RpcTarget.AllViaServer);
+                    Fire();
                     fireCountdown = 1f / castle.fireRate;
                 }
                 fireCountdown -= Time.deltaTime;
             }
         }
     }
-    [PunRPC]
     public void TakeDamage(float amout)
     {
         Health -= amout;
@@ -53,15 +64,20 @@ public class TowerBehavior : MonoBehaviourPun
 
         if (NoHealth && Dying)
         {
+            if (gameObject == TowerR || gameObject == TowerB)
+            {
+                Debug.Log("tower is destroying");
+                winAndLose.photonView.RPC("GameEnd",RpcTarget.All, PhotonNetwork.IsMasterClient);
+            }
             StartCoroutine(WaitDestruction());
             Dying = false;
         }
     }
     public IEnumerator WaitDestruction()
     {
-        yield return new WaitForSeconds(4);
-
-        PhotonNetwork.Destroy(gameObject);
+        yield return new WaitForSeconds(1.0f);
+        if (photonView.IsMine)
+            PhotonNetwork.Destroy(gameObject);
     }
     void FindTarget()
     {
@@ -94,10 +110,9 @@ public class TowerBehavior : MonoBehaviourPun
             target = null;
         }
     }
-    [PunRPC]
     void Fire()
     {
-        GameObject projectile = Instantiate(castle.projectilePrefab, transform.position + popo, Quaternion.identity) as GameObject;
+        GameObject projectile = PhotonNetwork.Instantiate(castle.projectilePrefab.name, transform.position + popo, Quaternion.identity);
         Projectile script = projectile.GetComponent<Projectile>();
         script.target = target;
         script.damage = castle.damage;

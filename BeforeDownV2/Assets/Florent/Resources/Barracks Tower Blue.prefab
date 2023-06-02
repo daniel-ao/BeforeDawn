@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3108081858295548743, guid: dd280e7a9315109438464a3cda98bd43,
+        type: 3}
+      propertyPath: TowerB
+      value: 
+      objectReference: {fileID: 2101698229715288973}
     - target: {fileID: 972599674738847939, guid: dd280e7a9315109438464a3cda98bd43,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1938,6 +1943,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3986183178789783211, guid: dd280e7a9315109438464a3cda98bd43,
         type: 3}
+    - target: {fileID: 6972469364104826447, guid: dd280e7a9315109438464a3cda98bd43,
+        type: 3}
+      propertyPath: Towers.Array.data[1]
+      value: 
+      objectReference: {fileID: 2101698229715288973}
     - target: {fileID: 8991862179698103280, guid: dd280e7a9315109438464a3cda98bd43,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

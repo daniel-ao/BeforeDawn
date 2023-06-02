@@ -68,7 +68,7 @@ public class AiBehavior : MonoBehaviourPun
         if (target != null && isAlive)
         {
             transform.LookAt(target.transform.position);
-
+            
             float distance = Vector3.Distance(target.transform.position, transform.position);
             if (distance <= AttackRange)
             {
@@ -89,7 +89,7 @@ public class AiBehavior : MonoBehaviourPun
             }
         }
     }
-
+    
     private void Chasing(GameObject target)
     {
         navAgent.SetDestination(target.transform.position);
@@ -109,7 +109,7 @@ public class AiBehavior : MonoBehaviourPun
             if (target.GetComponent<TowerBehavior>().Health > 0)
             {
                 animator.SetTrigger("Attack");
-                target.GetComponent<TowerBehavior>().photonView.RPC("TakeDamage",RpcTarget.AllViaServer,Damage);
+                target.GetComponent<TowerBehavior>().TakeDamage(Damage);
             }
 
         }
@@ -118,7 +118,7 @@ public class AiBehavior : MonoBehaviourPun
             if (target.GetComponent<AiBehavior>().Health > 0)
             {
                 animator.SetTrigger("Attack");
-                target.GetComponent<AiBehavior>().photonView.RPC("TakeDamage",RpcTarget.AllViaServer,Damage);
+                target.GetComponent<AiBehavior>().TakeDamage(Damage);
             }
         }
         else if (target.gameObject.TryGetComponent<Spawner>(out Spawner enemyComponentss))
@@ -217,13 +217,12 @@ public class AiBehavior : MonoBehaviourPun
         {
             AllEnemy = GameObject.FindGameObjectsWithTag("Red");
         }
-
         float closestDistance = Mathf.Infinity;
         GameObject closestEnemy = null;
         foreach (GameObject enemy in AllEnemy)
         {
             float distanceToEnemy = Vector3.Distance(transform.position, enemy.transform.position);
-            if (distanceToEnemy < closestDistance)
+            if (distanceToEnemy < closestDistance && (enemy.name != "Player1(Clone)" && enemy.name != "Player2(Clone)"))
             {
                 closestDistance = distanceToEnemy;
                 closestEnemy = enemy;
@@ -255,7 +254,7 @@ public class AiBehavior : MonoBehaviourPun
 
     public IEnumerator WaitDie()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
         if (photonView.IsMine)
             PhotonNetwork.Destroy(gameObject);
     }

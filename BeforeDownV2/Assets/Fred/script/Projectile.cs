@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,7 +20,7 @@ public class Projectile : MonoBehaviourPun
             return;
         }
 
-        transform.LookAt(target);
+        photonView.transform.LookAt(target);
         Vector3 direction = target.position - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
 
@@ -47,7 +48,8 @@ public class Projectile : MonoBehaviourPun
         TowerBehavior tower = target.GetComponent<TowerBehavior>();
         if (tower != null)
         {
-            tower.TakeDamage(damage);
+            if (!tower.NoHealth)
+                tower.TakeDamage(damage);
         }
 
         playerClickController player = target.GetComponent<playerClickController>();

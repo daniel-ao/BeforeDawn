@@ -4830,8 +4830,8 @@ GameObject:
   - component: {fileID: 2348266241764958830}
   - component: {fileID: 5043737225584452685}
   - component: {fileID: 175972205672986427}
-  - component: {fileID: -3746460256532254740}
   - component: {fileID: 7125088153761429322}
+  - component: {fileID: 7105144437576924358}
   m_Layer: 0
   m_Name: Fire Red
   m_TagString: Untagged
@@ -9671,7 +9671,23 @@ MonoBehaviour:
   speed: 10
   damage: 0
   target: {fileID: 0}
---- !u!114 &-3746460256532254740
+--- !u!114 &7125088153761429322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348266241764958831}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &7105144437576924358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9693,22 +9709,6 @@ MonoBehaviour:
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &7125088153761429322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2348266241764958831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!1 &2348266242545143782
 GameObject:
   m_ObjectHideFlags: 0

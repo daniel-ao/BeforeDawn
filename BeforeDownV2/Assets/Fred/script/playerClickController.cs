@@ -24,7 +24,7 @@ public class playerClickController : MonoBehaviourPun
     private NavMeshAgent Nav;
     private Animator animator;
     private float Timer = 0f;
-    private bool isAlive = true;
+    public bool isAlive = true;
     private PhotonView view;
 
     private void Awake()
@@ -182,9 +182,8 @@ public class playerClickController : MonoBehaviourPun
 
     public IEnumerator WaitDie()
     {
-        Debug.Log("waiting");
         yield return new WaitForSeconds(1.5f);
-
-        Destroy(gameObject);
+        if (photonView.IsMine)
+            PhotonNetwork.Destroy(gameObject);
     }
 }
