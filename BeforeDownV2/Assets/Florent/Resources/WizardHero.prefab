@@ -743,7 +743,7 @@ GameObject:
   - component: {fileID: 5730762970286874873}
   m_Layer: 0
   m_Name: WizardHero
-  m_TagString: Blue
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -775,9 +775,9 @@ Animator:
   m_GameObject: {fileID: 3837243125544021702}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: bed7a092d53e7c748bd65db98cebf9d6, type: 3}
-  m_Controller: {fileID: 22100000, guid: 0341c2063d5404e388b8180fa8e4f7cd, type: 2}
+  m_Controller: {fileID: 22100000, guid: e83efaf0b490143169a9ebd9ec904ecc, type: 2}
   m_CullingMode: 1
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -863,13 +863,13 @@ MonoBehaviour:
     SynchronizeType: 0
     Name: GetHit
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: IsMoving
   - Type: 1
     SynchronizeType: 0
     Name: MoveSpeed
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 2
     LayerIndex: 0
 --- !u!114 &7500218251067287889
 MonoBehaviour:

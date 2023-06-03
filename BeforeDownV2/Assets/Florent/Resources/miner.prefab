@@ -763,7 +763,7 @@ GameObject:
   - component: {fileID: 7800449772333206786}
   m_Layer: 0
   m_Name: miner
-  m_TagString: MinerBlue
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2372,11 +2372,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 439376, guid: e1239991fa745f64a9ef787ae6db26a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5900002
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 439376, guid: e1239991fa745f64a9ef787ae6db26a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.82
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 439376, guid: e1239991fa745f64a9ef787ae6db26a2, type: 3}
       propertyPath: m_LocalPosition.z

@@ -1567,7 +1567,7 @@ GameObject:
   - component: {fileID: 7995197552319177466}
   m_Layer: 0
   m_Name: KnightHero
-  m_TagString: Blue
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1599,9 +1599,9 @@ Animator:
   m_GameObject: {fileID: 1080219753876605317}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 9ce6002518e821e43b4f97c76700fbac, type: 3}
-  m_Controller: {fileID: 9100000, guid: 37594f01984414613b3ba897e300f3e9, type: 2}
+  m_Controller: {fileID: 22100000, guid: 7e145d76e405e488e8abe9300bb932ab, type: 2}
   m_CullingMode: 1
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -1679,7 +1679,7 @@ MonoBehaviour:
     SynchronizeType: 0
     Name: MoveSpeed
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 2
     LayerIndex: 0
 --- !u!114 &2045462569163162921
 MonoBehaviour:
