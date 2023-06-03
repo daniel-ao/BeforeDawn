@@ -21,6 +21,10 @@ public class Spawner : MonoBehaviourPun
     {
         if (photonView.IsMine)
             healthBar.SetMaxHealth(MaxHealth);
+        else
+        {
+            healthBar.gameObject.SetActive(false);
+        }
     }
 
     void Update()

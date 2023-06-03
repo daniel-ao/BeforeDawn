@@ -23,13 +23,9 @@ public class Billboard : MonoBehaviour
         {
             cam = GameObject.Find("Player1(Clone)");
         }
-        else if (transform.parent.tag == "Red")
-        {
-            cam = GameObject.Find("Player2(Clone)");
-        }
         else
         {
-            cam = GameObject.Find("Main Camera");
+            cam = GameObject.Find("Player2(Clone)");
         }
     }
 }

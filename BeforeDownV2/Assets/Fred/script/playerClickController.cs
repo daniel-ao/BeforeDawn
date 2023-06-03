@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 using Photon.Realtime;
+using UnityRoyale;
 
 public class playerClickController : MonoBehaviourPun
 {
@@ -33,7 +34,7 @@ public class playerClickController : MonoBehaviourPun
     private bool isMovable = false;
     public Vector3 popo;
 
-
+    private GameObject GameManager;
     public HealthBar healthBar;
 
     private PhotonView view;
@@ -80,7 +81,7 @@ public class playerClickController : MonoBehaviourPun
         Nav = GetComponent<NavMeshAgent>();
         Nav.speed = Speed;
         Enemy = null;
-
+        GameManager = GameObject.Find("_GameManager");
         view = GetComponent<PhotonView>();
     }
     private void Update()
@@ -104,7 +105,7 @@ public class playerClickController : MonoBehaviourPun
                 if (Timer <= 0f)
                 {
                     Attacking(target);
-                    Timer = 1f / TimeAttack;
+                    Timer = 1f / (1f/TimeAttack);
                 }
                 Timer -= Time.deltaTime;
             }
@@ -314,7 +315,6 @@ public class playerClickController : MonoBehaviourPun
         healthBar.SetHealth(Health);
         if (Health <= 0 && isAlive)
         {
-            Debug.Log(gameObject.name + "is dying");
             isAlive = false;
             Nav.isStopped = true;
             photonView.RPC("Trigger",RpcTarget.All,"IsDead");
