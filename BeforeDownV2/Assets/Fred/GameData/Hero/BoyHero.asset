@@ -16,7 +16,7 @@ MonoBehaviour:
   Damage: 8
   Speed: 12
   AttackRange: 3
-  SightRange: 30
+  SightRange: 12
   TimeAttack: 0.9
   IsLongRange: 0
   popo: {x: 0, y: 0, z: 0}

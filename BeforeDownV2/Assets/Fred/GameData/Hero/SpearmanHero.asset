@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 120
   Damage: 9
-  Speed: 10
+  Speed: 7
   AttackRange: 6
-  SightRange: 30
+  SightRange: 17
   TimeAttack: 0.7
   IsLongRange: 0
   popo: {x: 0, y: 0, z: 0}

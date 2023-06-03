@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fb72ca248874fcc826ace4ded37b5d, type: 3}
   m_Name: ArcherDef
   m_EditorClassIdentifier: 
-  Health: 15
+  Health: 50
   damage: 3
-  AttackRange: 40
+  AttackRange: 20
   fireRate: 1
   popo: {x: 0, y: 4, z: 0}
   projectilePrefab: {fileID: 953002537907380271, guid: e12f67aa396803b4db1f156b4de6a91f,

@@ -16,9 +16,9 @@ MonoBehaviour:
   Health: 10
   speed: 3
   damage: 10
-  SightRange: 30
+  SightRange: 20
   AttackRange: 10
-  timeBetweenAttack: 1.05
+  timeBetweenAttack: 1.7
   isLongRange: 1
   popo: {x: 0, y: 1, z: 0}
   projectilePrefab: {fileID: 2348266241764958831, guid: 16df5ca33880bf7409922364f4bdcc3d,

@@ -10,7 +10,7 @@ public class Mine : MonoBehaviourPun
 {
     float TimeBeforeDestroy = 40f;
     public float timer = 0f;
-    public float GoldStockage = 500;
+    public float GoldStockage = 750;
     private _GameManager gameManager;
     void Start()
     {

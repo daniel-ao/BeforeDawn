@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fb72ca248874fcc826ace4ded37b5d, type: 3}
   m_Name: WizardDef
   m_EditorClassIdentifier: 
-  Health: 15
+  Health: 50
   damage: 6
-  AttackRange: 30
+  AttackRange: 15
   fireRate: 1
   popo: {x: 0, y: 3.5, z: 0}
   projectilePrefab: {fileID: 2348266241764958831, guid: 12f4d949d5d2d443db3327ccef37d2cd,

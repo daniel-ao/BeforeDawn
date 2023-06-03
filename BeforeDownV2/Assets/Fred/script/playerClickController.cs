@@ -24,6 +24,7 @@ public class playerClickController : MonoBehaviourPun
     private RaycastHit hitInfo;
     private Ray ray;
     private NavMeshAgent Nav;
+    private float Speed;
     private Animator animator;
     private bool IsLongRange;
     private float Timer = 0f;
@@ -47,6 +48,8 @@ public class playerClickController : MonoBehaviourPun
         TimeAttack = playerdata.TimeAttack;
         Damage = playerdata.Damage;
         popo = playerdata.popo;
+        Speed = playerdata.Speed;
+
         IsLongRange = playerdata.IsLongRange;
 
         healthBar.SetMaxHealth(MaxHealth);
@@ -58,6 +61,7 @@ public class playerClickController : MonoBehaviourPun
     {
         animator = GetComponent<Animator>();
         Nav = GetComponent<NavMeshAgent>();
+        Nav.speed = Speed;
         Enemy = null;
 
         view = GetComponent<PhotonView>();
