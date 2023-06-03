@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 171603728}
   - component: {fileID: 171603727}
   m_Layer: 5
-  m_Name: superman
+  m_Name: 'KnightHero '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,7 +416,7 @@ GameObject:
   - component: {fileID: 279615287}
   - component: {fileID: 279615286}
   m_Layer: 5
-  m_Name: wanda
+  m_Name: SpearMan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1798,7 +1798,7 @@ GameObject:
   - component: {fileID: 1324178134}
   - component: {fileID: 1324178133}
   m_Layer: 5
-  m_Name: iron man
+  m_Name: 'BoyHero '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2025,7 +2025,7 @@ GameObject:
   - component: {fileID: 1478292362}
   - component: {fileID: 1478292361}
   m_Layer: 5
-  m_Name: captain america
+  m_Name: 'Wizard '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2843,7 +2843,7 @@ GameObject:
   - component: {fileID: 1895536232}
   - component: {fileID: 1895536231}
   m_Layer: 5
-  m_Name: ant man
+  m_Name: Magician
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2918,7 +2918,7 @@ GameObject:
   - component: {fileID: 1901207480}
   - component: {fileID: 1901207479}
   m_Layer: 5
-  m_Name: thor
+  m_Name: GirlHero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -28,7 +28,7 @@ public class CameraController : MonoBehaviourPun
     {
         id = player.ActorNumber;
         photonPlayer = player;
-        _GameManager.instance.players[id - 1] = this;
+        //_GameManager.instance.players[id - 1] = this;
     
         // is this not our local player?
         if(!photonView.IsMine)

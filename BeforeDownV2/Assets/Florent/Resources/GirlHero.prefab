@@ -923,7 +923,7 @@ GameObject:
   - component: {fileID: 9078624470555269315}
   m_Layer: 0
   m_Name: GirlHero
-  m_TagString: Blue
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -958,9 +958,9 @@ Animator:
   m_GameObject: {fileID: 3018763466220617823}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0308cf4e83cf517488b60af58b290fe0, type: 3}
-  m_Controller: {fileID: 9100000, guid: 37594f01984414613b3ba897e300f3e9, type: 2}
+  m_Controller: {fileID: 22100000, guid: c35867f9d31334d55b77159c37d1ebec, type: 2}
   m_CullingMode: 1
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -1032,13 +1032,13 @@ MonoBehaviour:
     SynchronizeType: 0
     Name: GetHit
   - Type: 4
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: IsMoving
   - Type: 1
     SynchronizeType: 0
     Name: MoveSpeed
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 2
     LayerIndex: 0
 --- !u!114 &4655126830367781759
 MonoBehaviour:
