@@ -4248,7 +4248,7 @@ MonoBehaviour:
   gridSize: 1.5
   gridToggle: {fileID: 1868468197}
   ShowGold: {fileID: 566450977}
-  prices: 2c010000f4010000fa000000
+  prices: 000000000000000000000000
 --- !u!4 &888135644
 Transform:
   m_ObjectHideFlags: 0

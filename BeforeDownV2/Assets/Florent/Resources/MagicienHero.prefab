@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 8399928215111483527}
   m_Layer: 0
   m_Name: MagicienHero
-  m_TagString: Blue
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,9 +375,9 @@ Animator:
   m_GameObject: {fileID: 1639703072801014456}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 3dc717adf98c7b043a3e77ed0130d470, type: 3}
-  m_Controller: {fileID: 22100000, guid: 0341c2063d5404e388b8180fa8e4f7cd, type: 2}
+  m_Controller: {fileID: 22100000, guid: 6bb64e3e95c42419fb09b6613baf3c25, type: 2}
   m_CullingMode: 1
-  m_UpdateMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -438,24 +438,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowLayerWeightsInspector: 1
   ShowParameterInspector: 1
-  m_SynchronizeParameters:
-  - Type: 9
-    SynchronizeType: 0
-    Name: IsDead
-  - Type: 9
-    SynchronizeType: 0
-    Name: Attack
-  - Type: 9
-    SynchronizeType: 0
-    Name: GetHit
-  - Type: 4
-    SynchronizeType: 0
-    Name: IsMoving
-  - Type: 1
-    SynchronizeType: 0
-    Name: MoveSpeed
+  m_SynchronizeParameters: []
   m_SynchronizeLayers:
-  - SynchronizeType: 0
+  - SynchronizeType: 2
     LayerIndex: 0
 --- !u!114 &-3142468739533449850
 MonoBehaviour:

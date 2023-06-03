@@ -42,7 +42,12 @@ public class AiBehavior : MonoBehaviourPun
         TimeAttack = data.timeBetweenAttack; 
         popo = data.popo;
 
-        healthBar.SetMaxHealth(MaxHealth);
+        if (photonView.IsMine)
+            healthBar.SetMaxHealth(MaxHealth);
+        else
+        {
+            healthBar.gameObject.SetActive(false);
+        }
     }
 
     // Start is called before the first frame update
@@ -191,7 +196,7 @@ public class AiBehavior : MonoBehaviourPun
             {
 
                 animator.SetTrigger("Attack");
-                target.GetComponent<Spawner>().TakeDamage(Damage);
+                Fire(target);
             }
         }
         else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponent5))
@@ -199,7 +204,7 @@ public class AiBehavior : MonoBehaviourPun
             if (target.GetComponent<playerClickController>().Health > 0)
             {
                 animator.SetTrigger("Attack");
-                target.GetComponent<playerClickController>().TakeDamage(Damage);
+                Fire(target);
             }
         }
         else
@@ -279,7 +284,7 @@ public class AiBehavior : MonoBehaviourPun
 
     public IEnumerator WaitDie()
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.5f);
         if (photonView.IsMine)
             PhotonNetwork.Destroy(gameObject);
     }

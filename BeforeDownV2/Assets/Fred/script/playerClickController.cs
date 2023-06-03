@@ -36,6 +36,19 @@ public class playerClickController : MonoBehaviourPun
     public HealthBar healthBar;
 
     private PhotonView view;
+    
+    [PunRPC]
+    public void Initialize (bool master)
+    {
+        if (master)
+        {
+            tag = "Red";
+        }
+        else
+        {
+            tag = "Blue";
+        }
+    }
 
     private void Awake()
     {
@@ -48,8 +61,12 @@ public class playerClickController : MonoBehaviourPun
         Damage = playerdata.Damage;
         popo = playerdata.popo;
         IsLongRange = playerdata.IsLongRange;
-
-        healthBar.SetMaxHealth(MaxHealth);
+        if (photonView.IsMine)
+            healthBar.SetMaxHealth(MaxHealth);
+        else
+        {
+            healthBar.gameObject.SetActive(false);
+        }
 
     }
 
@@ -135,7 +152,7 @@ public class playerClickController : MonoBehaviourPun
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
             {
-                animator.SetTrigger("Attack");
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
                 target.GetComponent<TowerBehavior>().TakeDamage(Damage);
             }
 
@@ -144,7 +161,7 @@ public class playerClickController : MonoBehaviourPun
         {
             if (target.GetComponent<AiBehavior>().Health > 0)
             {
-                animator.SetTrigger("Attack");
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
                 target.GetComponent<AiBehavior>().TakeDamage(Damage);
             }
         }
@@ -152,7 +169,7 @@ public class playerClickController : MonoBehaviourPun
         {
             if (target.GetComponent<Miner>().Health > 0)
             {
-                animator.SetTrigger("Attack");
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
                 target.GetComponent<Miner>().TakeDamage(Damage);
             }
         }
@@ -160,7 +177,7 @@ public class playerClickController : MonoBehaviourPun
         {
             if (target.GetComponent<Spawner>().Health > 0)
             {
-                animator.SetTrigger("Attack");
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
                 target.GetComponent<Spawner>().TakeDamage(Damage);
             }
         }
@@ -168,7 +185,7 @@ public class playerClickController : MonoBehaviourPun
         {
             if (target.GetComponent<playerClickController>().Health > 0)
             {
-                animator.SetTrigger("Attack");
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
                 target.GetComponent<playerClickController>().TakeDamage(Damage);
             }
         }
@@ -184,9 +201,8 @@ public class playerClickController : MonoBehaviourPun
         {
             if (target.GetComponent<TowerBehavior>().Health > 0)
             {
-                animator.SetTrigger("Attack");
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
                 Fire(target);
-                target.GetComponent<Spawner>().TakeDamage(Damage);
             }
 
         }
@@ -194,18 +210,16 @@ public class playerClickController : MonoBehaviourPun
         {
             if (target.GetComponent<AiBehavior>().Health > 0)
             {
-                animator.SetTrigger("Attack");
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
                 Fire(target);
-                target.GetComponent<Spawner>().TakeDamage(Damage);
             }
         }
         else if (target.gameObject.TryGetComponent<Miner>(out Miner enemyComponent3))
         {
             if (target.GetComponent<Miner>().Health > 0)
             {
-                animator.SetTrigger("Attack");
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
                 Fire(target);
-                target.GetComponent<Spawner>().TakeDamage(Damage);
             }
 
         }
@@ -214,16 +228,17 @@ public class playerClickController : MonoBehaviourPun
             if (target.GetComponent<Spawner>().Health > 0)
             {
 
-                animator.SetTrigger("Attack");
-                target.GetComponent<Spawner>().TakeDamage(Damage);
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
+                Fire(target);
+                
             }
         }
         else if (target.gameObject.TryGetComponent<playerClickController>(out playerClickController enemyComponent5))
         {
             if (target.GetComponent<playerClickController>().Health > 0)
             {
-                animator.SetTrigger("Attack");
-                target.GetComponent<playerClickController>().TakeDamage(Damage);
+                photonView.RPC("Trigger",RpcTarget.All,"Attack");
+                Fire(target);
             }
         }
         else
@@ -251,13 +266,6 @@ public class playerClickController : MonoBehaviourPun
         Projectile script = projectile.GetComponent<Projectile>();
         script.target = target.transform;
         script.damage = Damage;
-    }
-
-
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawWireSphere(transform.position, playerdata.SightRange);
-        Gizmos.DrawWireSphere(transform.position, playerdata.AttackRange);
     }
 
     private GameObject FindTarget()
@@ -302,17 +310,36 @@ public class playerClickController : MonoBehaviourPun
         healthBar.SetHealth(Health);
         if (Health <= 0 && isAlive)
         {
+            Debug.Log(gameObject.name + "is dying");
             isAlive = false;
             Nav.isStopped = true;
-            animator.SetTrigger("IsDead");
-            StartCoroutine(WaitDie());
+            photonView.RPC("Trigger",RpcTarget.All,"IsDead");
+            
         }
     }
 
     public IEnumerator WaitDie()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         if (photonView.IsMine)
             PhotonNetwork.Destroy(gameObject);
+    }
+
+    [PunRPC]
+    void Trigger(string mov)
+    {
+        if (mov == "IsDead")
+        {
+            animator.SetTrigger("IsDead");
+            StartCoroutine(WaitDie());
+        }
+        else if (mov == "Attack")
+        {
+            animator.SetTrigger("Attack");
+        }
+        else
+        {
+            animator.SetTrigger("GetHit");
+        }
     }
 }

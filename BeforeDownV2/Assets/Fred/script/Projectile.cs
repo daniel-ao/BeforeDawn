@@ -37,6 +37,8 @@ public class Projectile : MonoBehaviourPun
     {
         if (target == null)
         {
+            if (photonView.IsMine)
+                PhotonNetwork.Destroy(gameObject);
             return;
         }
 
@@ -53,8 +55,7 @@ public class Projectile : MonoBehaviourPun
         TowerBehavior tower = target.GetComponent<TowerBehavior>();
         if (tower != null)
         {
-            if (!tower.NoHealth)
-                tower.TakeDamage(damage);
+            tower.TakeDamage(damage);
         }
         playerClickController player = target.GetComponent<playerClickController>();
         if (player != null)

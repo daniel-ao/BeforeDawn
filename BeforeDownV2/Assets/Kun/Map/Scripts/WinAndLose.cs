@@ -25,37 +25,31 @@ public class WinAndLose : MonoBehaviourPun
     [PunRPC]
     public void GameEnd(bool master)
     {
-        Debug.Log("enter on script WINADNLOSE");
         if (!master)
         {
             if (PhotonNetwork.IsMasterClient)
             {
-                Debug.Log("!masterIf");
-                ShowWin();
+                ShowLose();
             }
 
                 
         
             else
             {
-                Debug.Log("!masterElse");
-                ShowLose();
+                ShowWin();
             }
             
         }
         else
         {
-            Debug.Log("master");
             if (PhotonNetwork.IsMasterClient)
             {
-                Debug.Log("showLose");
-                ShowLose();
+                ShowWin();
             }
                 
             else
             {
-                Debug.Log("showWin");
-                ShowWin();
+                ShowLose();
             }
         }
     }
@@ -63,7 +57,7 @@ public class WinAndLose : MonoBehaviourPun
     public void ShowWin()
     {
         WinPanel.SetActive(true);
-      
+        LosePanel.SetActive(false);
     }
 
     public void ShowLose()

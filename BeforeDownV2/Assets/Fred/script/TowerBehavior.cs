@@ -34,7 +34,12 @@ public class TowerBehavior : MonoBehaviourPun
         AttackRange = castle.AttackRange;
         popo = castle.popo;
 
-        healthBar.SetMaxHealth(MaxHealth);
+        if (photonView.IsMine)
+            healthBar.SetMaxHealth(MaxHealth);
+        else
+        {
+            healthBar.gameObject.SetActive(false);
+        }
 
     }
 
@@ -72,12 +77,12 @@ public class TowerBehavior : MonoBehaviourPun
 
         if (NoHealth && Dying)
         {
+            StartCoroutine(WaitDestruction());
+            Dying = false;
             if (gameObject == TowerR || gameObject == TowerB)
             {
                 winAndLose.photonView.RPC("GameEnd",RpcTarget.All, PhotonNetwork.IsMasterClient);
             }
-            StartCoroutine(WaitDestruction());
-            Dying = false;
         }
     }
     public IEnumerator WaitDestruction()
