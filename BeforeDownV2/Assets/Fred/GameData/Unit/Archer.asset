@@ -15,7 +15,7 @@ MonoBehaviour:
   Type: {fileID: 0}
   Health: 18
   speed: 6
-  damage: 2
+  damage: 5
   SightRange: 25
   AttackRange: 15
   timeBetweenAttack: 0.9
