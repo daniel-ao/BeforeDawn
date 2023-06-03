@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: WizardHero
   m_EditorClassIdentifier: 
   Health: 65
-  Damage: 9
+  Damage: 20
   Speed: 3
   AttackRange: 15
-  SightRange: 40
-  TimeAttack: 1.7
+  SightRange: 25
+  TimeAttack: 2.3
   IsLongRange: 1
   popo: {x: 0, y: 0, z: 0}
   projectilePrefab: {fileID: 2348266241764958831, guid: 16df5ca33880bf7409922364f4bdcc3d,

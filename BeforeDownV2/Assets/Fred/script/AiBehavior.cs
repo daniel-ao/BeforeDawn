@@ -54,6 +54,7 @@ public class AiBehavior : MonoBehaviourPun
     void Start()
     {
         navAgent = GetComponent<NavMeshAgent>();
+        navAgent.speed = Speed;
 
         animator = GetComponent<Animator>();
         TowerR = GameObject.Find("Barracks Tower Red(Clone)");
