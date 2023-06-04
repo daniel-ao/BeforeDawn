@@ -12,7 +12,7 @@ public class TowerBehavior : MonoBehaviourPun
 
     public float MaxHealth;
     public float Health;
-    public float CurrentGold = 100f;
+    public float CurrentGold = 500f;
     private float AttackRange;
     private float fireCountdown = 0f;
     private Transform target;
