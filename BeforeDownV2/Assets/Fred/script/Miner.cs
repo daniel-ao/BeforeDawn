@@ -13,7 +13,7 @@ public class Miner : MonoBehaviourPun
 
     public float MaxHealth = 12f;
     public float Health = 12f;
-    private float Speed = 3;
+    private float Speed = 4;
     private bool isAlive = true;
     public float GoldStock = 0f;
     float pickGoldRange = 2f;
