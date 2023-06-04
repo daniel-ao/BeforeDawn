@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fb72ca248874fcc826ace4ded37b5d, type: 3}
   m_Name: ArcherDef
   m_EditorClassIdentifier: 
-  Health: 50
-  damage: 3
+  Health: 40
+  damage: 10
   AttackRange: 20
   fireRate: 1
   popo: {x: 0, y: 4, z: 0}

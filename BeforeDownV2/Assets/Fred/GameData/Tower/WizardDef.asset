@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0fb72ca248874fcc826ace4ded37b5d, type: 3}
   m_Name: WizardDef
   m_EditorClassIdentifier: 
-  Health: 50
-  damage: 6
+  Health: 20
+  damage: 20
   AttackRange: 15
   fireRate: 1
   popo: {x: 0, y: 3.5, z: 0}
