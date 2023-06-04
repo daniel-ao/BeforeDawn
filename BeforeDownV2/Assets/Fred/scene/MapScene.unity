@@ -5762,7 +5762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SETTingsPanel: {fileID: 1959114550}
   ExitPannel: {fileID: 1089959271}
-  LosePannel: {fileID: 0}
+  LosePannel: {fileID: 1216919637}
 --- !u!114 &1089959274
 MonoBehaviour:
   m_ObjectHideFlags: 0
