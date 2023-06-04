@@ -278,7 +278,7 @@ MonoBehaviour:
   castle: {fileID: 11400000, guid: f3422b0879d884c4a80a144efa1f2a0d, type: 2}
   MaxHealth: 0
   Health: 0
-  CurrentGold: 100
+  CurrentGold: 500
   popo: {x: 0, y: 0, z: 0}
   NoHealth: 0
   TowerR: {fileID: 3986183178789783211}
