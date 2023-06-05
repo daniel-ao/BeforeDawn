@@ -55,8 +55,7 @@ public class _GameManager : MonoBehaviourPun
             photonView.RPC("SpawnHero", RpcTarget.All, hero1,hero2);
             photonView.RPC("SpawnTower",RpcTarget.All);
             photonView.RPC("SpawnMiner", RpcTarget.AllBuffered);
-            photonView.RPC("SpawnMine", RpcTarget.AllBuffered);
-            
+            SpawnMine();
             _buildingManager.photonView.RPC("OwnTower",RpcTarget.AllBuffered, true);
         }
             
@@ -141,29 +140,21 @@ public class _GameManager : MonoBehaviourPun
         
     }
 
-    [PunRPC]
-    void SpawnMine()
+    public void SpawnMine()
     {
         GameObject Mine;
-        float x = Random.Range(-31, 31);
-        float z = Random.Range(0, 31);
-        Vector3 position = new Vector3();
-        var positionPosition = position;
-        if (PhotonNetwork.IsMasterClient)
+        int nbmine = Random.Range(1, 3);
+        for (int n = 0; n < nbmine; n++)
         {
-            positionPosition.x = TowerR.transform.position.x + x;
-            positionPosition.z = TowerR.transform.position.z + z;
+            float x = Random.Range(-40, 40);
+            float z = Random.Range(-20, 20);
+            Vector3 position = new Vector3();
+            var positionPosition = position;
+            positionPosition.x = spawnPoints[8].position.x + x;
+            positionPosition.z = spawnPoints[8].position.z + z;
             position = positionPosition;
             Mine = PhotonNetwork.Instantiate("Mine", position, Quaternion.identity);
             Mine.tag = "Mine";
-        }
-        else
-        {
-            positionPosition.x = TowerB.transform.position.x + x;
-            positionPosition.z = TowerB.transform.position.z - z;
-            position = positionPosition;
-            Mine = PhotonNetwork.Instantiate("Mine", position, Quaternion.identity);
-            photonView.RPC("MasterTag",RpcTarget.MasterClient,Mine, "Mine");
         }
     }
 

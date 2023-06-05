@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Playables;
 using Photon.Pun;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class TowerBehavior : MonoBehaviourPun
 {
@@ -25,6 +26,8 @@ public class TowerBehavior : MonoBehaviourPun
     private WinAndLose winAndLose;
     
     public HealthBar healthBar;
+    private GameObject GoldB;
+    private GameObject GoldR;
 
 
     private void Awake()
@@ -42,12 +45,12 @@ public class TowerBehavior : MonoBehaviourPun
         }
 
     }
-
     private void Start()
     {
-        
-        if ( gameObject == TowerR || gameObject == TowerB)
-            winAndLose = GameObject.Find("_GameManager").GetComponent<WinAndLose>();
+        if (gameObject == TowerR || gameObject == TowerB)
+        {
+            InitializeUI();
+        }
     }
 
     void Update()
@@ -128,6 +131,34 @@ public class TowerBehavior : MonoBehaviourPun
         Projectile script = projectile.GetComponent<Projectile>();
         script.target = target;
         script.damage = castle.damage;
+    }
+
+    void InitializeUI()
+    {
+        GoldB = GameObject.Find("Canvas/TimerGoldPannel/ShowGoldTime/GoldNbB");
+        GoldR = GameObject.Find("Canvas/TimerGoldPannel/ShowGoldTime/GoldNbR");
+        winAndLose = GameObject.Find("_GameManager").GetComponent<WinAndLose>();
+        if (PhotonNetwork.IsMasterClient)
+        {
+            GoldR.SetActive(true);
+            GoldB.SetActive(false);
+        }
+        else
+        {
+            GoldB.SetActive(true);
+        }
+    }
+
+    public void ShowGoldPanel()
+    {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            GoldR.GetComponent<Text>().text = CurrentGold.ToString();
+        }
+        else
+        {
+            GoldB.GetComponent<Text>().text = CurrentGold.ToString();
+        }
     }
 }
 

@@ -21,8 +21,10 @@ public class CheckPlacement : MonoBehaviourPun
         {
             if (this.gameObject.name == "Barracks Tower Red(Clone)" || this.gameObject.name == "Barracks Tower Blue(Clone)")
             {
+                
                 GetComponent<TowerBehavior>().CurrentGold += miner.GoldStock;
                 miner.GoldStock = 0;
+                GetComponent<TowerBehavior>().ShowGoldPanel();
             }
         }
         else if (other.gameObject.CompareTag("Red") || other.gameObject.CompareTag("Blue"))

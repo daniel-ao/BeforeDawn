@@ -87,6 +87,7 @@ public class BuildingManager : MonoBehaviourPun
     public void PlaceObject(float price)
     {
         MainTower.CurrentGold -= fixprice;
+        MainTower.ShowGoldPanel();
         GameObject towerInstanciate = pendingObject.GetComponent<CheckPlacement>().SelectTower();
         Destroy(pendingObject);
         PhotonNetwork.Instantiate(towerInstanciate.name, pos, pendingObject.transform.rotation);

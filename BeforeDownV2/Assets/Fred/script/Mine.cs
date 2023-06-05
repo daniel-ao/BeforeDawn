@@ -27,7 +27,7 @@ public class Mine : MonoBehaviourPun
             if (photonView.IsMine)
             {
                 PhotonNetwork.Destroy(gameObject);
-                gameManager.photonView.RPC("SpawnMine", RpcTarget.All);
+                gameManager.SpawnMine();
             }
         }
     }
